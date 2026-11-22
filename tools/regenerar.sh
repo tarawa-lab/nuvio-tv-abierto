@@ -9,3 +9,4 @@ python3 tools/build_iptvorg.py "$2" "$3" /tmp/site_new
 python3 tools/catalogs.py /tmp/site_new
 python3 tools/limpiar.py /tmp/site_new
 cp -r /tmp/site_new/. .
+python3 tools/m3u.py .
