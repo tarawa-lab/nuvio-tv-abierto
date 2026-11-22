@@ -69,14 +69,38 @@ for cc in PRIMEROS + resto:
     rows.append(('pais-'+cc.lower(), 'País · '+pais(cc), [i for i in items if i['cc']==cc]))
 for rid, name, sel in rows:
     w(f'catalog/tv/{rid}.json', {"metas":[meta(i, name.split(' · ')[-1]) for i in sel]})
+
+# --- 4 filas grandes (la app de LG solo carga las 4 primeras filas del inicio) ---
+import csv as _csv
+REG = {r['code']: set(r['countries'].split(';')) for r in _csv.DictReader(open(os.environ.get('IPTV_DB','/tmp/iptvdb/data')+'/regions.csv', encoding='utf-8'))}
+EUR = REG['EUR'] | {'UK'}; LAT = REG['LATAM'] | {'PR'}
+ORD_ES = ['Generalistas','Noticias','Deportes','Infantil','Autonómicos y locales']
+def es_key(i):
+    t = next((x for x in ORD_ES if x in i['tipos']), 'Otros')
+    return (ORD_ES.index(t) if t in ORD_ES else len(ORD_ES), i.get('pr', 9), i['name'].lower()), t
+big = []
+es_items = sorted((i for i in items if i['cc']=='ES'), key=lambda i: es_key(i)[0])
+big.append(('tv-espana', 'Canales de España', [(i, es_key(i)[1]) for i in es_items]))
+def by_country(pred):
+    sel = sorted((i for i in items if i['cc']!='ES' and pred(i['cc'])), key=lambda i: (HISP.index(i['cc']) if i['cc'] in HISP else len(HISP), unicodedata.normalize('NFKD', pais(i['cc'])).encode('ascii','ignore').decode(), i['name'].lower()))
+    return [(i, pais(i['cc'])) for i in sel]
+big.append(('tv-latam', 'Canales de Latinoamérica', by_country(lambda cc: cc in LAT)))
+big.append(('tv-europa', 'Canales de Europa', by_country(lambda cc: cc in EUR)))
+big.append(('tv-mundo', 'Canales del resto del mundo', by_country(lambda cc: cc not in LAT and cc not in EUR)))
+for rid, name, sel in big:
+    metas = []
+    for i, tag in sel:
+        mm = meta(i, tag); mm['name'] = f'[{tag}] ' + i['name']; metas.append(mm)
+    w(f'catalog/tv/{rid}.json', {"metas": metas})
 mp = os.path.join(out,'manifest.json'); m = json.load(open(mp, encoding='utf-8'))
-m['catalogs'] = [dict(type='tv', id=rid, name=name) for rid, name, sel in rows if sel] + [
+m['catalogs'] = [dict(type='tv', id=rid, name=name) for rid, name, sel in big] + [
   dict(type='tv', id='por-pais', name='TV en abierto · Por país', genres=paises, extra=[{"name":"genre","options":paises,"isRequired":False}]),
   dict(type='tv', id='por-tipo', name='TV en abierto · Por tipo de contenido', genres=tipos, extra=[{"name":"genre","options":tipos,"isRequired":False}]),
 ]
-m['version'] = '2.1.0'
+m['version'] = '3.0.0'
 json.dump(m, open(mp,'w',encoding='utf-8'), ensure_ascii=False)
 os.remove(os.path.join(out,'_index_tdt.json')); os.remove(os.path.join(out,'_index_iptv.json'))
 print(len(items), 'canales;', len(paises), 'países;', 'tipos:', {t: sum(t in i['tipos'] for i in items) for t in tipos})
 print('filas:', [(n, len(x)) for _, n, x in rows])
+print('grandes:', [(n, len(x)) for _, n, x in big])
 print('España:', sum(i['cc']=='ES' for i in items))
