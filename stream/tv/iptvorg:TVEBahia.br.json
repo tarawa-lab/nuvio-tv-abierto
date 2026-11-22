@@ -1,0 +1,1 @@
+{"streams":[{"url":"http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8","name":"IPTV-org","title":"TVE RS (1080p)","behaviorHints":{"notWebReady":true}},{"url":"http://selpro1348.procergs.com.br:1935/tve/stve/playlist.m3u8","name":"IPTV-org","title":"TVE RS (1080p) [Not 24/7]","behaviorHints":{"notWebReady":true}}]}

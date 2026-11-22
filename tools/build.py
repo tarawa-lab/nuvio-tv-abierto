@@ -55,4 +55,5 @@ manifest = dict(id='org.tdtchannels.nuvio.es', version='1.0.0', name='TDT Españ
     resources=['catalog','meta','stream'], types=['tv'], idPrefixes=['tdtch:'], catalogs=catalogs,
     behaviorHints={"configurable":False})
 w('manifest.json', manifest)
+json.dump([dict(id=c['id'],name=c['name'],logo=c['logo'],cc='ES',sec=c['cat'],genre=c['genre'],cats='') for c in chans], open(os.path.join(out,'_index_tdt.json'),'w',encoding='utf-8'), ensure_ascii=False)
 print(len(chans), {k:sum(1 for c in chans if c['cat']==k) for k in NAMES})

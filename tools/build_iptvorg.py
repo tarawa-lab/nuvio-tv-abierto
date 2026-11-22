@@ -6,7 +6,9 @@ block = {r['channel'] for r in rd('blocklist.csv')}
 logos = {}
 for r in rd('logos.csv'):
     if r['channel'] not in logos or (r['in_use']=='TRUE' and not r['feed']): logos.setdefault(r['channel'], r['url'])
-countries = {r['code'].upper(): r['name'] for r in rd('countries.csv')}
+from babel import Locale
+_T = Locale('es').territories
+countries = {r['code'].upper(): _T.get(r['code'].upper(), r['name']) for r in rd('countries.csv')}
 items = {}
 ext = re.compile(r'#EXTINF:[^,]*?(?:tvg-id="([^"]*)")?[^,]*,(.*)')
 for f in sorted(glob.glob(os.path.join(streams_dir, '*.m3u'))):
@@ -15,7 +17,8 @@ for f in sorted(glob.glob(os.path.join(streams_dir, '*.m3u'))):
     cur = None; opts = {}
     for ln in lines:
         if ln.startswith('#EXTINF'):
-            m = ext.match(ln); cur = m.groups() if m else None; opts = {}
+            tm = re.search(r'tvg-id="([^"]*)"', ln); tt = ln.split('",', 1)[-1] if '",' in ln else ln.split(',', 1)[-1]
+            cur = ((tm.group(1) if tm else ''), tt); opts = {}
         elif ln.startswith('#EXTVLCOPT'):
             k, _, v = ln[11:].partition('='); opts[k] = v
         elif ln.startswith('http') and cur:
@@ -49,7 +52,7 @@ def meta(it, full=False):
         if it['web']: m['website'] = it['web']
     return m
 allit = sorted(items.values(), key=lambda x: (x['cc'], x['name'].lower()))
-genres = sorted({countries[i['cc']] for i in allit}, key=lambda g: (g!='Spain', g))
+genres = sorted({countries[i['cc']] for i in allit}, key=lambda g: (g!='España', g))
 w('catalog/tv/iptvorg-mundo.json', {"metas":[meta(i) for i in allit if i['cc']=='ES']})
 for g in genres:
     w(f'catalog/tv/iptvorg-mundo/genre={g}.json', {"metas":[meta(i) for i in allit if countries[i['cc']]==g]})
@@ -62,4 +65,5 @@ m['idPrefixes'] = ['tdtch:','iptvorg:']
 m['name'] = 'TDT España + Mundo en abierto'
 m['description'] = 'Canales de TV que se emiten gratis y en abierto por internet: TDT de España (nacionales, autonómicos y locales, lista pública de TDTChannels) y canales de todo el mundo por país (lista pública de IPTV-org, la que usa TV Garden). No afiliado a TDTChannels ni a IPTV-org.'
 json.dump(m, open(mp,'w',encoding='utf-8'), ensure_ascii=False)
+json.dump([dict(id=i['id'],name=i['name'],logo=i['logo'],cc=i['cc'],cats=i['cats']) for i in allit], open(os.path.join(out,'_index_iptv.json'),'w',encoding='utf-8'), ensure_ascii=False)
 print(len(allit), 'canales,', sum(len(i['streams']) for i in allit), 'enlaces,', len(genres), 'países; España:', sum(1 for i in allit if i['cc']=='ES'))

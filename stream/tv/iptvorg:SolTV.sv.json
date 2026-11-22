@@ -1,0 +1,1 @@
+{"streams":[{"url":"http://rtmp.info:1935/soltv/envivo/playlist.m3u8","name":"IPTV-org","title":"Sol TV Morazán (1080p) [Not 24/7]","behaviorHints":{"notWebReady":true}},{"url":"https://videostream.shockmedia.com.ar/hls/canalsoltv/canalsoltv.m3u8","name":"IPTV-org","title":"SolTV (720p)","behaviorHints":{"notWebReady":true}}]}

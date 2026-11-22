@@ -6,5 +6,6 @@ cd "$(dirname "$0")/.."
 rm -rf /tmp/site_new catalog meta stream manifest.json
 python3 tools/build.py "$1" /tmp/site_new
 python3 tools/build_iptvorg.py "$2" "$3" /tmp/site_new
+python3 tools/catalogs.py /tmp/site_new
 python3 tools/paginate.py /tmp/site_new
 cp -r /tmp/site_new/. .
