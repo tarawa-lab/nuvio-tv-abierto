@@ -103,3 +103,26 @@ print(len(items), 'canales;', len(paises), 'países;', 'tipos:', {t: sum(t in i[
 print('filas:', [(n, len(x)) for _, n, x in rows])
 print('grandes:', [(n, len(x)) for _, n, x in big])
 print('España:', sum(i['cc']=='ES' for i in items))
+
+# --- Add-on aparte solo con deportes (duplicados), en su carpeta con su propio manifest.json ---
+import csv as _csv2
+_REG = {r['code']: set(r['countries'].split(';')) for r in _csv2.DictReader(open(os.environ.get('IPTV_DB','/tmp/iptvdb/data')+'/regions.csv', encoding='utf-8'))}
+_LAT = _REG['LATAM'] | _REG['CENAMER'] | _REG['CARIB'] | {'PR'}; _EUR = _REG['EUR'] | {'UK'}
+dep = [i for i in items if 'Deportes' in i['tipos']]
+def _zona(i): return 0 if i['cc']=='ES' else 1 if i['cc'] in _LAT else 2 if i['cc'] in _EUR else 3
+_ND = ['España', 'Latinoamérica', 'Europa', 'Resto del mundo']
+dm = json.load(open(mp, encoding='utf-8')); dm['catalogs'] = []
+dm['id'] = dm['id'] + '.deportes'; dm['name'] = 'TV abierta · Deportes'
+dm['description'] = 'Solo canales deportivos en abierto (duplicados del add-on principal).'
+for z in range(4):
+    sel = sorted((i for i in dep if _zona(i)==z), key=lambda i: (pais(i['cc']), i['name'].lower()))
+    if not sel: continue
+    rid = f'dep-f{z+1}'
+    w(f'deportes/catalog/tv/{rid}.json', {"metas": [meta(i, 'España' if i['cc']=='ES' else pais(i['cc'])) for i in sel]})
+    dm['catalogs'].append(dict(type='tv', id=rid, name=f'Deportes · {_ND[z]}'))
+    for i in sel:
+        for res in ('meta', 'stream'):
+            src = os.path.join(out, res, 'tv', i['id'] + '.json'); dst = os.path.join(out, 'deportes', res, 'tv', i['id'] + '.json')
+            os.makedirs(os.path.dirname(dst), exist_ok=True); shutil.copyfile(src, dst)
+json.dump(dm, open(os.path.join(out, 'deportes', 'manifest.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+print('deportes:', [(c['name'], len(json.load(open(os.path.join(out,'deportes/catalog/tv',c['id']+'.json')))['metas'])) for c in dm['catalogs']])
