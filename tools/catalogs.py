@@ -82,7 +82,7 @@ def add_rows(base_id, title, sel, tag):
         rid = base_id if n == 1 else f'{base_id}-{n}'
         name = title if len(sel) <= ROW else f'{title} ({n})'
         big.append((rid, name, [(i, tag(i)) for i in part]))
-# España en las 4 primeras filas (las únicas que la app de LG carga siempre)
+# España primero; todas las filas de 100 como máximo (con filas mayores la app de LG deja de cargar las siguientes)
 es_all = [i for i in items if i['cc']=='ES']
 tdt_by_id = {c['id']: c for c in tdt}
 ORDT = ['Generalistas','Noticias','Deportes','Infantil']
@@ -90,12 +90,10 @@ def tipo_es(i): return next((t for t in ORDT if t in i['tipos']), None)
 nac = sorted((i for i in es_all if 'Autonómicos y locales' not in i['tipos'] and tipo_es(i)), key=lambda i: (ORDT.index(tipo_es(i)), i.get('pr',9), i['name'].lower()))
 big.append(('es-principales', 'España · Generalistas, noticias, deportes e infantil', [(i, tipo_es(i)) for i in nac]))
 auto = sorted((i for i in es_all if 'Autonómicos y locales' in i['tipos']), key=lambda i: (tdt_by_id[i['id']]['genre'], i['name'].lower()))
-big.append(('es-autonomicos', 'España · Autonómicos y locales', [(i, tdt_by_id[i['id']]['genre']) for i in auto]))
+add_rows('es-autonomicos', 'España · Autonómicos y locales', auto, lambda i: tdt_by_id[i['id']]['genre'])
 usados = {i['id'] for i in nac} | {i['id'] for i in auto}
 resto_es = sorted((i for i in es_all if i['id'] not in usados), key=lambda i: (i['tipos'][0], i['name'].lower()))
-mitad = (len(resto_es)+1)//2
-big.append(('es-otros', 'España · Música, cine y otros (1)', [(i, i['tipos'][0]) for i in resto_es[:mitad]]))
-big.append(('es-otros-2', 'España · Música, cine y otros (2)', [(i, i['tipos'][0]) for i in resto_es[mitad:]]))
+add_rows('es-otros', 'España · Música, cine y otros', resto_es, lambda i: i['tipos'][0])
 PRIMEROS = ['MX','AR','CO','CL','PE','VE','EC','UY','PY','BO','CU','DO','PR','CR','PA','GT','HN','SV','NI','PT','AD','FR','IT','UK','DE','US']
 todos = sorted({i['cc'] for i in items} - {'ES'}, key=lambda cc: (PRIMEROS.index(cc) if cc in PRIMEROS else len(PRIMEROS), unicodedata.normalize('NFKD', pais(cc)).encode('ascii','ignore').decode()))
 for cc in todos:
