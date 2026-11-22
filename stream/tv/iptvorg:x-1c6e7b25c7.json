@@ -1,0 +1,1 @@
+{"streams":[{"url":"https://fnx.lls.pbs.org/index.m3u8","name":"IPTV-org","title":"FNX (1080p)","behaviorHints":{"notWebReady":true}},{"url":"https://castus-vod-dev.s3.amazonaws.com/vod_clients/kvcr/live/ch1/video.m3u8","name":"IPTV-org","title":"FNX [Geo-blocked]","behaviorHints":{"notWebReady":true,"proxyHeaders":{"request":{"Referer":"https://fnx.org/"}}}}]}

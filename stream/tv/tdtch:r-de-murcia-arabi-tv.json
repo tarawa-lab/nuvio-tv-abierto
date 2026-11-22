@@ -1,0 +1,1 @@
+{"streams": [{"url": "https://streamtv2.elitecomunicacion.cloud:3628/live/arabitv2025live.m3u8", "name": "TDTChannels", "title": "Arabí TV · m3u8 # 1", "behaviorHints": {"notWebReady": true}}, {"url": "https://servidor.islahostingla.com:3548/live/arabitvlive.m3u8", "name": "TDTChannels", "title": "Arabí TV · m3u8 # 2", "behaviorHints": {"notWebReady": true}}]}

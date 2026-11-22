@@ -1,0 +1,1 @@
+{"streams":[{"url":"http://90.170.214.40:9700/stream/avatel/boing/master.m3u8","name":"IPTV-org","title":"Boing (1080p)","behaviorHints":{"notWebReady":true}},{"url":"http://digisat.ddns.net:4022/udp/239.0.5.177:8208","name":"IPTV-org","title":"Boing","behaviorHints":{"notWebReady":true}}]}

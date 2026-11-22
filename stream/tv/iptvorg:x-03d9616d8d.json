@@ -1,0 +1,1 @@
+{"streams":[{"url":"http://31.148.48.15/OTR/index.m3u8","name":"IPTV-org","title":"ОТР (576p)","behaviorHints":{"notWebReady":true}},{"url":"https://zabava-htlive.cdn.ngenix.net/hls/CH_OTR/variant.m3u8","name":"IPTV-org","title":"ОТР (450p) [Geo-blocked]","behaviorHints":{"notWebReady":true,"proxyHeaders":{"request":{"User-Agent":"WINK/1.40.1 (AndroidTV/9) HlsWinkPlayer"}}}}]}

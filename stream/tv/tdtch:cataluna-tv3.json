@@ -1,0 +1,1 @@
+{"streams": [{"url": "https://directes3-tv-cat.3catdirectes.cat/live-content/tv3-hls/master.m3u8", "name": "TDTChannels", "title": "TV3 · m3u8 # GEOCAT", "behaviorHints": {"notWebReady": true}}, {"url": "https://directes-tv-int-dev.3catdirectes.cat/live-content/tv3-uhd-cmaf/master.m3u8", "name": "TDTChannels", "title": "TV3 · m3u8 # UHD", "behaviorHints": {"notWebReady": true}}]}

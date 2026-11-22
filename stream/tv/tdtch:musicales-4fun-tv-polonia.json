@@ -1,0 +1,1 @@
+{"streams": [{"url": "https://stream.4fun.tv:8888/hls/4f.m3u8", "name": "TDTChannels", "title": "4FUN TV Polonia · m3u8 # PL # 1", "behaviorHints": {"notWebReady": true}}, {"url": "https://stream.4fun.tv:8888/sd/4fun.m3u8", "name": "TDTChannels", "title": "4FUN TV Polonia · m3u8 # PL # 2", "behaviorHints": {"notWebReady": true}}]}

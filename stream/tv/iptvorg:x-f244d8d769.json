@@ -1,0 +1,1 @@
+{"streams":[{"url":"https://e.siar.us/live/smtv.m3u8","name":"IPTV-org","title":"SMTV (720p)","behaviorHints":{"notWebReady":true,"proxyHeaders":{"request":{"Referer":"https://smtv.digital/"}}}},{"url":"http://122.248.43.242:1935/SMTV/_definst_/myStream/playlist.m3u8","name":"IPTV-org","title":"SMTV (720p) [Not 24/7]","behaviorHints":{"notWebReady":true}}]}

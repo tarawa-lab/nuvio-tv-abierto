@@ -1,0 +1,1 @@
+{"streams":[{"url":"https://tvsen6.aynaott.com/cnn/index.m3u8","name":"IPTV-org","title":"CNN (720p)","behaviorHints":{"notWebReady":true}},{"url":"https://p13.usnlive.com/stream/cnn.m3u8","name":"IPTV-org","title":"CNN","behaviorHints":{"notWebReady":true,"proxyHeaders":{"request":{"Referer":"https://usnewson.com"}}}}]}

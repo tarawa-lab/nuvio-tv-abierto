@@ -1,0 +1,1 @@
+{"streams":[{"url":"https://live-fi.tvkaista.net/mtv3/live.m3u8","name":"IPTV-org","title":"MTV3 (720p)","behaviorHints":{"notWebReady":true}},{"url":"http://195.222.7.17:8002/ch352","name":"IPTV-org","title":"MTV3 (576p)","behaviorHints":{"notWebReady":true,"proxyHeaders":{"request":{"Referer":"http://195.222.7.17:8002/"}}}}]}

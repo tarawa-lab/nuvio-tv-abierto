@@ -1,0 +1,1 @@
+{"streams": [{"url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8", "name": "TDTChannels", "title": "La 2 · m3u8 # 1", "behaviorHints": {"notWebReady": true}}, {"url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15618", "name": "TDTChannels", "title": "La 2 · m3u8 # 2", "behaviorHints": {"notWebReady": true}}]}
