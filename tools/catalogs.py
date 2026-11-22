@@ -72,49 +72,42 @@ for cc in PRIMEROS + resto:
 for rid, name, sel in rows:
     w(f'catalog/tv/{rid}.json', {"metas":[meta(i, name.split(' · ')[-1]) for i in sel]})
 
-# --- Filas de 100 canales como máximo (mismo formato que los add-ons de canales que la app de LG muestra bien) ---
+# --- Guía TV de Nuvio (LG): lee solo las 4 primeras filas de cada add-on y agrupa por la etiqueta "genres".
+# Por eso: 4 filas con TODOS los canales, servidas en páginas de 100 (skip), y la categoría en genres.
 import csv as _csv
-ROW = 100    # con filas de 100 la tele de LG cargó 138 filas; con filas grandes se para tras 4
-big = []
-def add_rows(base_id, title, sel, tag):
-    for k in range(0, len(sel), ROW):
-        part = sel[k:k+ROW]; n = k//ROW + 1
-        rid = base_id if n == 1 else f'{base_id}-{n}'
-        name = title if len(sel) <= ROW else f'{title} ({n})'
-        big.append((rid, name, [(i, tag(i)) for i in part]))
-# España en las 4 primeras filas (las únicas que la app de LG carga siempre)
-es_all = [i for i in items if i['cc']=='ES']
+REG = {r['code']: set(r['countries'].split(';')) for r in _csv.DictReader(open(os.environ.get('IPTV_DB','/tmp/iptvdb/data')+'/regions.csv', encoding='utf-8'))}
+EUR = REG['EUR'] | {'UK'}; LAT = REG['LATAM'] | {'PR'}
 tdt_by_id = {c['id']: c for c in tdt}
 ORDT = ['Generalistas','Noticias','Deportes','Infantil']
-def tipo_es(i): return next((t for t in ORDT if t in i['tipos']), None)
-nac = sorted((i for i in es_all if 'Autonómicos y locales' not in i['tipos'] and tipo_es(i)), key=lambda i: (ORDT.index(tipo_es(i)), i.get('pr',9), i['name'].lower()))
-big.append(('es-principales', 'España · Generalistas, noticias, deportes e infantil', [(i, tipo_es(i)) for i in nac]))
-auto = sorted((i for i in es_all if 'Autonómicos y locales' in i['tipos']), key=lambda i: (tdt_by_id[i['id']]['genre'], i['name'].lower()))
-big.append(('es-autonomicos', 'España · Autonómicos y locales', [(i, tdt_by_id[i['id']]['genre']) for i in auto]))
-usados = {i['id'] for i in nac} | {i['id'] for i in auto}
-resto_es = sorted((i for i in es_all if i['id'] not in usados), key=lambda i: (i['tipos'][0], i['name'].lower()))
-mitad = (len(resto_es)+1)//2
-big.append(('es-otros', 'España · Música, cine y otros (1)', [(i, i['tipos'][0]) for i in resto_es[:mitad]]))
-big.append(('es-otros-2', 'España · Música, cine y otros (2)', [(i, i['tipos'][0]) for i in resto_es[mitad:]]))
-PRIMEROS = ['MX','AR','CO','CL','PE','VE','EC','UY','PY','BO','CU','DO','PR','CR','PA','GT','HN','SV','NI','PT','AD','FR','IT','UK','DE','US']
-todos = sorted({i['cc'] for i in items} - {'ES'}, key=lambda cc: (PRIMEROS.index(cc) if cc in PRIMEROS else len(PRIMEROS), unicodedata.normalize('NFKD', pais(cc)).encode('ascii','ignore').decode()))
-for cc in todos:
-    sel = sorted((i for i in items if i['cc']==cc), key=lambda i: (i['tipos'][0], i['name'].lower()))
-    add_rows('pais-'+cc.lower(), pais(cc), sel, lambda i: i['tipos'][0])
-for rid, name, sel in big:
-    metas = []
-    for i, tag in sel:
-        mm = meta(i, tag); mm['name'] = f'[{tag}] ' + i['name']; metas.append(mm)
-    w(f'catalog/tv/{rid}.json', {"metas": metas})
-mp = os.path.join(out,'manifest.json'); m = json.load(open(mp, encoding='utf-8'))
-m['catalogs'] = [dict(type='tv', id=rid, name=name) for rid, name, sel in big] + [
-  dict(type='tv', id='por-pais', name='TV en abierto · Por país', genres=paises, extra=[{"name":"genre","options":paises,"isRequired":False}]),
-  dict(type='tv', id='por-tipo', name='TV en abierto · Por tipo de contenido', genres=tipos, extra=[{"name":"genre","options":tipos,"isRequired":False}]),
+def cat_es(i):
+    if 'Autonómicos y locales' in i['tipos']: return 'Autonómicos · ' + tdt_by_id[i['id']]['genre']
+    t = next((x for x in ORDT if x in i['tipos']), None)
+    if t: return t
+    t = i['tipos'][0]
+    return {'Cine':'Cine y series','Series':'Cine y series','Humor':'Cine y series','Clásicos':'Cine y series','Otros':'Locales y varios'}.get(t, t)
+ORD_CAT = ['Generalistas','Noticias','Deportes','Infantil']
+es_items = sorted((i for i in items if i['cc']=='ES'), key=lambda i: (ORD_CAT.index(cat_es(i)) if cat_es(i) in ORD_CAT else (5 if cat_es(i).startswith('Autonómicos') else 9), cat_es(i), i.get('pr',9), i['name'].lower()))
+def world(pred):
+    return sorted((i for i in items if i['cc']!='ES' and pred(i['cc'])), key=lambda i: (HISP.index(i['cc']) if i['cc'] in HISP else len(HISP), unicodedata.normalize('NFKD', pais(i['cc'])).encode('ascii','ignore').decode(), i['name'].lower()))
+big = [
+  ('tv-espana', 'España', [(i, cat_es(i)) for i in es_items]),
+  ('tv-latam', 'Latinoamérica', [(i, pais(i['cc'])) for i in world(lambda cc: cc in LAT)]),
+  ('tv-europa', 'Europa', [(i, pais(i['cc'])) for i in world(lambda cc: cc in EUR)]),
+  ('tv-mundo', 'Resto del mundo', [(i, pais(i['cc'])) for i in world(lambda cc: cc not in LAT and cc not in EUR)]),
 ]
-m['version'] = '4.0.0'
+PAGE = 100
+for rid, name, sel in big:
+    metas = [meta(i, cat) for i, cat in sel]
+    for k in range(0, len(metas), PAGE):
+        path = f'catalog/tv/{rid}.json' if k == 0 else f'catalog/tv/{rid}/skip={k}.json'
+        w(path, {"metas": metas[k:k+PAGE]})
+    w(f'catalog/tv/{rid}/skip={len(metas)}.json', {"metas": []})
+mp = os.path.join(out,'manifest.json'); m = json.load(open(mp, encoding='utf-8'))
+m['catalogs'] = [dict(type='tv', id=rid, name=name, extra=[{"name":"skip"}], extraSupported=['skip']) for rid, name, sel in big]
+m['version'] = '5.0.0'
 json.dump(m, open(mp,'w',encoding='utf-8'), ensure_ascii=False)
 os.remove(os.path.join(out,'_index_tdt.json')); os.remove(os.path.join(out,'_index_iptv.json'))
 print(len(items), 'canales;', len(paises), 'países;', 'tipos:', {t: sum(t in i['tipos'] for i in items) for t in tipos})
 print('filas:', [(n, len(x)) for _, n, x in rows])
-print('filas:', len(big), 'max por fila:', max(len(x) for _,_,x in big), 'total:', sum(len(x) for _,_,x in big))
+print('filas4:', [(n, len(x)) for _, n, x in big]); print('filas:', len(big), 'max por fila:', max(len(x) for _,_,x in big), 'total:', sum(len(x) for _,_,x in big))
 print('España:', sum(i['cc']=='ES' for i in items))
