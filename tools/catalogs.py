@@ -18,13 +18,13 @@ items = []
 seen_es = set()
 for c in tdt:
     t = TDT_TIPO.get(c['sec']) or OTROS_TDT.get(c['genre'], 'Otros')
-    items.append(dict(id=c['id'], name=c['name'], logo=c['logo'], cc='ES', tipos=[t], tdt=True)); seen_es.add(norm(c['name']))
+    items.append(dict(id=c['id'], name=c['name'], logo=c['logo'], cc='ES', tipos=[t], tdt=True, pr=['nacionales','informativos','deportivos','infantiles','autonomicos','otros'].index(c['sec']))); seen_es.add(norm(c['name']))
 for c in iptv:
     if c['cc']=='ES' and norm(c['name']) in seen_es: continue
     tipos = sorted({TIPOS.get(x,'Otros') for x in c['cats'].split(';') if x and x!='xxx'}) or ['Otros']
     items.append(dict(id=c['id'], name=c['name'], logo=c['logo'], cc=c['cc'], tipos=tipos, tdt=False))
 HISP = ['ES','MX','AR','CO','CL','PE','VE','EC','UY','PY','BO','CR','PA','DO','CU','GT','HN','SV','NI','PR','AD','PT']
-rank = lambda i: (HISP.index(i['cc']) if i['cc'] in HISP else len(HISP), pais(i['cc']), not i['tdt'], i['name'].lower())
+rank = lambda i: (HISP.index(i['cc']) if i['cc'] in HISP else len(HISP), pais(i['cc']), i.get('pr', 9), i['name'].lower())
 items.sort(key=rank)
 def meta(i, g):
     m = dict(id=i['id'], type='tv', name=i['name'], genres=[g], posterShape='square')
