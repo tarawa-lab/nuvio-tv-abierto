@@ -8,7 +8,7 @@ for r in rd('logos.csv'):
     if r['channel'] not in logos or (r['in_use']=='TRUE' and not r['feed']): logos.setdefault(r['channel'], r['url'])
 from babel import Locale
 _T = Locale('es').territories
-countries = {r['code'].upper(): _T.get(r['code'].upper(), r['name']) for r in rd('countries.csv')}
+countries = {r['code'].upper(): _T.get({'UK':'GB'}.get(r['code'].upper(), r['code'].upper()), r['name']) for r in rd('countries.csv')}
 items = {}
 ext = re.compile(r'#EXTINF:[^,]*?(?:tvg-id="([^"]*)")?[^,]*,(.*)')
 for f in sorted(glob.glob(os.path.join(streams_dir, '*.m3u'))):

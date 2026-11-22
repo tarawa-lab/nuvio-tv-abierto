@@ -1,11 +1,12 @@
 # Crea dos catálogos con los mismos canales: "Por país" y "Por tipo de contenido".
 import json, os, sys, shutil, re, unicodedata
+slugify = lambda x: re.sub(r'[^a-z0-9]+','-',unicodedata.normalize('NFKD',x).encode('ascii','ignore').decode().lower()).strip('-')
 from babel import Locale
 out = sys.argv[1]
 tdt = json.load(open(os.path.join(out,'_index_tdt.json'), encoding='utf-8'))
 iptv = json.load(open(os.path.join(out,'_index_iptv.json'), encoding='utf-8'))
 T = Locale('es').territories
-pais = lambda cc: T.get(cc, cc)
+pais = lambda cc: T.get('GB' if cc=='UK' else cc, cc)
 TIPOS = {'general':'Generalistas','news':'Noticias','sports':'Deportes','entertainment':'Entretenimiento','movies':'Cine',
  'series':'Series','kids':'Infantil','animation':'Infantil','family':'Infantil','music':'Música','documentary':'Documentales',
  'culture':'Cultura','education':'Educación','science':'Documentales','religious':'Religión','lifestyle':'Estilo de vida',
@@ -45,13 +46,35 @@ tipos = [t for t in orden if any(t in i['tipos'] for i in items)]
 for t in tipos:
     w(f'catalog/tv/por-tipo/genre={t}.json', {"metas":[meta(i, t) for i in items if t in i['tipos']]})
 w('catalog/tv/por-tipo.json', {"metas":[meta(i,'Generalistas') for i in items if 'Generalistas' in i['tipos']]})
+
+# Filas separadas para la pantalla de inicio (la app de LG no muestra el filtro de género)
+rows = []
+es = [i for i in items if i['cc']=='ES']
+used = set()
+def es_row(rid, name, pred):
+    sel = [i for i in es if i['id'] not in used and pred(i)]
+    used.update(i['id'] for i in sel); rows.append((rid, name, sel))
+es_row('es-generalistas', 'España · Generalistas', lambda i: 'Generalistas' in i['tipos'] and not ('Autonómicos y locales' in i['tipos']))
+es_row('es-autonomicos', 'España · Autonómicos y locales', lambda i: 'Autonómicos y locales' in i['tipos'])
+es_row('es-noticias', 'España · Noticias', lambda i: 'Noticias' in i['tipos'])
+es_row('es-deportes', 'España · Deportes', lambda i: 'Deportes' in i['tipos'])
+es_row('es-infantil', 'España · Infantil', lambda i: 'Infantil' in i['tipos'])
+es_row('es-otros', 'España · Música, cine y otros', lambda i: True)
+for t, name in [('Noticias','Mundo · Noticias'),('Deportes','Mundo · Deportes'),('Infantil','Mundo · Infantil'),('Cine','Mundo · Cine'),('Series','Mundo · Series'),('Entretenimiento','Mundo · Entretenimiento'),('Música','Mundo · Música'),('Documentales','Mundo · Documentales y cultura')]:
+    sel = [i for i in items if i['cc']!='ES' and (t in i['tipos'] or (t=='Documentales' and 'Cultura' in i['tipos']))]
+    rows.append(('mundo-'+slugify(t), name, sel))
+for cc in ['MX','AR','CO','CL','PE','VE','EC','UY','PT','UK','FR','IT','DE','US']:
+    rows.append(('pais-'+cc.lower(), 'País · '+pais(cc), [i for i in items if i['cc']==cc]))
+for rid, name, sel in rows:
+    w(f'catalog/tv/{rid}.json', {"metas":[meta(i, name.split(' · ')[-1]) for i in sel]})
 mp = os.path.join(out,'manifest.json'); m = json.load(open(mp, encoding='utf-8'))
-m['catalogs'] = [
+m['catalogs'] = [dict(type='tv', id=rid, name=name) for rid, name, sel in rows if sel] + [
   dict(type='tv', id='por-pais', name='TV en abierto · Por país', genres=paises, extra=[{"name":"genre","options":paises,"isRequired":False}]),
   dict(type='tv', id='por-tipo', name='TV en abierto · Por tipo de contenido', genres=tipos, extra=[{"name":"genre","options":tipos,"isRequired":False}]),
 ]
-m['version'] = '2.0.0'
+m['version'] = '2.1.0'
 json.dump(m, open(mp,'w',encoding='utf-8'), ensure_ascii=False)
 os.remove(os.path.join(out,'_index_tdt.json')); os.remove(os.path.join(out,'_index_iptv.json'))
 print(len(items), 'canales;', len(paises), 'países;', 'tipos:', {t: sum(t in i['tipos'] for i in items) for t in tipos})
+print('filas:', [(n, len(x)) for _, n, x in rows])
 print('España:', sum(i['cc']=='ES' for i in items))
