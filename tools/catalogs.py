@@ -152,6 +152,29 @@ for a, (anom, filas) in enumerate(addons, 1):
     m2['catalogs'] = [dict(type='tv', id=f'a{a}-f{r}', name=n, extra=[{"name":"skip"}], extraSupported=['skip']) for r, (n, _) in enumerate(filas, 1)]
     m2['version'] = '7.0.0'
     json.dump(m2, open(os.path.join(out, 'manifest.json' if a == 1 else f'manifest-{a}.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+# Add-on extra solo con deportes (los mismos canales, duplicados; no se quitan de los otros).
+dep = [i for i in items if 'Deportes' in i['tipos']]
+def zona(i):
+    if i['cc']=='ES': return 0
+    if i['cc'] in LAT or i['cc'] in REG['CENAMER'] or i['cc'] in REG['CARIB']: return 1
+    if i['cc'] in EUR: return 2
+    return 3
+NOM_D = ['España', 'Latinoamérica', 'Europa', 'Resto del mundo']
+filas_d = []
+for z in range(4):
+    sel = sorted((i for i in dep if zona(i)==z), key=lambda i: (unicodedata.normalize('NFKD', pais(i['cc'])).encode('ascii','ignore').decode(), i['name'].lower()))
+    if sel: filas_d.append((f'Deportes · {NOM_D[z]}', [(i, 'Deportes · ' + ('España' if i['cc']=='ES' else pais(i['cc']))) for i in sel]))
+for r, (nombre, sel) in enumerate(filas_d, 1):
+    rid = f'dep-f{r}'
+    metas = [meta(i, cat) for i, cat in sel]
+    for k in range(0, len(metas), PAGE):
+        w(f'catalog/tv/{rid}.json' if k == 0 else f'catalog/tv/{rid}/skip={k}.json', {"metas": metas[k:k+PAGE]})
+    w(f'catalog/tv/{rid}/skip={len(metas)}.json', {"metas": []})
+md = dict(base); md['id'] = base['id'] + '.deportes'; md['name'] = 'TV abierta · Deportes'
+md['description'] = 'Solo los canales deportivos en abierto (España y resto del mundo), duplicados de los add-ons "TV abierta".'
+md['catalogs'] = [dict(type='tv', id=f'dep-f{r}', name=n, extra=[{"name":"skip"}], extraSupported=['skip']) for r, (n, _) in enumerate(filas_d, 1)]
+json.dump(md, open(os.path.join(out, 'manifest-deportes.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+print('deportes:', [(n, len(x)) for n, x in filas_d])
 print('addons:', [(a, n, sum(len(r) for _, r in f), [x for x, _ in f]) for a, (n, f) in enumerate(addons, 1)])
 mp = os.path.join(out,'manifest.json'); m = json.load(open(mp, encoding='utf-8'))
 m = json.load(open(mp, encoding='utf-8'))
