@@ -89,22 +89,57 @@ ORD_CAT = ['Generalistas','Noticias','Deportes','Infantil']
 es_items = sorted((i for i in items if i['cc']=='ES'), key=lambda i: (ORD_CAT.index(cat_es(i)) if cat_es(i) in ORD_CAT else (5 if cat_es(i).startswith('Autonómicos') else 9), cat_es(i), i.get('pr',9), i['name'].lower()))
 def world(pred):
     return sorted((i for i in items if i['cc']!='ES' and pred(i['cc'])), key=lambda i: (HISP.index(i['cc']) if i['cc'] in HISP else len(HISP), unicodedata.normalize('NFKD', pais(i['cc'])).encode('ascii','ignore').decode(), i['name'].lower()))
-big = [
-  ('tv-espana', 'España', [(i, cat_es(i)) for i in es_items]),
-  ('tv-latam', 'Latinoamérica', [(i, pais(i['cc'])) for i in world(lambda cc: cc in LAT)]),
-  ('tv-europa', 'Europa', [(i, pais(i['cc'])) for i in world(lambda cc: cc in EUR)]),
-  ('tv-mundo', 'Resto del mundo', [(i, pais(i['cc'])) for i in world(lambda cc: cc not in LAT and cc not in EUR)]),
-]
+# Varios add-ons: la Guía TV de Nuvio en LG carga unos 2.200 canales por add-on y solo sus 4 primeras filas.
+# Cada add-on: hasta 2.000 canales en 4 filas como máximo (filas de hasta 500, por países seguidos), en páginas de 100.
+EUROPA_PRI = ['PT','AD','FR','IT','UK','DE']
+def kpais(cc):
+    if cc in HISP: return (0, HISP.index(cc), '')
+    if cc in LAT: return (1, 0, pais(cc))
+    if cc in EUR: return (2, EUROPA_PRI.index(cc) if cc in EUROPA_PRI else 99, unicodedata.normalize('NFKD', pais(cc)).encode('ascii','ignore').decode())
+    return (3, 0 if cc=='US' else 1, unicodedata.normalize('NFKD', pais(cc)).encode('ascii','ignore').decode())
+ADDON_MAX, ROW_MAX = 2000, 500
+bloques = [('España', [(i, cat_es(i)) for i in es_items])]
+for cc in sorted({i['cc'] for i in items} - {'ES'}, key=kpais):
+    sel = sorted((i for i in items if i['cc']==cc), key=lambda i: i['name'].lower())
+    for k in range(0, len(sel), ROW_MAX):   # países enormes (EE. UU.) en trozos de 500
+        bloques.append((pais(cc), [(i, pais(cc)) for i in sel[k:k+ROW_MAX]]))
+addons = []; cur = []; rows = []; row = []; rown = []
+def cerrar_fila():
+    global row, rown
+    if row:
+        ns = list(dict.fromkeys(rown))
+        cur.append((' · '.join(ns) if len(ns) <= 3 else f'{ns[0]} … {ns[-1]}', row)); row = []; rown = []
+for nombre, sel in bloques:
+    if nombre == 'España':
+        cur.append(('España', sel)); continue
+    if len(row) + len(sel) > ROW_MAX: cerrar_fila()
+    if len(cur) == 4 or sum(len(r) for _, r in cur) + len(row) + len(sel) > ADDON_MAX:
+        cerrar_fila(); addons.append(cur); cur = []
+    row += sel; rown.append(nombre)
+cerrar_fila(); addons.append(cur)
 PAGE = 100
-for rid, name, sel in big:
-    metas = [meta(i, cat) for i, cat in sel]
-    for k in range(0, len(metas), PAGE):
-        path = f'catalog/tv/{rid}.json' if k == 0 else f'catalog/tv/{rid}/skip={k}.json'
-        w(path, {"metas": metas[k:k+PAGE]})
-    w(f'catalog/tv/{rid}/skip={len(metas)}.json', {"metas": []})
+big = []
+for a, filas in enumerate(addons, 1):
+    for r, (nombre, sel) in enumerate(filas, 1):
+        rid = f'a{a}-f{r}'
+        metas = [meta(i, cat) for i, cat in sel]
+        for k in range(0, len(metas), PAGE):
+            w(f'catalog/tv/{rid}.json' if k == 0 else f'catalog/tv/{rid}/skip={k}.json', {"metas": metas[k:k+PAGE]})
+        w(f'catalog/tv/{rid}/skip={len(metas)}.json', {"metas": []})
+        big.append((rid, nombre, sel))
+base = json.load(open(os.path.join(out,'manifest.json'), encoding='utf-8'))
+for a, filas in enumerate(addons, 1):
+    paises_a = [n for n, _ in filas]
+    m2 = dict(base)
+    m2['id'] = base['id'] if a == 1 else f"{base['id']}.{a}"
+    primero = filas[0][1][0][0]['cc']; ultimo = filas[-1][1][-1][0]['cc']
+    m2['name'] = f'TV abierta {a} · ' + ('España' if primero == 'ES' else pais(primero)) + ' – ' + pais(ultimo)
+    m2['catalogs'] = [dict(type='tv', id=f'a{a}-f{r}', name=n, extra=[{"name":"skip"}], extraSupported=['skip']) for r, (n, _) in enumerate(filas, 1)]
+    m2['version'] = '6.0.0'
+    json.dump(m2, open(os.path.join(out, 'manifest.json' if a == 1 else f'manifest-{a}.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+print('addons:', [(a, sum(len(r) for _, r in f), [n for n, _ in f]) for a, f in enumerate(addons, 1)])
 mp = os.path.join(out,'manifest.json'); m = json.load(open(mp, encoding='utf-8'))
-m['catalogs'] = [dict(type='tv', id=rid, name=name, extra=[{"name":"skip"}], extraSupported=['skip']) for rid, name, sel in big]
-m['version'] = '5.0.0'
+m = json.load(open(mp, encoding='utf-8'))
 json.dump(m, open(mp,'w',encoding='utf-8'), ensure_ascii=False)
 os.remove(os.path.join(out,'_index_tdt.json')); os.remove(os.path.join(out,'_index_iptv.json'))
 print(len(items), 'canales;', len(paises), 'países;', 'tipos:', {t: sum(t in i['tipos'] for i in items) for t in tipos})

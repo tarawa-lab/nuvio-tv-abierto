@@ -1,7 +1,8 @@
 # Borra catálogos que no están en el manifiesto (restos de versiones anteriores).
 import json, os, sys, shutil
 root = sys.argv[1]
-ids = {c['id'] for c in json.load(open(os.path.join(root, 'manifest.json'), encoding='utf-8'))['catalogs']}
+import glob
+ids = {c['id'] for f in glob.glob(os.path.join(root, 'manifest*.json')) for c in json.load(open(f, encoding='utf-8'))['catalogs']}
 d = os.path.join(root, 'catalog', 'tv'); n = 0
 for f in os.listdir(d):
     base = f[:-5] if f.endswith('.json') else f
