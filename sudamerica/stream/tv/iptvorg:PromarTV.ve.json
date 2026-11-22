@@ -1,0 +1,1 @@
+{"streams":[{"url":"https://vcp.myplaytv.com/promar/promar/playlist.m3u8","name":"IPTV-org","title":"PromarTV (576p)","behaviorHints":{"notWebReady":true}},{"url":"http://vcp1.myplaytv.com:1935/promar/promar/playlist.m3u8","name":"IPTV-org","title":"PromarTV (1080p) [Not 24/7]","behaviorHints":{"notWebReady":true}}]}

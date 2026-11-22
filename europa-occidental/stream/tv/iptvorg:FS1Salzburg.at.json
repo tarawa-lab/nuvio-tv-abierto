@@ -1,0 +1,1 @@
+{"streams":[{"url":"http://stream.fs1.tv:8080/hls/webstream.m3u8","name":"IPTV-org","title":"FS1 Salzburg (720p) [Not 24/7]","behaviorHints":{"notWebReady":true}},{"url":"https://stream.fs1.tv/hls/webstream.m3u8","name":"IPTV-org","title":"FS1 Salzburg (720p) [Not 24/7]","behaviorHints":{"notWebReady":true}}]}

@@ -1,0 +1,1 @@
+{"streams":[{"url":"http://194.143.148.28:8080/Aist/index.m3u8","name":"IPTV-org","title":"AIST TV (576p)","behaviorHints":{"notWebReady":true}},{"url":"http://live2-aisttv.cdnvideo.ru/aisttv2/aisttv.sdp/playlist.m3u8","name":"IPTV-org","title":"Аист ТВ (1080p)","behaviorHints":{"notWebReady":true}}]}
