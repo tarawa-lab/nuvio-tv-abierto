@@ -20,3 +20,23 @@ for f in glob.glob(os.path.join(root, 'catalog/tv/**/*.json'), recursive=True):
             os.makedirs(base, exist_ok=True); out = os.path.join(base, f'skip={s}.json')
         json.dump({"metas": metas[s:s+PAGE]}, open(out, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); n += 1
 print('páginas extra:', n)
+
+# Página final vacía (skip = total) para que la app sepa que no hay más, en vez de recibir un 404
+t = 0
+for f in glob.glob(os.path.join(root, 'catalog/tv/**/*.json'), recursive=True):
+    b = os.path.basename(f)[:-5]
+    if 'skip=' in b: continue
+    d = os.path.dirname(f)
+    total = 0; pages = [f]
+    if b.startswith('genre='):
+        pages += glob.glob(os.path.join(d, glob.escape(b) + '&skip=*.json'))
+        total = sum(len(json.load(open(p, encoding='utf-8'))['metas']) for p in pages)
+        out = os.path.join(d, f'{b}&skip={total}.json')
+    else:
+        base = f[:-5]
+        pages += glob.glob(os.path.join(glob.escape(base), 'skip=*.json'))
+        total = sum(len(json.load(open(p, encoding='utf-8'))['metas']) for p in pages)
+        os.makedirs(base, exist_ok=True); out = os.path.join(base, f'skip={total}.json')
+    if not os.path.exists(out):
+        json.dump({"metas": []}, open(out, 'w', encoding='utf-8')); t += 1
+print('páginas finales vacías:', t)
