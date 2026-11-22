@@ -1,5 +1,5 @@
 # Crea dos catálogos con los mismos canales: "Por país" y "Por tipo de contenido".
-import json, os, sys, shutil, re, unicodedata
+import json, os, sys, shutil, re, unicodedata, collections
 slugify = lambda x: re.sub(r'[^a-z0-9]+','-',unicodedata.normalize('NFKD',x).encode('ascii','ignore').decode().lower()).strip('-')
 from babel import Locale
 out = sys.argv[1]
@@ -91,35 +91,52 @@ def world(pred):
     return sorted((i for i in items if i['cc']!='ES' and pred(i['cc'])), key=lambda i: (HISP.index(i['cc']) if i['cc'] in HISP else len(HISP), unicodedata.normalize('NFKD', pais(i['cc'])).encode('ascii','ignore').decode(), i['name'].lower()))
 # Varios add-ons: la Guía TV de Nuvio en LG carga unos 2.200 canales por add-on y solo sus 4 primeras filas.
 # Cada add-on: hasta 2.000 canales en 4 filas como máximo (filas de hasta 500, por países seguidos), en páginas de 100.
-EUROPA_PRI = ['PT','AD','FR','IT','UK','DE']
-def kpais(cc):
-    if cc in HISP: return (0, HISP.index(cc), '')
-    if cc in LAT: return (1, 0, pais(cc))
-    if cc in EUR: return (2, EUROPA_PRI.index(cc) if cc in EUROPA_PRI else 99, unicodedata.normalize('NFKD', pais(cc)).encode('ascii','ignore').decode())
-    return (3, 0 if cc=='US' else 1, unicodedata.normalize('NFKD', pais(cc)).encode('ascii','ignore').decode())
-ADDON_MAX, ROW_MAX = 2000, 500
-bloques = [('España', [(i, cat_es(i)) for i in es_items])]
-for cc in sorted({i['cc'] for i in items} - {'ES'}, key=kpais):
-    sel = sorted((i for i in items if i['cc']==cc), key=lambda i: i['name'].lower())
-    for k in range(0, len(sel), ROW_MAX):   # países enormes (EE. UU.) en trozos de 500
-        bloques.append((pais(cc), [(i, pais(cc)) for i in sel[k:k+ROW_MAX]]))
-addons = []; cur = []; rows = []; row = []; rown = []
-def cerrar_fila():
-    global row, rown
-    if row:
-        ns = list(dict.fromkeys(rown))
-        cur.append((' · '.join(ns) if len(ns) <= 3 else f'{ns[0]} … {ns[-1]}', row)); row = []; rown = []
-for nombre, sel in bloques:
-    if nombre == 'España':
-        cur.append(('España', sel)); continue
-    if len(row) + len(sel) > ROW_MAX: cerrar_fila()
-    if len(cur) == 4 or sum(len(r) for _, r in cur) + len(row) + len(sel) > ADDON_MAX:
-        cerrar_fila(); addons.append(cur); cur = []
-    row += sel; rown.append(nombre)
-cerrar_fila(); addons.append(cur)
+# Agrupación por continentes/regiones (cada add-on ≤ 2.000 canales y ≤ 4 filas de ≤ 500).
+GRUPOS_REG = [('Sudamérica', REG['SOUTHAM']), ('México, Centroamérica y Caribe', REG['CENAMER'] | REG['CARIB'] | {'MX','BQ','CW','SX','AW','PR'}),
+  ('Norteamérica', REG['NAM'] | {'US','CA'}), ('Europa occidental', REG['WER'] | {'UK','IE'}),
+  ('Europa del sur y del norte', (REG['SER'] - {'ES'}) | REG['NEU'] | {'FO'}), ('Europa del este', REG['CEE'] | REG['CIS'] | REG['BALKAN'] | REG['EUR']),
+  ('África y Oriente Medio', REG['MENA'] | REG['SSA'] | REG['AFR']),
+  ('Asia y Oceanía', REG['ASIA'] | REG['APAC'] | REG['OCE'] | {'HK','MO','TW'})]
+def region(cc):
+    for n, ccs in GRUPOS_REG:
+        if cc in ccs: return n
+    return 'Otros países'
+ADDON_MAX, ROW_MAX = 2000, 700
+addons = []   # (nombre, [(nombre_fila, [(item, categoría)])])
+# España: 4 filas temáticas
+def fila_es(i):
+    c = cat_es(i)
+    if c in ('Generalistas','Noticias','Deportes','Infantil'): return 0
+    if c.startswith('Autonómicos'): return 1
+    if c == 'Locales y varios': return 3
+    return 2
+NOM_ES = ['Generalistas, noticias, deportes e infantil', 'Autonómicos y locales', 'Cine, series, música y más', 'Locales y varios']
+addons.append(('España', [(NOM_ES[k], [(i, cat_es(i)) for i in es_items if fila_es(i)==k]) for k in range(4)]))
+orden_reg = [n for n, _ in GRUPOS_REG] + ['Otros países']
+por_reg = collections.defaultdict(list)
+for cc in {i['cc'] for i in items} - {'ES'}: por_reg[region(cc)].append(cc)
+for reg in orden_reg:
+    if reg not in por_reg: continue
+    bloques = []
+    for cc in sorted(por_reg[reg], key=lambda c: unicodedata.normalize('NFKD', pais(c)).encode('ascii','ignore').decode()):
+        sel = sorted((i for i in items if i['cc']==cc), key=lambda i: i['name'].lower())
+        for k in range(0, len(sel), ROW_MAX): bloques.append((pais(cc), [(i, pais(cc)) for i in sel[k:k+ROW_MAX]]))
+    partes = []; filas = []; fila = []; fn = []
+    def cierra():
+        global fila, fn
+        if fila:
+            ns = list(dict.fromkeys(fn)); filas.append((' · '.join(ns) if len(ns) <= 3 else f'{ns[0]} – {ns[-1]}', fila)); fila = []; fn = []
+    for nombre, sel in bloques:
+        if len(fila) + len(sel) > ROW_MAX: cierra()
+        if len(filas) == 4 or sum(len(r) for _, r in filas) + len(fila) + len(sel) > ADDON_MAX:
+            cierra(); partes.append(filas); filas = []
+        fila += sel; fn.append(nombre)
+    cierra(); partes.append(filas)
+    for k, f in enumerate(partes, 1):
+        addons.append((reg if len(partes) == 1 else f'{reg} ({k})', f))
 PAGE = 100
 big = []
-for a, filas in enumerate(addons, 1):
+for a, (anom, filas) in enumerate(addons, 1):
     for r, (nombre, sel) in enumerate(filas, 1):
         rid = f'a{a}-f{r}'
         metas = [meta(i, cat) for i, cat in sel]
@@ -128,16 +145,14 @@ for a, filas in enumerate(addons, 1):
         w(f'catalog/tv/{rid}/skip={len(metas)}.json', {"metas": []})
         big.append((rid, nombre, sel))
 base = json.load(open(os.path.join(out,'manifest.json'), encoding='utf-8'))
-for a, filas in enumerate(addons, 1):
-    paises_a = [n for n, _ in filas]
+for a, (anom, filas) in enumerate(addons, 1):
     m2 = dict(base)
     m2['id'] = base['id'] if a == 1 else f"{base['id']}.{a}"
-    primero = filas[0][1][0][0]['cc']; ultimo = filas[-1][1][-1][0]['cc']
-    m2['name'] = f'TV abierta {a} · ' + ('España' if primero == 'ES' else pais(primero)) + ' – ' + pais(ultimo)
+    m2['name'] = f'TV abierta · {anom}'
     m2['catalogs'] = [dict(type='tv', id=f'a{a}-f{r}', name=n, extra=[{"name":"skip"}], extraSupported=['skip']) for r, (n, _) in enumerate(filas, 1)]
-    m2['version'] = '6.0.0'
+    m2['version'] = '7.0.0'
     json.dump(m2, open(os.path.join(out, 'manifest.json' if a == 1 else f'manifest-{a}.json'), 'w', encoding='utf-8'), ensure_ascii=False)
-print('addons:', [(a, sum(len(r) for _, r in f), [n for n, _ in f]) for a, f in enumerate(addons, 1)])
+print('addons:', [(a, n, sum(len(r) for _, r in f), [x for x, _ in f]) for a, (n, f) in enumerate(addons, 1)])
 mp = os.path.join(out,'manifest.json'); m = json.load(open(mp, encoding='utf-8'))
 m = json.load(open(mp, encoding='utf-8'))
 json.dump(m, open(mp,'w',encoding='utf-8'), ensure_ascii=False)
