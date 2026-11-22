@@ -82,19 +82,20 @@ def add_rows(base_id, title, sel, tag):
         rid = base_id if n == 1 else f'{base_id}-{n}'
         name = title if len(sel) <= ROW else f'{title} ({n})'
         big.append((rid, name, [(i, tag(i)) for i in part]))
-ORD_ES = [('Generalistas','es-generalistas','España · Generalistas'),('Noticias','es-noticias','España · Noticias'),('Deportes','es-deportes','España · Deportes'),('Infantil','es-infantil','España · Infantil')]
-es_all = [i for i in items if i['cc']=='ES']; usados = set()
-for t, rid, title in ORD_ES:
-    sel = sorted((i for i in es_all if i['id'] not in usados and t in i['tipos'] and 'Autonómicos y locales' not in i['tipos']), key=lambda i: (i.get('pr',9), i['name'].lower()))
-    usados |= {i['id'] for i in sel}; add_rows(rid, title, sel, lambda i, t=t: t)
-# Autonómicos: por comunidad (TDTChannels guarda la comunidad en genre)
+# España en las 4 primeras filas (las únicas que la app de LG carga siempre)
+es_all = [i for i in items if i['cc']=='ES']
 tdt_by_id = {c['id']: c for c in tdt}
-auto = [i for i in es_all if 'Autonómicos y locales' in i['tipos']]
-usados |= {i['id'] for i in auto}
-auto.sort(key=lambda i: (tdt_by_id[i['id']]['genre'], i['name'].lower()))
-add_rows('es-autonomicos', 'España · Autonómicos y locales', auto, lambda i: tdt_by_id[i['id']]['genre'])
+ORDT = ['Generalistas','Noticias','Deportes','Infantil']
+def tipo_es(i): return next((t for t in ORDT if t in i['tipos']), None)
+nac = sorted((i for i in es_all if 'Autonómicos y locales' not in i['tipos'] and tipo_es(i)), key=lambda i: (ORDT.index(tipo_es(i)), i.get('pr',9), i['name'].lower()))
+big.append(('es-principales', 'España · Generalistas, noticias, deportes e infantil', [(i, tipo_es(i)) for i in nac]))
+auto = sorted((i for i in es_all if 'Autonómicos y locales' in i['tipos']), key=lambda i: (tdt_by_id[i['id']]['genre'], i['name'].lower()))
+big.append(('es-autonomicos', 'España · Autonómicos y locales', [(i, tdt_by_id[i['id']]['genre']) for i in auto]))
+usados = {i['id'] for i in nac} | {i['id'] for i in auto}
 resto_es = sorted((i for i in es_all if i['id'] not in usados), key=lambda i: (i['tipos'][0], i['name'].lower()))
-add_rows('es-otros', 'España · Música, cine y otros', resto_es, lambda i: i['tipos'][0])
+mitad = (len(resto_es)+1)//2
+big.append(('es-otros', 'España · Música, cine y otros (1)', [(i, i['tipos'][0]) for i in resto_es[:mitad]]))
+big.append(('es-otros-2', 'España · Música, cine y otros (2)', [(i, i['tipos'][0]) for i in resto_es[mitad:]]))
 PRIMEROS = ['MX','AR','CO','CL','PE','VE','EC','UY','PY','BO','CU','DO','PR','CR','PA','GT','HN','SV','NI','PT','AD','FR','IT','UK','DE','US']
 todos = sorted({i['cc'] for i in items} - {'ES'}, key=lambda cc: (PRIMEROS.index(cc) if cc in PRIMEROS else len(PRIMEROS), unicodedata.normalize('NFKD', pais(cc)).encode('ascii','ignore').decode()))
 for cc in todos:
