@@ -1,1 +1,0 @@
-{"streams":[{"url":"https://www.sccbolivia.com/dash/720p.mpd","name":"IPTV-org","title":"XTOTV (720p)","behaviorHints":{"notWebReady":true}},{"url":"http://190.104.15.135/0.ts","name":"IPTV-org","title":"XTOTV (1280p) [Not 24/7]","behaviorHints":{"notWebReady":true,"proxyHeaders":{"request":{"Referer":"https://www.sccbolivia.com/"}}}}]}
