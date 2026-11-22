@@ -84,9 +84,17 @@ big.append(('tv-espana', 'Canales de España', [(i, es_key(i)[1]) for i in es_it
 def by_country(pred):
     sel = sorted((i for i in items if i['cc']!='ES' and pred(i['cc'])), key=lambda i: (HISP.index(i['cc']) if i['cc'] in HISP else len(HISP), unicodedata.normalize('NFKD', pais(i['cc'])).encode('ascii','ignore').decode(), i['name'].lower()))
     return [(i, pais(i['cc'])) for i in sel]
-big.append(('tv-latam', 'Canales de Latinoamérica', by_country(lambda cc: cc in LAT)))
-big.append(('tv-europa', 'Canales de Europa', by_country(lambda cc: cc in EUR)))
-big.append(('tv-mundo', 'Canales del resto del mundo', by_country(lambda cc: cc not in LAT and cc not in EUR)))
+CAP = 1000   # la app de LG corta cada fila hacia los 1.100 canales
+def capped(sel): return sel[:CAP]
+HISPANO = ['MX','AR','CO','CL','PE','VE','EC','UY','PY','BO','CU','DO','PR','CR','PA','GT','HN','SV','NI']
+hisp = sorted((i for i in items if i['cc'] in HISPANO), key=lambda i: (HISPANO.index(i['cc']), i['name'].lower()))
+big.append(('tv-hispanoamerica', 'Canales de Hispanoamérica', capped([(i, pais(i['cc'])) for i in hisp])))
+EUROPA = ['PT','AD','FR','IT','UK','DE','IE','BE','NL','CH','AT']
+eu = sorted((i for i in items if i['cc'] in EUROPA), key=lambda i: (EUROPA.index(i['cc']), i['name'].lower()))
+big.append(('tv-europa', 'Canales de Europa', capped([(i, pais(i['cc'])) for i in eu])))
+LANG_PRI = ['ES'] + HISPANO + ['US','UK','FR','IT','DE','PT']
+news = sorted((i for i in items if i['cc']!='ES' and 'Noticias' in i['tipos']), key=lambda i: (LANG_PRI.index(i['cc']) if i['cc'] in LANG_PRI else len(LANG_PRI), pais(i['cc']), i['name'].lower()))
+big.append(('tv-noticias-mundo', 'Noticias de todo el mundo', capped([(i, pais(i['cc'])) for i in news])))
 for rid, name, sel in big:
     metas = []
     for i, tag in sel:
