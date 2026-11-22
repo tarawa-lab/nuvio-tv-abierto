@@ -19,4 +19,5 @@ done
 export IPTV_DB="$W/iptvdb/data"
 sh tools/regenerar.sh "$W/TELEVISION.md" "$W/iptv/streams" "$W/iptvdb/data"
 python3 tools/extras.py "$W/extra" .
+python3 tools/clasificar.py . "$W/iptvdb/data" "$W/extra"
 echo "OK"

@@ -126,3 +126,6 @@ for z in range(4):
             os.makedirs(os.path.dirname(dst), exist_ok=True); shutil.copyfile(src, dst)
 json.dump(dm, open(os.path.join(out, 'deportes', 'manifest.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 print('deportes:', [(c['name'], len(json.load(open(os.path.join(out,'deportes/catalog/tv',c['id']+'.json')))['metas'])) for c in dm['catalogs']])
+
+# Índice para tools/clasificar.py (fuera de la carpeta publicada)
+json.dump([dict(id=i['id'], name=i['name'], cc=i['cc'], tipos=i['tipos'], tdt=i.get('tdt', False)) for i in items], open(os.environ.get('CANALES_INDEX', '/tmp/_canales_index.json'), 'w', encoding='utf-8'), ensure_ascii=False)
