@@ -29,7 +29,9 @@ rank = lambda i: (HISP.index(i['cc']) if i['cc'] in HISP else len(HISP), pais(i[
 items.sort(key=rank)
 def meta(i, g):
     m = dict(id=i['id'], type='tv', name=i['name'], genres=[g], posterShape='square')
-    if i['logo']: m.update(poster=i['logo'], logo=i['logo'])
+    lg = i['logo'] or ''
+    if lg.startswith('https://') and not lg.lower().split('?')[0].endswith('.svg'): m.update(poster=lg, logo=lg)
+    m['name'] = re.sub(r'[\x00-\x1f]', '', m['name'])
     return m
 shutil.rmtree(os.path.join(out,'catalog'), ignore_errors=True)
 def w(path, obj):
@@ -72,7 +74,7 @@ for rid, name, sel in rows:
 
 # --- Filas de 100 canales como máximo (mismo formato que los add-ons de canales que la app de LG muestra bien) ---
 import csv as _csv
-ROW = 1000   # en la tele de LG una fila ha cargado bien hasta ~1.100 canales
+ROW = 100    # con filas de 100 la tele de LG cargó 138 filas; con filas grandes se para tras 4
 big = []
 def add_rows(base_id, title, sel, tag):
     for k in range(0, len(sel), ROW):
