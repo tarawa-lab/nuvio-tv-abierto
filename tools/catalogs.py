@@ -101,7 +101,7 @@ def region(cc):
     for n, ccs in GRUPOS_REG:
         if cc in ccs: return n
     return 'Otros países'
-ADDON_MAX, ROW_MAX = 2000, 700
+ADDON_MAX, ROW_MAX = 2000, 500
 addons = []   # (nombre, [(nombre_fila, [(item, categoría)])])
 # España: 4 filas temáticas
 def fila_es(i):
@@ -149,9 +149,12 @@ for a, (anom, filas) in enumerate(addons, 1):
     for r, (nombre, sel) in enumerate(filas, 1):
         rid = f'a{a}-f{r}'
         metas = [meta(i, cat) for i, cat in sel]
-        for k in range(0, len(metas), PAGE):
-            w(f'{pref}catalog/tv/{rid}.json' if k == 0 else f'{pref}catalog/tv/{rid}/skip={k}.json', {"metas": metas[k:k+PAGE]})
-        w(f'{pref}catalog/tv/{rid}/skip={len(metas)}.json', {"metas": []})
+        if a == 1:   # España (raíz): por páginas, ya funciona
+            for k in range(0, len(metas), PAGE):
+                w(f'{pref}catalog/tv/{rid}.json' if k == 0 else f'{pref}catalog/tv/{rid}/skip={k}.json', {"metas": metas[k:k+PAGE]})
+            w(f'{pref}catalog/tv/{rid}/skip={len(metas)}.json', {"metas": []})
+        else:        # resto: un solo archivo por fila (la paginación falla en estos add-ons)
+            w(f'{pref}catalog/tv/{rid}.json', {"metas": metas})
         copiar_recursos(pref, sel)
         big.append((rid, nombre, sel))
 base = json.load(open(os.path.join(out,'manifest.json'), encoding='utf-8'))
@@ -159,7 +162,7 @@ for a, (anom, filas) in enumerate(addons, 1):
     m2 = dict(base)
     m2['id'] = base['id'] if a == 1 else f"{base['id']}.{a}"
     m2['name'] = f'TV abierta · {anom}'
-    m2['catalogs'] = [dict(type='tv', id=f'a{a}-f{r}', name=n, extra=[{"name":"skip"}], extraSupported=['skip']) for r, (n, _) in enumerate(filas, 1)]
+    m2['catalogs'] = [dict(type='tv', id=f'a{a}-f{r}', name=n, **({'extra':[{"name":"skip"}], 'extraSupported':['skip']} if a == 1 else {})) for r, (n, _) in enumerate(filas, 1)]
     m2['version'] = '7.0.0'
     os.makedirs(os.path.join(out, carpeta(a, anom) or '.'), exist_ok=True)
     json.dump(m2, open(os.path.join(out, carpeta(a, anom) + 'manifest.json'), 'w', encoding='utf-8'), ensure_ascii=False)
@@ -177,14 +180,11 @@ for z in range(4):
     if sel: filas_d.append((f'Deportes · {NOM_D[z]}', [(i, 'Deportes · ' + ('España' if i['cc']=='ES' else pais(i['cc']))) for i in sel]))
 for r, (nombre, sel) in enumerate(filas_d, 1):
     rid = f'dep-f{r}'
-    metas = [meta(i, cat) for i, cat in sel]
-    for k in range(0, len(metas), PAGE):
-        w(f'deportes/catalog/tv/{rid}.json' if k == 0 else f'deportes/catalog/tv/{rid}/skip={k}.json', {"metas": metas[k:k+PAGE]})
-    w(f'deportes/catalog/tv/{rid}/skip={len(metas)}.json', {"metas": []})
+    w(f'deportes/catalog/tv/{rid}.json', {"metas": [meta(i, cat) for i, cat in sel]})
     copiar_recursos('deportes/', sel)
 md = dict(base); md['id'] = base['id'] + '.deportes'; md['name'] = 'TV abierta · Deportes'
 md['description'] = 'Solo los canales deportivos en abierto (España y resto del mundo), duplicados de los add-ons "TV abierta".'
-md['catalogs'] = [dict(type='tv', id=f'dep-f{r}', name=n, extra=[{"name":"skip"}], extraSupported=['skip']) for r, (n, _) in enumerate(filas_d, 1)]
+md['catalogs'] = [dict(type='tv', id=f'dep-f{r}', name=n) for r, (n, _) in enumerate(filas_d, 1)]
 json.dump(md, open(os.path.join(out, 'deportes', 'manifest.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 print('deportes:', [(n, len(x)) for n, x in filas_d])
 print('addons:', [(a, n, sum(len(r) for _, r in f), [x for x, _ in f]) for a, (n, f) in enumerate(addons, 1)])
