@@ -72,7 +72,7 @@ for rid, name, sel in rows:
 
 # --- Filas de 100 canales como máximo (mismo formato que los add-ons de canales que la app de LG muestra bien) ---
 import csv as _csv
-ROW = 100
+ROW = 1000   # en la tele de LG una fila ha cargado bien hasta ~1.100 canales
 big = []
 def add_rows(base_id, title, sel, tag):
     for k in range(0, len(sel), ROW):
