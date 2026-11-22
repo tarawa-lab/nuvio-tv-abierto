@@ -1,5 +1,5 @@
 # Crea dos catálogos con los mismos canales: "Por país" y "Por tipo de contenido".
-import json, os, sys, shutil, re, unicodedata, collections
+import json, os, sys, shutil, re, unicodedata
 slugify = lambda x: re.sub(r'[^a-z0-9]+','-',unicodedata.normalize('NFKD',x).encode('ascii','ignore').decode().lower()).strip('-')
 from babel import Locale
 out = sys.argv[1]
@@ -82,50 +82,25 @@ def add_rows(base_id, title, sel, tag):
         rid = base_id if n == 1 else f'{base_id}-{n}'
         name = title if len(sel) <= ROW else f'{title} ({n})'
         big.append((rid, name, [(i, tag(i)) for i in part]))
-# Filas temáticas, 100 canales como máximo (con filas mayores la app de LG deja de cargar las siguientes).
-# Si un tema pasa de 100, se parte por orden alfabético (A–L, M–Z…), nunca con números.
-def ini(i): return (unicodedata.normalize('NFKD', re.sub(r'^[^A-Za-z0-9]+', '', i['name']) or '#').encode('ascii','ignore').decode()[:1] or '#').upper()
-def themed(rid, title, sel, tag):
-    sel = sorted(sel, key=lambda i: unicodedata.normalize('NFKD', i['name'].lower()).encode('ascii','ignore').decode())
-    if len(sel) <= ROW:
-        big.append((rid, title, [(i, tag(i)) for i in sel])); return
-    parts = -(-len(sel)//ROW); size = -(-len(sel)//parts)
-    for k in range(parts):
-        part = sel[k*size:(k+1)*size]
-        a, b = ini(part[0]), ini(part[-1])
-        big.append((f'{rid}-{k+1}' if k else rid, f'{title} ({a}–{b})' if a != b else f'{title} ({a})', [(i, tag(i)) for i in part]))
-GRUPOS = [('Generalistas',['Generalistas']),('Noticias',['Noticias']),('Deportes',['Deportes']),('Infantil',['Infantil']),
-  ('Cine y series',['Cine','Series','Clásicos','Humor']),('Entretenimiento',['Entretenimiento','Estilo de vida','Cocina','Viajes','Motor','Relax','Teletienda']),
-  ('Música',['Música']),('Cultura y documentales',['Documentales','Cultura','Educación','Economía','Institucional','Tiempo']),('Religión',['Religión']),('Otros',['Otros','Autonómicos y locales'])]
-GN = [g for g, _ in GRUPOS]
-def grupo(i):
-    for g, ts in GRUPOS:
-        if any(t in i['tipos'] for t in ts): return g
-    return 'Otros'
+# España en las 4 primeras filas (las únicas que la app de LG carga siempre)
 es_all = [i for i in items if i['cc']=='ES']
 tdt_by_id = {c['id']: c for c in tdt}
-auto = [i for i in es_all if 'Autonómicos y locales' in i['tipos']]
-resto = [i for i in es_all if 'Autonómicos y locales' not in i['tipos']]
-for g in GN[:4]:
-    themed('es-'+slugify(g), 'España · '+g, [i for i in resto if grupo(i)==g], lambda i, g=g: g)
-com = collections.Counter(tdt_by_id[i['id']]['genre'] for i in auto)
-grandes = [c for c, n in com.most_common() if n >= 14]
-for c in grandes:
-    themed('es-auto-'+slugify(c), 'España · Autonómicos · '+c, [i for i in auto if tdt_by_id[i['id']]['genre']==c], lambda i: tdt_by_id[i['id']]['genre'])
-themed('es-auto-resto', 'España · Autonómicos · Resto de comunidades', [i for i in auto if tdt_by_id[i['id']]['genre'] not in grandes], lambda i: tdt_by_id[i['id']]['genre'])
-for title, gs in [('Cine, series y entretenimiento', ['Cine y series','Entretenimiento']), ('Música', ['Música']), ('Cultura y documentales', ['Cultura y documentales']), ('Religión', ['Religión']), ('Locales y varios', ['Otros'])]:
-    themed('es-'+slugify(title), 'España · '+title, [i for i in resto if grupo(i) in gs], lambda i: i['tipos'][0])
+ORDT = ['Generalistas','Noticias','Deportes','Infantil']
+def tipo_es(i): return next((t for t in ORDT if t in i['tipos']), None)
+nac = sorted((i for i in es_all if 'Autonómicos y locales' not in i['tipos'] and tipo_es(i)), key=lambda i: (ORDT.index(tipo_es(i)), i.get('pr',9), i['name'].lower()))
+big.append(('es-principales', 'España · Generalistas, noticias, deportes e infantil', [(i, tipo_es(i)) for i in nac]))
+auto = sorted((i for i in es_all if 'Autonómicos y locales' in i['tipos']), key=lambda i: (tdt_by_id[i['id']]['genre'], i['name'].lower()))
+big.append(('es-autonomicos', 'España · Autonómicos y locales', [(i, tdt_by_id[i['id']]['genre']) for i in auto]))
+usados = {i['id'] for i in nac} | {i['id'] for i in auto}
+resto_es = sorted((i for i in es_all if i['id'] not in usados), key=lambda i: (i['tipos'][0], i['name'].lower()))
+mitad = (len(resto_es)+1)//2
+big.append(('es-otros', 'España · Música, cine y otros (1)', [(i, i['tipos'][0]) for i in resto_es[:mitad]]))
+big.append(('es-otros-2', 'España · Música, cine y otros (2)', [(i, i['tipos'][0]) for i in resto_es[mitad:]]))
 PRIMEROS = ['MX','AR','CO','CL','PE','VE','EC','UY','PY','BO','CU','DO','PR','CR','PA','GT','HN','SV','NI','PT','AD','FR','IT','UK','DE','US']
 todos = sorted({i['cc'] for i in items} - {'ES'}, key=lambda cc: (PRIMEROS.index(cc) if cc in PRIMEROS else len(PRIMEROS), unicodedata.normalize('NFKD', pais(cc)).encode('ascii','ignore').decode()))
 for cc in todos:
-    sel = [i for i in items if i['cc']==cc]
-    if len(sel) <= ROW:
-        sel = sorted(sel, key=lambda i: (GN.index(grupo(i)), i['name'].lower()))
-        big.append(('pais-'+cc.lower(), pais(cc), [(i, grupo(i)) for i in sel]))
-    else:
-        for g in GN:
-            gs = [i for i in sel if grupo(i)==g]
-            if gs: themed(f'pais-{cc.lower()}-{slugify(g)}', f'{pais(cc)} · {g}', gs, lambda i, g=g: g)
+    sel = sorted((i for i in items if i['cc']==cc), key=lambda i: (i['tipos'][0], i['name'].lower()))
+    add_rows('pais-'+cc.lower(), pais(cc), sel, lambda i: i['tipos'][0])
 for rid, name, sel in big:
     metas = []
     for i, tag in sel:
