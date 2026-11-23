@@ -108,9 +108,9 @@ def clave(c):
 antes = len(canales); mejor = {}
 for c in canales:
     k = clave(c); o = mejor.get(k)
-    # mejor = más resolución; a igualdad, fuente oficial (TDT) > IPTV-org > Free-TV > plataformas; luego con logo
-    puntos = (c['r'], -c['prio'], bool(c['logo']))
-    if o is None or puntos > (o['r'], -o['prio'], bool(o['logo'])):
+    # mejor = fuente más oficial (TDT > IPTV-org > Free-TV > plataformas); a igualdad, más resolución; luego con logo
+    puntos = (-c['prio'], c['r'], bool(c['logo']))
+    if o is None or puntos > (-o['prio'], o['r'], bool(o['logo'])):
         if o is not None: c['es'] = c['es'] or o['es']; c['genero'] = c['genero'] if c['genero'] != 'Otros' else o['genero']
         mejor[k] = c
     else:
