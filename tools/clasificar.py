@@ -29,15 +29,18 @@ def genero_texto(*t):
     return 'Otros'
 def esc(s): return (s or '').replace('"', "'")
 canales = []; vistos = set()
-def add(name, url, logo, cc, genero, espanol, extra_lines=(), hd=False, uhd=None):
+def add(name, url, logo, cc, genero, espanol, extra_lines=(), hd=False, uhd=None, fhd_extra=False):
     if not url or url in vistos: return
     if uhd is None: uhd = bool(re.search(r'\b(4K|UHD|2160p)\b', name or '', re.I))
-    vistos.add(url); canales.append(dict(name=name, url=url, logo=logo, cc=cc, genero=genero, es=espanol, extra=list(extra_lines), hd=hd, uhd=uhd))
+    fhd = uhd or fhd_extra or bool(re.search(r'\b(FHD|FullHD|Full HD|1080[pi])\b', name or '', re.I))
+    vistos.add(url); canales.append(dict(name=name, url=url, logo=logo, cc=cc, genero=genero, es=espanol, extra=list(extra_lines), hd=hd, uhd=uhd, fhd=fhd))
 def res(t):
     m = re.findall(r'(\d{3,4})[pi]\b', t or ''); return max(map(int, m)) if m else 0
-feed_hd = {}
+feed_hd = {}; feed_res = {}
 for r_ in csv.DictReader(open(os.path.join(db, 'feeds.csv'), encoding='utf-8')):
     if res(r_['format']) >= 720 or r_['id'].upper() in ('HD','FHD','UHD','4K'): feed_hd[r_['channel']] = True
+    rr = max(res(r_['format']), 1080 if r_['id'].upper() in ('FHD','UHD','4K') else 0)
+    if rr > feed_res.get(r_['channel'], 0): feed_res[r_['channel']] = rr
 def nombre_hd(n): return bool(re.search(r'\b(HD|FHD|UHD|4K)\b', n or '', re.I))
 
 # 1) Propios (TDT + IPTV-org), con su género y país del índice
@@ -56,7 +59,7 @@ for i in idx:
     meta = json.load(open(os.path.join(root, 'meta/tv', i['id'] + '.json'), encoding='utf-8'))['meta']
     r0 = max([res(x.get('title','')) for x in st] + [0])
     hd = r0 >= 720 or (r0 == 0 and (feed_hd.get(cid, False) or nombre_hd(i['name'])))
-    add(i['name'], s['url'], meta.get('poster') or meta.get('logo'), i['cc'], g, es, ex, hd, r0 >= 2160 or bool(re.search(r'\b(4K|UHD)\b', i['name'], re.I)))
+    add(i['name'], s['url'], meta.get('poster') or meta.get('logo'), i['cc'], g, es, ex, hd, r0 >= 2160 or bool(re.search(r'\b(4K|UHD)\b', i['name'], re.I)), r0 >= 1080 or (r0 == 0 and feed_res.get(cid, 0) >= 1080))
 # 2) Agregadores
 def leer(fn):
     out = []; cur = None; exl = []
@@ -94,7 +97,7 @@ for inf, exl, u in leer('playlist.m3u8'):
     es = ('spa' in lg.split(';')) if lg else (cc in HISP)
     full_id = attr(inf, 'tvg-id'); fid = full_id.split('@')[1].upper() if '@' in full_id else ''
     hd = res(nombre(inf)) >= 720 or fid in ('HD','FHD','UHD','4K') or feed_hd.get(tid, False) or nombre_hd(nombre(inf))
-    add(re.sub(r'\s*[ⒼⓈⓎ]+\s*$', '', nombre(inf)), u, attr(inf, 'tvg-logo'), cc, g, es, exl, hd)
+    add(re.sub(r'\s*[ⒼⓈⓎ]+\s*$', '', nombre(inf)), u, attr(inf, 'tvg-logo'), cc, g, es, exl, hd, None, res(nombre(inf)) >= 1080 or fid in ('FHD','UHD','4K') or feed_res.get(tid, 0) >= 1080)
 # 3) Escribir listas
 ORD = ['Generalistas','Autonómicos y locales (España)','Noticias','Deportes','Infantil','Cine','Series','Entretenimiento','Humor','Música','Documentales','Cultura',
        'Educación','Clásicos','Cocina','Viajes','Motor','Estilo de vida','Economía','Institucional','Tiempo','Religión','Relax','Teletienda','Otros']
@@ -129,3 +132,8 @@ print('hd:', r['hd'], collections.Counter(c['genero'] for c in hdsel).most_commo
 uhd = [c for c in canales if c['uhd']]
 r['4k'] = escribir('4k.m3u', sorted(uhd, key=key_gen), lambda c: c['genero'])
 print('4k:', r['4k'], [c['name'] for c in uhd][:40])
+
+fh = [c for c in canales if c['fhd']]
+def k_fh(c): return (not c['uhd'],) + key_gen(c)
+r['fhd4k'] = escribir('fhd-4k.m3u', sorted(fh, key=k_fh), lambda c: ('4K · ' if c['uhd'] else 'FHD · ') + c['genero'])
+print('fhd+4k:', r['fhd4k'], 'de ellos 4K:', sum(c['uhd'] for c in fh), 'en español:', sum(c['es'] for c in fh), collections.Counter(c['genero'] for c in fh).most_common(8))
