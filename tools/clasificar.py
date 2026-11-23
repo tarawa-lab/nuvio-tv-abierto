@@ -29,9 +29,10 @@ def genero_texto(*t):
     return 'Otros'
 def esc(s): return (s or '').replace('"', "'")
 canales = []; vistos = set()
-def add(name, url, logo, cc, genero, espanol, extra_lines=(), hd=False):
+def add(name, url, logo, cc, genero, espanol, extra_lines=(), hd=False, uhd=None):
     if not url or url in vistos: return
-    vistos.add(url); canales.append(dict(name=name, url=url, logo=logo, cc=cc, genero=genero, es=espanol, extra=list(extra_lines), hd=hd))
+    if uhd is None: uhd = bool(re.search(r'\b(4K|UHD|2160p)\b', name or '', re.I))
+    vistos.add(url); canales.append(dict(name=name, url=url, logo=logo, cc=cc, genero=genero, es=espanol, extra=list(extra_lines), hd=hd, uhd=uhd))
 def res(t):
     m = re.findall(r'(\d{3,4})[pi]\b', t or ''); return max(map(int, m)) if m else 0
 feed_hd = {}
@@ -55,7 +56,7 @@ for i in idx:
     meta = json.load(open(os.path.join(root, 'meta/tv', i['id'] + '.json'), encoding='utf-8'))['meta']
     r0 = max([res(x.get('title','')) for x in st] + [0])
     hd = r0 >= 720 or (r0 == 0 and (feed_hd.get(cid, False) or nombre_hd(i['name'])))
-    add(i['name'], s['url'], meta.get('poster') or meta.get('logo'), i['cc'], g, es, ex, hd)
+    add(i['name'], s['url'], meta.get('poster') or meta.get('logo'), i['cc'], g, es, ex, hd, r0 >= 2160 or bool(re.search(r'\b(4K|UHD)\b', i['name'], re.I)))
 # 2) Agregadores
 def leer(fn):
     out = []; cur = None; exl = []
@@ -124,3 +125,7 @@ def k_hd(c):
     return (1, c['cc'] != 'ES', not c['es'], c['cc'] not in HISP, norm(pais(c['cc'])), c['name'].lower())
 r['hd'] = escribir('hd-espanol-deportes.m3u', sorted(hdsel, key=k_hd), lambda c: ('Deportes · ' + pais(c['cc'])) if c['genero'] == 'Deportes' else c['genero'])
 print('hd:', r['hd'], collections.Counter(c['genero'] for c in hdsel).most_common(8))
+
+uhd = [c for c in canales if c['uhd']]
+r['4k'] = escribir('4k.m3u', sorted(uhd, key=key_gen), lambda c: c['genero'])
+print('4k:', r['4k'], [c['name'] for c in uhd][:40])
