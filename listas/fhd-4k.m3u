@@ -9,9 +9,6 @@ https://pb-qyrvophnifz47.akamaized.net/Clarity_4K.m3u8
 https://ncdn.telewebion.ir/faratar/live/playlist.m3u8
 #EXTINF:-1 tvg-name="BBC UHD 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/BBC_Logo_2021.svg/960px-BBC_Logo_2021.svg.png" tvg-country="UK" group-title="4K · Generalistas",BBC UHD 4
 http://45.14.84.37/bbc4/index.m3u8
-#EXTINF:-1 tvg-name="Eurosport 4K Czechia" tvg-logo="https://i.imgur.com/0o3zjC7.png" tvg-country="CZ" group-title="4K · Deportes",Eurosport 4K Czechia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.15.50/live/esp_4k_atk/playlist.m3u8
 #EXTINF:-1 tvg-name="Eurosport 4K" tvg-logo="https://i.imgur.com/0o3zjC7.png" tvg-country="FR" group-title="4K · Deportes",Eurosport 4K
 https://vip-acasatv.online:25463/lrZuGxAuP3/6782859900/5449.m3u8
 #EXTINF:-1 tvg-name="5Sport 4K" tvg-logo="https://i.imgur.com/Msfhpqd.png" tvg-country="IL" group-title="4K · Deportes",5Sport 4K
@@ -64,8 +61,6 @@ https://vip-acasatv.online:25463/lrZuGxAuP3/6782859900/5928.m3u8
 #EXTINF:-1 tvg-name="12tv" tvg-logo="https://i.imgur.com/VSTgXsh.png" tvg-country="ES" group-title="FHD · Generalistas",12tv
 #EXTVLCOPT:http-referrer=https://www.12tv.es/
 https://cloud.streamingconnect.tv/hls/12tv/12tv2.m3u8
-#EXTINF:-1 tvg-name="Antena 3" tvg-logo="https://i.imgur.com/j3SP4BS.png" tvg-country="ES" group-title="FHD · Generalistas",Antena 3
-http://177.10.184.193:8000/play/a06a/index.m3u8
 #EXTINF:-1 tvg-name="Canal San Roque" tvg-logo="https://i.imgur.com/SN9kFKh.png" tvg-country="ES" group-title="FHD · Generalistas",Canal San Roque
 https://cdnlivevlc.codev8.net/aytosanroquelive/smil:channel1.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Canal Sur Andalucia" tvg-logo="https://i.imgur.com/lznnA4v.png" tvg-country="ES" group-title="FHD · Generalistas",Canal Sur Andalucia
@@ -885,8 +880,6 @@ https://webtvstream.bhtelecom.ba/hrt1.m3u8
 https://webtvstream.bhtelecom.ba/hrt2.m3u8
 #EXTINF:-1 tvg-name="Libertas TV" tvg-logo="https://i.imgur.com/4R4fhbd.png" tvg-country="HR" group-title="FHD · Generalistas",Libertas TV
 https://stream.luci.xyz/hls/LTV.m3u8
-#EXTINF:-1 tvg-name="Nova TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Nova_TV_Croatia_logo.png/960px-Nova_TV_Croatia_logo.png" tvg-country="HR" group-title="FHD · Generalistas",Nova TV
-http://176.61.157.250/NovaTV/index.m3u8
 #EXTINF:-1 tvg-name="SBTV" tvg-logo="https://i.imgur.com/MIampxZ.png" tvg-country="HR" group-title="FHD · Generalistas",SBTV
 https://live.leveex.hr/hls/live.m3u8
 #EXTINF:-1 tvg-name="TV Zapad" tvg-logo="https://i.imgur.com/cgCeX12.png" tvg-country="HR" group-title="FHD · Generalistas",TV Zapad
@@ -2109,9 +2102,6 @@ http://170.82.202.31/GNT/index.m3u8
 https://live.tcm10.com.br/tcm10hd/stream.m3u8
 #EXTINF:-1 tvg-name="VEJA+ TV" tvg-logo="https://i.imgur.com/n0pxHo4.png" tvg-country="BR" group-title="FHD · Noticias",VEJA+ TV
 https://gpa-vja.otteravision.com/gpa/vja/vja.m3u8
-#EXTINF:-1 tvg-name="Nova News" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c3/Nova_News_HD.svg" tvg-country="BG" group-title="FHD · Noticias",Nova News
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://213.91.179.28:8000/play/a063
 #EXTINF:-1 tvg-name="Filinfo TV" tvg-logo="https://i.imgur.com/KG93Tvn.png" tvg-country="BF" group-title="FHD · Noticias",Filinfo TV
 https://d2iqjnqfr8pv3b.cloudfront.net/out/v1/d09d2fc718404cd8bccd3eba2444dd70/index.m3u8
 #EXTINF:-1 tvg-name="Sterk TV" tvg-logo="https://i.imgur.com/bIheNAI.png" tvg-country="BE" group-title="FHD · Noticias",Sterk TV
@@ -2910,18 +2900,10 @@ https://stream8.cinerama.uz/1011/tracks-v1a1/playlist.m3u8
 https://stream8.cinerama.uz/1015/tracks-v1a1/playlist.m3u8
 #EXTINF:-1 tvg-name="Olympic Channel" tvg-logo="https://i.imgur.com/wPQVVtj.png" tvg-country="ES" group-title="FHD · Deportes",Olympic Channel
 https://ocshls-2-olympicchannel.akamaized.net/ocshls/OCTV_32.m3u8
-#EXTINF:-1 tvg-name="Real Madrid TV English" tvg-logo="https://i.imgur.com/5pMo7dL.png" tvg-country="ES" group-title="FHD · Deportes",Real Madrid TV English
-http://88.212.15.50/live/real_madrid_tv/index.m3u8
 #EXTINF:-1 tvg-name="DeporTV" tvg-logo="https://i.imgur.com/THk9ARS.png" tvg-country="AR" group-title="FHD · Deportes",DeporTV
 http://158.172.155.130:8000/play/a09y/index.m3u8
-#EXTINF:-1 tvg-name="ESPN Premium" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png" tvg-country="AR" group-title="FHD · Deportes",ESPN Premium
-http://45.134.141.161:2200/ARG/ESPN_Premium_Argentina_HD/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-name="Fox Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/960px-FOX_Sports_logo.svg.png" tvg-country="AR" group-title="FHD · Deportes",Fox Sports
-http://138.59.227.20:8000/play/a085/index.m3u8
 #EXTINF:-1 tvg-name="TyC Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/TyC_Sports_logo.svg/960px-TyC_Sports_logo.svg.png" tvg-country="AR" group-title="FHD · Deportes",TyC Sports
 https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
-#EXTINF:-1 tvg-name="TNT Sports Premium" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/TNT_Sports_Premium_%28Argentina%29.png/960px-TNT_Sports_Premium_%28Argentina%29.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" tvg-country="CL" group-title="FHD · Deportes",TNT Sports Premium
-http://181.78.79.131:8000/play/a0q9
 #EXTINF:-1 tvg-name="Win Sports" tvg-logo="https://i.imgur.com/DuSSrHV.png" tvg-country="CO" group-title="FHD · Deportes",Win Sports
 http://138.121.15.230:9002/WIN-SPORT/index.m3u8
 #EXTINF:-1 tvg-name="Win+ Futbol" tvg-logo="https://i.imgur.com/0UN87vB.png" tvg-country="CO" group-title="FHD · Deportes",Win+ Futbol
@@ -2942,12 +2924,6 @@ http://168.196.127.137:6001/play/a06v/index.m3u8
 http://209.14.115.253:8081/azteca-deportes/index.m3u8
 #EXTINF:-1 tvg-name="Claro Sports" tvg-logo="https://i.imgur.com/n0kd17r.png" tvg-country="MX" group-title="FHD · Deportes",Claro Sports
 http://45.171.64.30:6060/play/a00w/index.m3u8
-#EXTINF:-1 tvg-name="FOX Central" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" tvg-country="MX" group-title="FHD · Deportes",FOX Central
-http://181.78.106.127:5000/play/a009/index.m3u8
-#EXTINF:-1 tvg-name="Sky Sports 1" tvg-logo="https://i.imgur.com/9onSfMi.png" tvg-country="MX" group-title="FHD · Deportes",Sky Sports 1
-http://45.228.234.9:8000/play/a06b/index.m3u8
-#EXTINF:-1 tvg-name="Sky Sports 2" tvg-logo="https://i.imgur.com/VM0a8Ny.png" tvg-country="MX" group-title="FHD · Deportes",Sky Sports 2
-http://200.115.120.1:8000/play/ca82266/index.m3u8
 #EXTINF:-1 tvg-name="TV Cuatro 4.3" tvg-logo="https://i.imgur.com/Of044Jx.png" tvg-country="MX" group-title="FHD · Deportes",TV Cuatro 4.3
 https://5ca3e84a76d30.streamlock.net/tv43gto/tv43gto.smil/.m3u8
 #EXTINF:-1 tvg-name="Tigo Sports+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Tigo_Sports_2025.png/960px-Tigo_Sports_2025.png" tvg-country="PY" group-title="FHD · Deportes",Tigo Sports+
@@ -2958,8 +2934,6 @@ https://stmv7.voxtvhd.com.br/xxvideo/xxvideo/playlist.m3u8
 http://45.4.1.201:8000/play/a1ai/index.m3u8
 #EXTINF:-1 tvg-name="L1 Max" tvg-logo="https://i.imgur.com/2fziU2B.png" tvg-country="PE" group-title="FHD · Deportes",L1 Max
 http://190.93.224.42/LIGA-1-MAX/index.m3u8
-#EXTINF:-1 tvg-name="Movistar Deportes" tvg-logo="https://i.imgur.com/Zt3iE86.png" tvg-country="PE" group-title="FHD · Deportes",Movistar Deportes
-http://195.178.110.110/movistar/index.m3u8
 #EXTINF:-1 tvg-name="Tour Spot TV" tvg-logo="https://imgur.com/khj869k.png" tvg-country="DO" group-title="FHD · Deportes",Tour Spot TV
 https://fox.hostlagarto.com:8081/toursporttv/playlist.m3u8
 #EXTINF:-1 tvg-name="AS3 Sport TV" tvg-logo="https://i.ibb.co/bRmGbsyV/A3-SPORTTV.jpg" tvg-country="VE" group-title="FHD · Deportes",AS3 Sport TV
@@ -2970,24 +2944,6 @@ http://181.79.86.130:8000/play/a081/index.m3u8
 http://178.33.11.6:8696/live/rtshsport/playlist.m3u8
 #EXTINF:-1 tvg-name="More Than Sports TV" tvg-logo="https://i.imgur.com/SLrjImc.png" tvg-country="DE" group-title="FHD · Deportes",More Than Sports TV
 https://mts1.iptv-playoutcenter.de/mts/mts-web/playlist.m3u8
-#EXTINF:-1 tvg-name="Sky Sport F1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sky_Sport_F1_-_Logo_2020.svg/960px-Sky_Sport_F1_-_Logo_2020.svg.png" tvg-country="DE" group-title="FHD · Deportes",Sky Sport F1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/51/index.m3u8
-#EXTINF:-1 tvg-name="Sky Sport Golf" tvg-logo="https://i.imgur.com/nhhbHvs.png" tvg-country="DE" group-title="FHD · Deportes",Sky Sport Golf
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/56/index.m3u8
-#EXTINF:-1 tvg-name="Sky Sport Mix" tvg-logo="https://i.imgur.com/erx02nr.png" tvg-country="DE" group-title="FHD · Deportes",Sky Sport Mix
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/53/index.m3u8
-#EXTINF:-1 tvg-name="Sky Sport News" tvg-logo="https://upload.wikimedia.org/wikipedia/de/thumb/c/cc/Sky_Sport_News_2020.svg/960px-Sky_Sport_News_2020.svg.png" tvg-country="DE" group-title="FHD · Deportes",Sky Sport News
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/49/index.m3u8
-#EXTINF:-1 tvg-name="Sky Sport Tennis" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Sky_Sport_Tennis.svg/960px-Sky_Sport_Tennis.svg.png" tvg-country="DE" group-title="FHD · Deportes",Sky Sport Tennis
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/55/index.m3u8
-#EXTINF:-1 tvg-name="Sky Sport Top Event" tvg-logo="https://i.imgur.com/kQ6cVNx.png" tvg-country="DE" group-title="FHD · Deportes",Sky Sport Top Event
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/50/index.m3u8
 #EXTINF:-1 tvg-name="World of Freesports" tvg-logo="https://i.imgur.com/lta5Mog.png" tvg-country="DE" group-title="FHD · Deportes",World of Freesports
 https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="El-Heddaf TV" tvg-logo="https://i.imgur.com/cDkIDIA.png" tvg-country="DZ" group-title="FHD · Deportes",El-Heddaf TV
@@ -3012,12 +2968,6 @@ http://178.124.179.122:8080/SportTV/mpegts
 https://edge55.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Band Sports" tvg-logo="https://i.imgur.com/EuPvzJe.png" tvg-country="BR" group-title="FHD · Deportes",Band Sports
 https://cdn-5.nxplay.com.br/BAND_SPORTS/index.m3u8
-#EXTINF:-1 tvg-name="ESPN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" tvg-country="BR" group-title="FHD · Deportes",ESPN
-http://181.78.197.59:8000/play/a07z/index.m3u8
-#EXTINF:-1 tvg-name="ESPN 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ESPN3_Logo.png/960px-ESPN3_Logo.png" tvg-country="BR" group-title="FHD · Deportes",ESPN 3
-http://190.83.2.182:8090/ESPN3/index.m3u8
-#EXTINF:-1 tvg-name="ESPN 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/960px-ESPN_4_logo.svg.png" tvg-country="BR" group-title="FHD · Deportes",ESPN 4
-http://181.78.197.59:8000/play/a07n/index.m3u8
 #EXTINF:-1 tvg-name="N Sports" tvg-logo="https://i.imgur.com/7QnJojr.png" tvg-country="BR" group-title="FHD · Deportes",N Sports
 https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt.m3u8
 #EXTINF:-1 tvg-name="SporTV 2" tvg-logo="https://i.imgur.com/pBiUnb2.png" tvg-country="BR" group-title="FHD · Deportes",SporTV 2
@@ -3259,8 +3209,6 @@ http://88.212.7.14/live/uatlmvixrr/index.m3u8
 http://141.94.193.53/Match4_HD/index.m3u8
 #EXTINF:-1 tvg-name="DD Sports" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SPORTS_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="FHD · Deportes",DD Sports
 https://mumbai-edge.smartplaytv.in/DDSportsHD/index.m3u8
-#EXTINF:-1 tvg-name="Eurosport" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9LQS.png?lock=720x540" tvg-country="IN" group-title="FHD · Deportes",Eurosport
-http://116.90.120.149:8000/play/a118/index.m3u8
 #EXTINF:-1 tvg-name="FloRacing 24/7" tvg-country="IN" group-title="FHD · Deportes",FloRacing 24/7
 https://amg02278-amg02278c1-distrotv-us-7534.playouts.now.amagi.tv/playlist/amg02278-flosports-floracing24x7-distrotvus/playlist.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 1" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Deportes",Sony Sports Ten 1
@@ -3357,10 +3305,6 @@ http://92.114.85.87:8002/play/a00f/index.m3u8
 http://92.114.85.87:8002/play/a00g/index.m3u8
 #EXTINF:-1 tvg-name="Eleven Sports 4" tvg-logo="https://i.imgur.com/SEKXaAW.png" tvg-country="PL" group-title="FHD · Deportes",Eleven Sports 4
 http://92.114.85.87:8002/play/a00h/index.m3u8
-#EXTINF:-1 tvg-name="Eurosport 1 Polska" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e7/Eurosport_1_2022.svg/revision/latest?cb=20220806090310" tvg-country="PL" group-title="FHD · Deportes",Eurosport 1 Polska
-http://57.128.210.196:8080/264/index.m3u8
-#EXTINF:-1 tvg-name="Eurosport 2 Polska" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/16/Eurosport_2_2022.svg/revision/latest?cb=20220417183127" tvg-country="PL" group-title="FHD · Deportes",Eurosport 2 Polska
-http://57.128.210.196:8080/263/index.m3u8
 #EXTINF:-1 tvg-name="Eurosport 3 Polska" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/da/Eurosport_3_2022.svg/revision/latest?cb=20220418054130" tvg-country="PL" group-title="FHD · Deportes",Eurosport 3 Polska
 https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F5121596371c5191ed9b35
 #EXTINF:-1 tvg-name="Eurosport 4 Polska" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/ae/Eurosport_4_2022.svg/revision/latest?cb=20220418053934" tvg-country="PL" group-title="FHD · Deportes",Eurosport 4 Polska
@@ -3379,12 +3323,6 @@ https://amg00378-mavtv-amg00378c2-rakuten-us-1048.playouts.now.amagi.tv/playlist
 https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/playlist.m3u8?ads.xumo_channelId=88883102
 #EXTINF:-1 tvg-name="FUEL TV" tvg-logo="https://i.imgur.com/I8mviBy.png" tvg-country="PT" group-title="FHD · Deportes",FUEL TV
 https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8
-#EXTINF:-1 tvg-name="DAZN 1" tvg-logo="https://i.imgur.com/2Z2EmZF.png" tvg-country="UK" group-title="FHD · Deportes",DAZN 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://45.142.104.86/stream/25/index.m3u8
-#EXTINF:-1 tvg-name="DAZN 2" tvg-logo="https://i.imgur.com/OGj3qf5.png" tvg-country="UK" group-title="FHD · Deportes",DAZN 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://45.142.104.86/stream/15/index.m3u8
 #EXTINF:-1 tvg-name="Eurovision Sport" tvg-logo="https://images.ctfassets.net/2b1dkanupt14/1A1Z8Gcn2NkbJRzTjxuj6h/2c14436cdc5b78e746a256e9f0c11a70/eurovision-icon.png" tvg-country="UK" group-title="FHD · Deportes",Eurovision Sport
 https://amg26268-amg26268c34-amgplt0018.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg26268-amg26268c34-amgplt0018/playlist.m3u8
 #EXTINF:-1 tvg-name="FIFA+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/FIFA%2B_%282025%29.svg" tvg-country="UK" group-title="FHD · Deportes",FIFA+
@@ -3400,14 +3338,6 @@ https://rightsboosterltd-scl-1-be.samsung.wurl.tv/playlist.m3u8
 https://af7a8b4e.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfdGFsa1NQT1JUX0hMUw/playlist.m3u8
 #EXTINF:-1 tvg-name="Tennis+" tvg-country="UK" group-title="FHD · Deportes",Tennis+
 https://amg01935-amg01935c1-amgplt0165.playout.now3.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="TNT Sports 1" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-kingdom/tnt-sports-1-uk.png?raw=true" tvg-country="UK" group-title="FHD · Deportes",TNT Sports 1
-http://37.49.224.5/stream/1/index.m3u8
-#EXTINF:-1 tvg-name="TNT Sports 2" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-kingdom/tnt-sports-2-uk.png?raw=true" tvg-country="UK" group-title="FHD · Deportes",TNT Sports 2
-http://37.49.224.5/stream/2/index.m3u8
-#EXTINF:-1 tvg-name="TNT Sports 3" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-kingdom/tnt-sports-3-uk.png?raw=true" tvg-country="UK" group-title="FHD · Deportes",TNT Sports 3
-http://37.49.224.5/stream/3/index.m3u8
-#EXTINF:-1 tvg-name="TNT Sports 4" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-kingdom/tnt-sports-4-uk.png?raw=true" tvg-country="UK" group-title="FHD · Deportes",TNT Sports 4
-http://37.49.224.5/stream/4/index.m3u8
 #EXTINF:-1 tvg-name="U&Transport" tvg-country="UK" group-title="FHD · Deportes",U&Transport
 https://jmp2.uk/plu-64c0d6765dc1660008a3e033.m3u8
 #EXTINF:-1 tvg-name="Prima Sport 1" tvg-logo="https://static.wikia.nocookie.net/tvfanon6528/images/5/52/Prima_Sport_1_%282022-.n.v.%29.png/revision/latest/scale-to-width-down/1000?cb=20240205121905" tvg-country="RO" group-title="FHD · Deportes",Prima Sport 1
@@ -3513,19 +3443,9 @@ https://dethich.pw/htvthethao/index.m3u8
 https://d1ujfw1zyymzyd.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-a6fukwkbxmex8/live/fast-channel-animevision-64527ec0/fast-channel-animevision-64527ec0.m3u8
 #EXTINF:-1 tvg-name="Anime Vision Classics" tvg-logo="https://i.imgur.com/mTaiEE1.png" tvg-country="ES" group-title="FHD · Infantil",Anime Vision Classics
 https://d82pyvmcw2kdc.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-swfivzrzwamaq/live/fast-channel-animevisionclassics-efc8dc6d/fast-channel-animevisionclassics-efc8dc6d.m3u8
-#EXTINF:-1 tvg-name="Boing" tvg-logo="https://i.imgur.com/nUYuCAP.png" tvg-country="ES" group-title="FHD · Infantil",Boing
-http://90.170.214.40:9700/stream/avatel/boing/master.m3u8
-#EXTINF:-1 tvg-name="Clan Internacional" tvg-logo="https://i.ibb.co/vv3FC2Nv/clan.png" tvg-country="ES" group-title="FHD · Infantil",Clan Internacional
-http://168.228.44.241:9999/play/a04j/index.m3u8
 #EXTINF:-1 tvg-name="KinoKazka" tvg-logo="https://i.imgur.com/y6SWpsX.png" tvg-country="ES" group-title="FHD · Infantil",KinoKazka
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://stream.mcquack.net/167/index.m3u8
-#EXTINF:-1 tvg-name="Nickelodeon" tvg-logo="https://i.imgur.com/E84jnP8.png" tvg-country="ES" group-title="FHD · Infantil",Nickelodeon
-http://90.170.214.40:9700/stream/avatel/nickelodeon/master.m3u8
-#EXTINF:-1 tvg-name="Disney Channel Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" tvg-country="AR" group-title="FHD · Infantil",Disney Channel Latin America
-http://15.204.246.24:8080/DisneyHD/index.m3u8
-#EXTINF:-1 tvg-name="Disney Jr. Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" tvg-country="AR" group-title="FHD · Infantil",Disney Jr. Latin America
-http://190.93.224.42/DISNEY-JR/index.m3u8
 #EXTINF:-1 tvg-name="Pakapaka" tvg-logo="https://i.imgur.com/GJbRWwH.png" tvg-country="AR" group-title="FHD · Infantil",Pakapaka
 http://138.59.227.20:8000/play/a05t/index.m3u8
 #EXTINF:-1 tvg-name="Plim Plim" tvg-logo="https://i.imgur.com/MYc8srh.png" tvg-country="AR" group-title="FHD · Infantil",Plim Plim
@@ -3572,12 +3492,10 @@ http://74.91.26.218:82/live/cctv14hd.m3u8
 https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-name="Koogi TV" tvg-logo="https://i.imgur.com/zojMTP9.png" tvg-country="EG" group-title="FHD · Infantil",Koogi TV
 https://5d658d7e9f562.streamlock.net/koogi.tv/koogi.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="Cartoon Network Arabic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cartoon_Network_Arabic_logo.png/960px-Cartoon_Network_Arabic_logo.png" tvg-country="AE" group-title="FHD · Infantil",Cartoon Network Arabic
-http://149.100.11.252:8000/play/a056/index.m3u8
+#EXTINF:-1 tvg-name="Cartoon Network Arabic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/bb/Cartoon_Network_Arabic_logo.png" tvg-country="AE" group-title="FHD · Infantil",Cartoon Network Arabic
+https://shls-cartoon-net-prod-dub.shahid.net/out/v1/dc4aa87372374325a66be458f29eab0f/index.m3u8
 #EXTINF:-1 tvg-name="MBC 5" tvg-logo="https://i.imgur.com/fRWaDyF.png" tvg-country="AE" group-title="FHD · Infantil",MBC 5
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8
-#EXTINF:-1 tvg-name="Nickelodeon Arabia" tvg-logo="https://i.imgur.com/E84jnP8.png" tvg-country="AE" group-title="FHD · Infantil",Nickelodeon Arabia
-http://85.237.89.159:3342/ar-s/Nickelodeon/index.m3u8
 #EXTINF:-1 tvg-name="AMG TV" tvg-logo="https://i.imgur.com/m5Anun9.png" tvg-country="US" group-title="FHD · Infantil",AMG TV
 https://2-fss-2.streamhoster.com/pl_138/201660-1270634-1/playlist.m3u8
 #EXTINF:-1 tvg-name="Animation+" tvg-logo="https://i.imgur.com/OIFK6JB.png" tvg-country="US" group-title="FHD · Infantil",Animation+
@@ -3597,8 +3515,6 @@ https://turnerlive.warnermediacdn.com/hls/live/2023160/tooneast/noslate/VIDEO_3_
 #EXTINF:-1 tvg-name="Cartoon Network Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" tvg-country="US" group-title="FHD · Infantil",Cartoon Network Latin America
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
 https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/cartoonnetwork.stream/chunks.m3u8
-#EXTINF:-1 tvg-name="Cartoonito Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/960px-Cartoonito_-_Logo_2021.svg.png" tvg-country="US" group-title="FHD · Infantil",Cartoonito Latin America
-http://45.173.12.70:8000/play/a0hh
 #EXTINF:-1 tvg-name="Christian Youth Channel CYC" tvg-logo="https://i.imgur.com/61eV77C.png" tvg-country="US" group-title="FHD · Infantil",Christian Youth Channel CYC
 http://media3.smc-host.com:1935/cycnow.com/smil:cyc.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Discovery Kids Latin America" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Discovery_Kids_2021_2D_sin_wordmark.svg/960px-Discovery_Kids_2021_2D_sin_wordmark.svg.png" tvg-country="US" group-title="FHD · Infantil",Discovery Kids Latin America
@@ -3613,8 +3529,6 @@ http://138.121.15.230:9002/DREAMWORKS/index.m3u8
 https://mumbai-edge.smartplaytv.in/HappyKids/index.m3u8
 #EXTINF:-1 tvg-name="Hasbro Legends" tvg-logo="https://i.imgur.com/JDM9rEV.png" tvg-country="US" group-title="FHD · Infantil",Hasbro Legends
 https://amg02713-amg02713c11-amgplt0852.playout.now3.amagi.tv/ts-us-e2-n2/playlist/amg02713-amg02713c11-amgplt0852/playlist.m3u8
-#EXTINF:-1 tvg-name="HBO Family Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" tvg-country="US" group-title="FHD · Infantil",HBO Family Latin America
-http://45.171.64.30:6060/play/a00k/index.m3u8
 #EXTINF:-1 tvg-name="It’s Anime" tvg-country="US" group-title="FHD · Infantil",It’s Anime
 https://d1isoijd9dbbf7.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-name="Kartoon Channel!" tvg-logo="https://i.imgur.com/1luzP3T.png" tvg-country="US" group-title="FHD · Infantil",Kartoon Channel!
@@ -3639,8 +3553,6 @@ https://streaming.onnethn.com/NICK_JR/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://tvnow.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
 https://cache0.wonvt.st/live/1ewxgzu023dos60vlh62k/master.m3u8
-#EXTINF:-1 tvg-name="Nickelodeon Latin America" tvg-logo="https://i.imgur.com/E84jnP8.png" tvg-country="US" group-title="FHD · Infantil",Nickelodeon Latin America
-http://181.78.79.131:8000/play/a0qm
 #EXTINF:-1 tvg-name="Ninja Kidz TV" tvg-logo="https://i.imgur.com/7EngqUi.png" tvg-country="US" group-title="FHD · Infantil",Ninja Kidz TV
 https://d3868b4ny0rgdf.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-name="Placid" tvg-logo="https://static.wikitide.net/indietvwiki/0/03/Placid_(2026).svg" tvg-country="US" group-title="FHD · Infantil",Placid
@@ -3681,10 +3593,6 @@ http://99.27.51.147:8080/Gulli/index.m3u8
 https://amg01796-amg01796c3-rakuten-uk-2555.playouts.now.amagi.tv/playlist/amg01796-fastmediafast-wasabii-rakutenuk/playlist.m3u8
 #EXTINF:-1 tvg-name="ERT Kids" tvg-logo="https://i.imgur.com/XkSR66q.png" tvg-country="GR" group-title="FHD · Infantil",ERT Kids
 https://ert-ucdn.broadpeak-aas.com/bpk-tv/ERTKids/default/index.mpd
-#EXTINF:-1 tvg-name="Cartoon Network HD+" tvg-logo="https://i.imgur.com/pH6ao2T.png" tvg-country="IN" group-title="FHD · Infantil",Cartoon Network HD+
-http://103.135.253.32:8080/CN-NETWORK/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" tvg-country="IN" group-title="FHD · Infantil",Disney Channel
-http://116.90.120.149:8000/play/a124/index.m3u8
 #EXTINF:-1 tvg-name="Epic Kids" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0032BVSR.png?lock=720x540" tvg-country="IN" group-title="FHD · Infantil",Epic Kids
 https://cc-t8lqe1o99pszu.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t8lqe1o99pszu/playlist.m3u8
 #EXTINF:-1 tvg-name="Green Gold TV" tvg-logo="https://i.ibb.co/TDPsPVkT/Greengoldtv.png" tvg-country="IN" group-title="FHD · Infantil",Green Gold TV
@@ -3720,16 +3628,11 @@ http://stream.mcquack.net/44/index.m3u8
 https://stream.paroledivita.org/bejoy.m3u8
 #EXTINF:-1 tvg-name="Boing" tvg-logo="https://i.imgur.com/rabKj9i.png" tvg-country="IT" group-title="FHD · Infantil",Boing
 https://boing.akamaized.net/6380392800112/eu-central-1/6284318116001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0Ijoib3dwbnN1LmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjI4NDMxODExNjAwMSIsImVobiI6ImJvaW5nLmFrYW1haXplZC5uZXQiLCJpc3MiOiJibGl2ZS1wbGF5YmFjay1zb3VyY2UtYXBpIiwic3ViIjoicGF0aG1hcHRva2VuIiwiYXVkIjpbIjYyODQzMTgxMTYwMDEiXSwianRpIjoiNjM4MDM5MjgwMDExMiJ9.0RWQ0yZrauU0cHSnbpBYhgyRPeq1Lyw6nOn_fo7_cg0/playlist-hls.m3u8
-#EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" tvg-country="IT" group-title="FHD · Infantil",Cartoon Network
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://185.227.34.104/stream/122/index.m3u8
 #EXTINF:-1 tvg-name="Iunior TV" tvg-logo="https://i.imgur.com/FBOJnfT.png" tvg-country="IT" group-title="FHD · Infantil",Iunior TV
 https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/chunklist_w774879328.m3u8
 #EXTINF:-1 tvg-name="Rai Yoyo" tvg-logo="https://i.imgur.com/9gCxiDy.png" tvg-country="IT" group-title="FHD · Infantil",Rai Yoyo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
 http://95.141.36.9:8080/stream/156/index.m3u8
-#EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" tvg-country="JP" group-title="FHD · Infantil",Cartoon Network
-http://103.255.250.188:5002/cs25.m3u8?channel=zhongying&gid=cs25&token=guoziyun
 #EXTINF:-1 tvg-name="Balapan" tvg-logo="https://i.imgur.com/2o5T0gi.png" tvg-country="KZ" group-title="FHD · Infantil",Balapan
 https://fs.uplink.kz/balapan/mono.m3u8?token=onlinetv
 #EXTINF:-1 tvg-name="Balapan International" tvg-logo="https://otv.server-img.lfstrm.tv/images/channel_logos/logo_638108d82e47243302bc81f1.png" tvg-country="KZ" group-title="FHD · Infantil",Balapan International
@@ -3740,24 +3643,16 @@ https://balapantv-stream.qazcdn.com/balapantv/balapantv/playlist.m3u8
 https://stream8.cinerama.uz/1500/playlist.m3u8
 #EXTINF:-1 tvg-name="NRK Super" tvg-logo="https://i.imgur.com/xIATe2T.png" tvg-country="NO" group-title="FHD · Infantil",NRK Super
 https://nrk-live-no.akamaized.net/nrksuper/muxed.m3u8
-#EXTINF:-1 tvg-name="Nickelodeon" tvg-logo="https://i.imgur.com/E84jnP8.png" tvg-country="NL" group-title="FHD · Infantil",Nickelodeon
-http://185.77.12.179:9981/stream/channelid/788918401?profile=pass
 #EXTINF:-1 tvg-name="Active Family" tvg-logo="https://i.imgur.com/I1wdWAo.png" tvg-country="PL" group-title="FHD · Infantil",Active Family
 http://92.114.85.87:8010/play/a00p/index.m3u8
 #EXTINF:-1 tvg-name="Cartoon Classics" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/3227c06e-333b-4b1b-b657-3e3ab99ebd06-width200-quality90.jpeg" tvg-country="PL" group-title="FHD · Infantil",Cartoon Classics
 https://daiconnect.com/live/hls/tvup/rk-cartoonclassics/578f4b7eb725168349ec0af81b21d388/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" tvg-country="PL" group-title="FHD · Infantil",Disney Channel
-http://185.227.34.179:8080/disney-channel-hd/index.m3u8
 #EXTINF:-1 tvg-name="Teletoon+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/T%C3%A9l%C3%A9toon%2B_Logo.png/960px-T%C3%A9l%C3%A9toon%2B_Logo.png" tvg-country="PL" group-title="FHD · Infantil",Teletoon+
 http://92.114.85.87:8009/play/a006/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" tvg-country="PT" group-title="FHD · Infantil",Disney Channel
-http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
 #EXTINF:-1 tvg-name="Kuriakos Kids" tvg-logo="https://i.imgur.com/SRX6EPY.png" tvg-country="PT" group-title="FHD · Infantil",Kuriakos Kids
 https://w2.manasat.com/kkids/smil:kkids.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="BabyTV" tvg-logo="https://i.imgur.com/4BDJ5FT.png" tvg-country="UK" group-title="FHD · Infantil",BabyTV
 http://38.44.109.41:8003/play/a0eh
-#EXTINF:-1 tvg-name="Cartoonito CEE" tvg-logo="https://i.imgur.com/9MrzLb1.png" tvg-country="UK" group-title="FHD · Infantil",Cartoonito CEE
-http://193.33.39.108:9019/play/a00t
 #EXTINF:-1 tvg-name="CBBC" tvg-logo="https://i.imgur.com/tk8G4CU.png" tvg-country="UK" group-title="FHD · Infantil",CBBC
 https://cdn.stmify.com/bbc/stream/CBBC/hevc_iptv_mse_v0.mpd
 #EXTINF:-1 tvg-name="CBBC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/CBBC_%282023%29.svg/500px-CBBC_%282023%29.svg.png" tvg-country="GB" group-title="FHD · Infantil",CBBC
@@ -3772,15 +3667,10 @@ https://amg02757-amg02757c5-samsung-gb-5765.playouts.now.amagi.tv/playlist/amg02
 https://mumbai-edge.smartplaytv.in/Moonbug/index.m3u8
 #EXTINF:-1 tvg-name="Mr Bean Animated" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/25/Mr._Bean_Animated_Series_stacked_logo.png" tvg-country="UK" group-title="FHD · Infantil",Mr Bean Animated
 https://amg00627-amg00627c23-samsung-au-4110.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Nickelodeon" tvg-logo="https://i.imgur.com/E84jnP8.png" tvg-country="UK" group-title="FHD · Infantil",Nickelodeon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://93.186.201.93/stream/397/index.m3u8
 #EXTINF:-1 tvg-name="Pop Up" tvg-logo="https://i.imgur.com/GdSotmS.png" tvg-country="UK" group-title="FHD · Infantil",Pop Up
 https://amg01753-amg01753c9-samsung-gb-8005.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01753-narrativeuk-popup-samsunggb/playlist.m3u8
 #EXTINF:-1 tvg-name="Tiny Pop" tvg-logo="https://i.imgur.com/zCTf71x.png" tvg-country="UK" group-title="FHD · Infantil",Tiny Pop
 https://amg01753-narrativeuk-amg01753c1-lg-gb-1830.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-tinypop-lggb/playlist.m3u8
-#EXTINF:-1 tvg-name="Nickelodeon" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/60/Nickelodeon_Splat_2023.png/revision/latest?cb=20241009234318" tvg-country="RO" group-title="FHD · Infantil",Nickelodeon
-http://178.76.68.60:7442/64/mpegts
 #EXTINF:-1 tvg-name="Carousel" tvg-logo="https://i.imgur.com/4wmnx1W.png" tvg-country="RU" group-title="FHD · Infantil",Carousel
 http://185.37.150.46/Karusel/index.m3u8
 #EXTINF:-1 tvg-name="Detvora+" tvg-logo="https://interra-cdn-europe1.b-cdn.net/logo-detvora.png" tvg-country="RU" group-title="FHD · Infantil",Detvora+
@@ -3809,22 +3699,15 @@ https://cdn.rostelekom-tv.xyz/live/HSxyMqDlSVR54UTN.m3u8
 http://ott-cdn.ucom.am/s52/04.m3u8
 #EXTINF:-1 tvg-name="Animax Asia" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Animax.png" tvg-country="SG" group-title="FHD · Infantil",Animax Asia
 https://amg02159-kcglobal-amg02159c1-samsung-in-521.playouts.now.amagi.tv/playlist/amg02159-kcglobal-animax-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-name="HBO Family Asia" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/HBO_Family_Asia_logo.svg/960px-HBO_Family_Asia_logo.svg.png" tvg-country="SG" group-title="FHD · Infantil",HBO Family Asia
-http://202.150.165.66:8088/play/103-HBOFamily/index.m3u8
 #EXTINF:-1 tvg-name="Nick Jr. Asia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nick_Jr._logo_2023_(outline).svg/960px-Nick_Jr._logo_2023_(outline).svg.png" tvg-country="SG" group-title="FHD · Infantil",Nick Jr. Asia
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
 http://103.253.74.210:7070/stream/116/index.m3u8
-#EXTINF:-1 tvg-name="Nickelodeon Asia" tvg-logo="https://i.imgur.com/E84jnP8.png" tvg-country="SG" group-title="FHD · Infantil",Nickelodeon Asia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://103.253.74.210:7070/stream/117/index.m3u8
 #EXTINF:-1 tvg-name="ZooMoo" tvg-logo="https://i.imgur.com/ciTJrnl.png" tvg-country="SG" group-title="FHD · Infantil",ZooMoo
 https://zoomoo-samsungau.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Al-Souriya TV" tvg-logo="https://i.imgur.com/8FILgXT.jpeg" tvg-country="SY" group-title="FHD · Infantil",Al-Souriya TV
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-souriya-tv/e3150760fa5fd62776225433b8c3d406/index.m3u8
 #EXTINF:-1 tvg-name="TV Bahoriston" tvg-logo="https://i.imgur.com/Dacai5z.png" tvg-country="TJ" group-title="FHD · Infantil",TV Bahoriston
 https://live.teleradiocom.tj/3/3m.m3u8
-#EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" tvg-country="TR" group-title="FHD · Infantil",Cartoon Network
-http://176.65.153.40:6002/play/a013/index.m3u8
 #EXTINF:-1 tvg-name="Disney Jr." tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" tvg-country="TR" group-title="FHD · Infantil",Disney Jr.
 https://saran-live.ercdn.net/disneyjunior/index.m3u8
 #EXTINF:-1 tvg-name="TRT Cocuk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TRT_%C3%87ocuk_logo_%282021%29.svg/960px-TRT_%C3%87ocuk_logo_%282021%29.svg.png" tvg-country="TR" group-title="FHD · Infantil",TRT Cocuk
@@ -3848,9 +3731,6 @@ https://stream8.cinerama.uz/1017/tracks-v1a1/playlist.m3u8
 https://freem3u.xyz/api/live/play.m3u8?vid=178
 #EXTINF:-1 tvg-name="AXN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-country="ES" group-title="FHD · Cine",AXN
 https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fgeil.to%2Flive%2Fplay%2F4238619703
-#EXTINF:-1 tvg-name="AXN CEE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-country="ES" group-title="FHD · Cine",AXN CEE
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.15.50/live/axn_hun/index.m3u8
 #EXTINF:-1 tvg-name="Cine Friki" tvg-logo="https://i.imgur.com/b3Ospym.png" tvg-country="ES" group-title="FHD · Cine",Cine Friki
 https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8
 #EXTINF:-1 tvg-name="Cine Western" tvg-logo="https://i.imgur.com/2UROzSc.png" tvg-country="ES" group-title="FHD · Cine",Cine Western
@@ -3907,9 +3787,6 @@ https://oly-ftvpc.otteravision.com/oly/ftvpc/ftvpc.m3u8
 https://cnn.hostlagarto.com/megacinetv/playlist.m3u8
 #EXTINF:-1 tvg-name="RTSH Shqip" tvg-logo="https://i.imgur.com/88kRsW3.png" tvg-country="AL" group-title="FHD · Cine",RTSH Shqip
 http://178.33.11.6:8696/live/rtshshqip/playlist.m3u8
-#EXTINF:-1 tvg-name="AXN Black" tvg-logo="https://i.imgur.com/Peo1QiZ.png" tvg-country="DE" group-title="FHD · Cine",AXN Black
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://46.244.99.71:8181/stream/35/index.m3u8
 #EXTINF:-1 tvg-name="FilmGold Germany" tvg-country="DE" group-title="FHD · Cine",FilmGold Germany
 https://mainstreamfilmgold-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="MyTime Movie Network Germany" tvg-country="DE" group-title="FHD · Cine",MyTime Movie Network Germany
@@ -3970,16 +3847,10 @@ http://92.36.202.5:10001/play/a01s
 http://92.36.202.5:10001/play/a01o
 #EXTINF:-1 tvg-name="50 Cent Action" tvg-logo="https://provider-static.plex.tv/epg/cms/production/bcfb9977-809f-49ae-acc7-430f2c6ffb26/50CentAction_Logo_1500x1000_DarkBG_-_Chris_Connors.png" tvg-country="US" group-title="FHD · Cine",50 Cent Action
 https://jmp2.uk/plu-68487fb3f212bedacf5a53e3.m3u8
-#EXTINF:-1 tvg-name="AMC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" tvg-country="US" group-title="FHD · Cine",AMC
-http://41.205.93.154/AMC/index.m3u8
-#EXTINF:-1 tvg-name="AMC Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" tvg-country="US" group-title="FHD · Cine",AMC Latin America
-http://15.204.246.24:8080/AMCHD/index.m3u8
 #EXTINF:-1 tvg-name="AMC Thrillers" tvg-logo="https://i.imgur.com/EVD0aIt.png" tvg-country="US" group-title="FHD · Cine",AMC Thrillers
 https://amc-rushbyamc-1-us.vizio.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="AVI Rewind" tvg-logo="https://zplay.cl/LogosV2/AVIREWINDS_NEW.png" tvg-country="US" group-title="FHD · Cine",AVI Rewind
 http://45.70.201.81:8000/play/a010/index.m3u8
-#EXTINF:-1 tvg-name="AXN Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-country="US" group-title="FHD · Cine",AXN Latin America
-http://15.204.246.24:8080/AXNHD/index.m3u8
 #EXTINF:-1 tvg-name="Charge!" tvg-logo="https://i.imgur.com/1rxmu2u.png" tvg-country="US" group-title="FHD · Cine",Charge!
 https://fast-channels.sinclairstoryline.com/CHARGE/index.m3u8
 #EXTINF:-1 tvg-name="Cine Estrella" tvg-country="US" group-title="FHD · Cine",Cine Estrella
@@ -4018,10 +3889,6 @@ https://ads.its-newid.net/api/manifest.m3u8?ads.service_id=US200001137&channel_i
 https://d6dg3ebeih71x.cloudfront.net/Gravitas_Movies.m3u8
 #EXTINF:-1 tvg-name="Hallmark Movies & More" tvg-logo="https://provider-static.plex.tv/epg/cms/production/29af70d1-d3ba-4a16-bc4d-bd99e7e7def4/hallmark-movies-and-more_color.png" tvg-country="US" group-title="FHD · Cine",Hallmark Movies & More
 https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991709
-#EXTINF:-1 tvg-name="HBO 2 Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png" tvg-country="US" group-title="FHD · Cine",HBO 2 Latin America
-http://45.171.64.30:6060/play/a00i/index.m3u8
-#EXTINF:-1 tvg-name="HBO Xtreme Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/HBO_Xtreme.svg/960px-HBO_Xtreme.svg.png" tvg-country="US" group-title="FHD · Cine",HBO Xtreme Latin America
-http://181.78.61.202:8000/play/a02a
 #EXTINF:-1 tvg-name="HerSphere" tvg-logo="https://provider-static.plex.tv/epg/cms/production/3ed082aa-5659-4fd0-8775-22613a65f924/HerSphere_1500x1000_Logo_Dark.png" tvg-country="US" group-title="FHD · Cine",HerSphere
 https://amg00353-lionsgatestudios-amg00353c3-vizio-us-802.playouts.now.amagi.tv/playlist/amg00353-lionsgatetvfast-hersphere-vizious/playlist.m3u8
 #EXTINF:-1 tvg-name="ICC plus" tvg-country="US" group-title="FHD · Cine",ICC plus
@@ -4054,8 +3921,6 @@ https://ads.its-newid.net/api/manifest.m3u8?ads.service_id=GB1700007PK&channel_i
 https://jmp2.uk/plu-66c638726838ee00085ac20d.m3u8
 #EXTINF:-1 tvg-name="OUTflix Movies" tvg-country="US" group-title="FHD · Cine",OUTflix Movies
 https://dg37ei3o66x3s.cloudfront.net/OutTV_US.m3u8
-#EXTINF:-1 tvg-name="Paramount Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png" tvg-country="US" group-title="FHD · Cine",Paramount Network
-http://23.237.104.106:8080/USA_PARAMOUNT_NETWORK/index.m3u8
 #EXTINF:-1 tvg-name="Pure Flix TV" tvg-logo="https://www.tablotv.com/wp-content/uploads/2025/05/PureFlixTV_black.png" tvg-country="US" group-title="FHD · Cine",Pure Flix TV
 https://amg01884-gac-amg01884c1-vizio-us-5495.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Scares by Shudder" tvg-logo="https://www.bgr.com/bgr/entertainment/freevee-added-5-spooky-new-live-channels-just-in-time-for-halloween/Scares-by-Shudder.jpg" tvg-country="US" group-title="FHD · Cine",Scares by Shudder
@@ -4196,24 +4061,6 @@ http://team-tv.co:81/raimovie/index.m3u8
 https://asian-cinema-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6431/master.m3u8
 #EXTINF:-1 tvg-name="Rakuten TV Romance Movies Italy" tvg-country="IT" group-title="FHD · Cine",Rakuten TV Romance Movies Italy
 https://3e0f2491d8634a58967529df3f424c0d.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6193/master.m3u8
-#EXTINF:-1 tvg-name="Sky Cinema Action" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sky_Cinema_Action_-_Logo_2021.svg/960px-Sky_Cinema_Action_-_Logo_2021.svg.png" tvg-country="IT" group-title="FHD · Cine",Sky Cinema Action
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://109.169.87.42:8080/stream/26/index.m3u8
-#EXTINF:-1 tvg-name="Sky Cinema Collection" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Sky_Cinema_Collection_-_Logo_2021.svg/960px-Sky_Cinema_Collection_-_Logo_2021.svg.png" tvg-country="IT" group-title="FHD · Cine",Sky Cinema Collection
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://109.169.87.42:8080/stream/18/index.m3u8
-#EXTINF:-1 tvg-name="Sky Cinema Due" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sky_Cinema_Due_-_Logo_2021.svg/960px-Sky_Cinema_Due_-_Logo_2021.svg.png" tvg-country="IT" group-title="FHD · Cine",Sky Cinema Due
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://109.169.87.42:8080/stream/10/index.m3u8
-#EXTINF:-1 tvg-name="Sky Cinema Family" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sky_Cinema_Family_-_Logo_2021.svg/960px-Sky_Cinema_Family_-_Logo_2021.svg.png" tvg-country="IT" group-title="FHD · Cine",Sky Cinema Family
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://109.169.87.42:8080/stream/22/index.m3u8
-#EXTINF:-1 tvg-name="Sky Cinema Suspense" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sky_Cinema_Suspense_-_Logo_2021.svg/960px-Sky_Cinema_Suspense_-_Logo_2021.svg.png" tvg-country="IT" group-title="FHD · Cine",Sky Cinema Suspense
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://109.169.87.42:8080/stream/30/index.m3u8
-#EXTINF:-1 tvg-name="Sky Cinema Uno" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Cinema_Uno_-_Logo_2021.svg/960px-Sky_Cinema_Uno_-_Logo_2021.svg.png" tvg-country="IT" group-title="FHD · Cine",Sky Cinema Uno
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://109.169.87.42:8080/stream/2/index.m3u8
 #EXTINF:-1 tvg-name="Twentyseven" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twentyseven_logo.svg/960px-Twentyseven_logo.svg.png" tvg-country="IT" group-title="FHD · Cine",Twentyseven
 #EXTVLCOPT:http-user-agent=HbbTV/1.6.1
 https://live03-col.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/manifest.mpd
@@ -4235,30 +4082,21 @@ https://ktvhdsg.ekantipur.com:8443/ktvmax2025/match2/playlist.m3u8
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungnz/playlist.m3u8
 #EXTINF:-1 tvg-name="Surf Cinema" tvg-country="NZ" group-title="FHD · Cine",Surf Cinema
 https://amg13231-actve-amg13231c4-samsung-nz-3093.playouts.now.amagi.tv/playlist/amg13231-actvefast-surfer-samsungnz/playlist.m3u8
-#EXTINF:-1 tvg-name="AXN Poland" tvg-logo="https://i.imgur.com/i5wOhkf.png" tvg-country="PL" group-title="FHD · Cine",AXN Poland
-http://92.114.85.87:8015/play/a00f/index.m3u8
 #EXTINF:-1 tvg-name="FILMBOX+ Emotion" tvg-logo="https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bemotion.png" tvg-country="PL" group-title="FHD · Cine",FILMBOX+ Emotion
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 https://webtvstream.bhtelecom.ba/filmbox_extra.m3u8
 #EXTINF:-1 tvg-name="FILMBOX+ Festival" tvg-logo="https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bfestival.png" tvg-country="PL" group-title="FHD · Cine",FILMBOX+ Festival
 https://dash3.antik.sk/live/test_filmbox_arthouse_atk_1200/playlist.m3u8
-#EXTINF:-1 tvg-name="HBO 2" tvg-logo="https://i.imgur.com/2e3muOJ.png" tvg-country="PL" group-title="FHD · Cine",HBO 2
-http://185.227.34.179:8080/hbo-2-hd/index.m3u8
 #EXTINF:-1 tvg-name="Paramount Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png" tvg-country="PL" group-title="FHD · Cine",Paramount Network
 https://guard.sekobes.workers.dev/?url=https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fgeil.to%2Flive%2Fplay%2F3390498693
 #EXTINF:-1 tvg-name="Polsat Film" tvg-logo="https://i.imgur.com/wGH6shZ.png" tvg-country="PL" group-title="FHD · Cine",Polsat Film
 http://92.63.196.180:8080/live/74173747597177/7vfxky4rjx3j/10208.m3u8?token=Q0FaWEpZFFsXAwNWUFMEBwJXAwMDVlpTBgVTVwEHAQNeWgoACVVXVQAVGEZGFUdTUl9qWwIVAlBSAQBdGENHQ10RbVBdEwxDAgANUAJVFxoRRlxfAxUCUU4RQA1QQwheTQ9eFRtUThVQRVoFWT5RU0VbVldEDVYUDl8cRlsPbVRdDlNXXRMMQwQVGEZcEkUUCVxAXgobGgMLR0IFQAQQClYWXlUVE1UOQFlAFkxDDxRjfhceRFJAFQddQw1bDxAKGg4BTAETGkNcRGsWUBJBRFZTWFcUFQJDUhEcRlkASm9bDFxXXFJCCFpZR0YPQwQUHxBYXQheTA4QbEANUEMIXk0PXkQ=
 #EXTINF:-1 tvg-name="Top Movies Polska" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/39a979b9-49df-48c1-8c1c-5763828b60aa-width200-quality90.png" tvg-country="PL" group-title="FHD · Cine",Top Movies Polska
 https://top-movies-rakuten-tv-pl.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6059/master.m3u8
-#EXTINF:-1 tvg-name="AXN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-country="PT" group-title="FHD · Cine",AXN
-http://188.115.15.121:8000/play/a02z
 #EXTINF:-1 tvg-name="Kuriakos Cine" tvg-logo="https://i.imgur.com/CZViCwB.jpg" tvg-country="PT" group-title="FHD · Cine",Kuriakos Cine
 https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Mei Ah Movie Channel" tvg-logo="https://i.imgur.com/laGiFM1.png" tvg-country="HK" group-title="FHD · Cine",Mei Ah Movie Channel
 http://103.172.187.30:12000/stream/mytv/null-2/master.m3u8
-#EXTINF:-1 tvg-name="AMC Europe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" tvg-country="UK" group-title="FHD · Cine",AMC Europe
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://212.70.131.37:8000/play/a05k
 #EXTINF:-1 tvg-name="GREAT! movies" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3709.png" tvg-country="UK" group-title="FHD · Cine",GREAT! movies
 https://amg01753-narrativeuk-amg01753c3-lg-gb-1833.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatmovies-lggb/playlist.m3u8
 #EXTINF:-1 tvg-name="GREAT! romance" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3643.png" tvg-country="UK" group-title="FHD · Cine",GREAT! romance
@@ -4385,16 +4223,8 @@ https://stream8.cinerama.uz/1058/tracks-v1a1/mono.m3u8
 http://46.53.200.153:7777/play/Viju_Megahit_HD/index.m3u8
 #EXTINF:-1 tvg-name="viju+ Premiere" tvg-logo="https://i.imgur.com/klRvhR5.png" tvg-country="RU" group-title="FHD · Cine",viju+ Premiere
 http://46.53.200.153:7777/play/Viju_Premiere/index.m3u8
-#EXTINF:-1 tvg-name="AXN Asia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d0/AXN_Logo_2015.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" tvg-country="SG" group-title="FHD · Cine",AXN Asia
-http://202.150.165.66:8088/play/301-AXN/index.m3u8
 #EXTINF:-1 tvg-name="Cinemax Asia" tvg-logo="https://freem3u.xyz/static/images/global/cinemax.png" tvg-country="SG" group-title="FHD · Cine",Cinemax Asia
 https://tinyurl.com/44efw2rx
-#EXTINF:-1 tvg-name="HBO Asia" tvg-logo="https://freem3u.xyz/static/images/global/hbo.png" tvg-country="SG" group-title="FHD · Cine",HBO Asia
-http://202.150.165.66:8088/play/100-HBO/index.m3u8
-#EXTINF:-1 tvg-name="HBO Hits Asia" tvg-logo="https://i.ibb.co/Mkzs7g3J/IMG-2195.png" tvg-country="SG" group-title="FHD · Cine",HBO Hits Asia
-http://202.150.165.66:8088/play/102-HBOHits/index.m3u8
-#EXTINF:-1 tvg-name="HBO Signature Asia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/HBO_Signature_Asia.png/960px-HBO_Signature_Asia.png" tvg-country="SG" group-title="FHD · Cine",HBO Signature Asia
-http://202.150.165.66:8088/play/101-HBOSignature/index.m3u8
 #EXTINF:-1 tvg-name="KCM" tvg-logo="https://img1.wsimg.com/isteam/ip/31e9f2fb-aa91-4437-b7ce-f34ad0f7e457/blob-c09ea31.png" tvg-country="SG" group-title="FHD · Cine",KCM
 https://amg02159-amg02159c7-samsung-in-4001.playouts.now.amagi.tv/playlist/amg02159-kcglobal-kcm-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="4ever Cinema" tvg-logo="https://i.imgur.com/vFOgVbG.png" tvg-country="UA" group-title="FHD · Cine",4ever Cinema
@@ -4443,17 +4273,12 @@ https://dtsszjrztq9ti.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a
 https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_576.m3u8
 #EXTINF:-1 tvg-name="Europa Europa" tvg-logo="https://i.imgur.com/w5SOfyJ.png" tvg-country="AR" group-title="FHD · Series",Europa Europa
 http://38.252.238.18:8000/play/a01d/index.m3u8
-#EXTINF:-1 tvg-name="Mega Ficcion" tvg-logo="https://i.imgur.com/aQdhJie.png" tvg-country="CL" group-title="FHD · Series",Mega Ficcion
-http://15.204.196.147:22880/MEGAFICCION-MEGAMEDIA-EE.UU-PROVEEDOR/index.m3u8
 #EXTINF:-1 tvg-name="Tlnovelas Latin America" tvg-logo="https://i.imgur.com/Rvm38Mu.png" tvg-country="MX" group-title="FHD · Series",Tlnovelas Latin America
 http://138.121.15.230:9002/TELENOVELAS/index.m3u8
 #EXTINF:-1 tvg-name="Tlnovelas Mexico" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/62/Tlnovelas_logo_2021.png" tvg-country="MX" group-title="FHD · Series",Tlnovelas Mexico
 http://167.249.23.102:8000/play/a0g8/index.m3u8
 #EXTINF:-1 tvg-name="Latina Clasicos" tvg-logo="https://i.imgur.com/q0dAWyj.png" tvg-country="PE" group-title="FHD · Series",Latina Clasicos
 http://45.171.108.253:8888/LATINA/index.m3u8
-#EXTINF:-1 tvg-name="AXN White" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/68/AXN_White_logo_%282015%29.svg" tvg-country="DE" group-title="FHD · Series",AXN White
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://46.244.99.71:8181/stream/50/index.m3u8
 #EXTINF:-1 tvg-name="Rakuten TV Crime Series Germany" tvg-country="DE" group-title="FHD · Series",Rakuten TV Crime Series Germany
 https://b6244e915ee04a5aa758e863a55a6a3d.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6217/master.m3u8
 #EXTINF:-1 tvg-name="Bab Al Hara" tvg-logo="https://i.imgur.com/QtlnZbq.png" tvg-country="SA" group-title="FHD · Series",Bab Al Hara
@@ -4484,8 +4309,6 @@ https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6070
 https://jmp2.uk/plu-5e82530945600e0007ca076c.m3u8
 #EXTINF:-1 tvg-name="All Weddings WE tv" tvg-logo="https://i.imgur.com/OjLCew5.png" tvg-country="US" group-title="FHD · Series",All Weddings WE tv
 https://pb-amiq9wz02dhco.akamaized.net/playlist.m3u8
-#EXTINF:-1 tvg-name="AMC Series Latin America" tvg-logo="https://amc-series.s3.amazonaws.com/menu/hbfen1Gom0_k1cyqi7rw4-amc-series-train-w.png" tvg-country="US" group-title="FHD · Series",AMC Series Latin America
-http://45.171.64.30:6060/play/a005/index.m3u8
 #EXTINF:-1 tvg-name="American Crimes" tvg-country="US" group-title="FHD · Series",American Crimes
 https://jmp2.uk/plu-65492fc7056b9700088560b5.m3u8
 #EXTINF:-1 tvg-name="Antiques Roadshow UK" tvg-logo="https://i.imgur.com/rKWLv48.png" tvg-country="US" group-title="FHD · Series",Antiques Roadshow UK
@@ -4614,10 +4437,6 @@ https://jmp2.uk/plu-62fa8176b9884200074ef5ae.m3u8
 https://jmp2.uk/plu-5d51e791b7dba3b2ae990ab2.m3u8
 #EXTINF:-1 tvg-name="Tiny House Nation" tvg-logo="https://i.imgur.com/ai1P06C.png" tvg-country="US" group-title="FHD · Series",Tiny House Nation
 https://jmp2.uk/plu-6540ff4f7312a40008297b59.m3u8
-#EXTINF:-1 tvg-name="TNT Novelas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png" tvg-country="US" group-title="FHD · Series",TNT Novelas
-http://158.172.155.130:8000/play/a0at/index.m3u8
-#EXTINF:-1 tvg-name="TNT Series Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/75/TNT_Series_Logo_2016.png" tvg-country="US" group-title="FHD · Series",TNT Series Latin America
-http://168.196.127.137:6001/play/a095/index.m3u8
 #EXTINF:-1 tvg-name="Todo Novelas Más Pasiones" tvg-country="US" group-title="FHD · Series",Todo Novelas Más Pasiones
 https://448a93b8.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/Vml6aW9fVG9kb05vdmVsYXNfSExT/playlist.m3u8
 #EXTINF:-1 tvg-name="True Crime Network" tvg-logo="https://i.imgur.com/VdRA7fG.png" tvg-country="US" group-title="FHD · Series",True Crime Network
@@ -5903,8 +5722,6 @@ https://stream.smotrim.ru/hls2/fasttv09/playlist_3.m3u8
 https://bl.rutube.ru/livestream/310744c10a5809da38aa445c952976da/index.m3u8?e=2066519758&s=dmUf6BUQzDBTwtQOseAfog&scheme=https
 #EXTINF:-1 tvg-name="Svoyo TV" tvg-logo="https://i.imgur.com/3cP2fmX.png" tvg-country="RU" group-title="FHD · Entretenimiento",Svoyo TV
 https://svoetv.mediacdn.ru/cdn/svoetv/playlist.m3u8
-#EXTINF:-1 tvg-name="TNT" tvg-logo="https://i.ibb.co/HDmdRFR1/N-Baltic-2025.webp" tvg-country="RU" group-title="FHD · Entretenimiento",TNT
-http://31.148.5.241/kanal_19/index.m3u8
 #EXTINF:-1 tvg-name="TV-3" tvg-logo="https://i.imgur.com/JLAvq8O.png" tvg-country="RU" group-title="FHD · Entretenimiento",TV-3
 http://31.148.5.241/kanal_15/index.m3u8
 #EXTINF:-1 tvg-name="Tvoe TV" tvg-logo="https://i.imgur.com/kKAM7dP.png" tvg-country="RU" group-title="FHD · Entretenimiento",Tvoe TV
@@ -6036,14 +5853,10 @@ https://freem3u.xyz/api/live/play.m3u8?vid=177
 https://freem3u.xyz/api/live/play.m3u8?vid=180
 #EXTINF:-1 tvg-name="Quang Ngai TV" tvg-logo="https://i.imgur.com/QckiN3H.png" tvg-country="VN" group-title="FHD · Entretenimiento",Quang Ngai TV
 https://live.mediatech.vn/live/285aaa79b4b265a457d81bb72bc32e2c114/chunklist.m3u8
-#EXTINF:-1 tvg-name="Comedy Central" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png" tvg-country="ES" group-title="FHD · Humor",Comedy Central
-http://90.170.214.40:9700/stream/avatel/comedycentral/master.m3u8
 #EXTINF:-1 tvg-name="Distrito Comedia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png" tvg-country="MX" group-title="FHD · Humor",Distrito Comedia
 http://15.204.142.109:22880/TELEVISA-PROVEEDOR-DISTRITO-COMEDIA/index.m3u8
 #EXTINF:-1 tvg-name="Comedy Central" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png" tvg-country="DE" group-title="FHD · Humor",Comedy Central
 https://ma.anixa.tv/clips/stream/comedy_central/playlist.php
-#EXTINF:-1 tvg-name="Nick/Comedy Central +1" tvg-logo="https://i.imgur.com/lf34V3Y.png" tvg-country="DE" group-title="FHD · Humor",Nick/Comedy Central +1
-http://90.183.52.46:4000/play/a046/index.m3u8
 #EXTINF:-1 tvg-name="Rotana Comedy" tvg-logo="https://i.imgur.com/IlT8U6S.png" tvg-country="SA" group-title="FHD · Humor",Rotana Comedy
 #EXTVLCOPT:http-referrer=https://rotana.net/
 https://rotana.hibridcdn.net/rotananet/comedy_net-7Y83PP5adWixDF93/playlist.m3u8
@@ -6057,8 +5870,6 @@ https://linear-12.frequency.stream/dist/plex/12/hls/master/playlist.m3u8
 https://amg00353-lionsgatestudio-angermgmt-samsungau-o9jg9.amagi.tv/playlist/amg00353-lionsgatestudio-angermgmt-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-name="BET x Tyler Perry Comedy" tvg-country="US" group-title="FHD · Humor",BET x Tyler Perry Comedy
 https://jmp2.uk/plu-666b265722acab000885c6aa.m3u8
-#EXTINF:-1 tvg-name="Comedy Central Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png" tvg-country="US" group-title="FHD · Humor",Comedy Central Latin America
-http://190.93.224.42/COMEDY-CENTRAL/index.m3u8
 #EXTINF:-1 tvg-name="Comedy Dynamics" tvg-logo="https://i.imgur.com/1lEvUOa.png" tvg-country="US" group-title="FHD · Humor",Comedy Dynamics
 https://comedydynamics-plex-ingest.cinedigm.com/playlist.m3u8
 #EXTINF:-1 tvg-name="Comedy Tadka" tvg-country="US" group-title="FHD · Humor",Comedy Tadka
@@ -6067,8 +5878,6 @@ https://streams2.sofast.tv/WiseM3U8_27/sofast/cleanhls/master.m3u8
 https://amg00346-amg00346c25-amgplt0022.playout.now3.amagi.tv/playlist/amg00346-amg00346c25-amgplt0022/playlist.m3u8
 #EXTINF:-1 tvg-name="Ghosts" tvg-country="US" group-title="FHD · Humor",Ghosts
 https://amg00353-amg00353c96-amgplt0022.playout.now3.amagi.tv/ts-us-w2-n2/playlist/amg00353-amg00353c96-amgplt0022/playlist.m3u8
-#EXTINF:-1 tvg-name="HBO Pop Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" tvg-country="US" group-title="FHD · Humor",HBO Pop Latin America
-http://15.204.246.24:8080/HBOPOPHD/index.m3u8
 #EXTINF:-1 tvg-name="Humor Mill" tvg-logo="https://i.imgur.com/e5W91v2.png" tvg-country="US" group-title="FHD · Humor",Humor Mill
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
 https://damkf751d85s1.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HumorMill-DistroTV/152.m3u8?ads.vf=3I7CXmxz7vK
@@ -7135,8 +6944,6 @@ https://live.canthotv.vn/cs2/live.stream/playlist.m3u8
 http://190.128.214.97:64333/play/a057/index.m3u8
 #EXTINF:-1 tvg-name="13C" tvg-logo="https://i.imgur.com/Zfe2f5j.png" tvg-country="CL" group-title="FHD · Cultura",13C
 https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8
-#EXTINF:-1 tvg-name="Mega 2" tvg-logo="https://i.imgur.com/c1ME00r.png" tvg-country="CL" group-title="FHD · Cultura",Mega 2
-http://15.204.196.147:22880/MEGA2-MEGAMEDIA-EE.UU-PROVEEDOR/index.m3u8
 #EXTINF:-1 tvg-name="Radio Suyai TV" tvg-logo="https://stream-tools.zenomedia.com/content/stations/883465cc-a2ee-418a-972d-2c937707687d/image/?keep=w&lu=1775615385000&resize=350x350" tvg-country="CL" group-title="FHD · Cultura",Radio Suyai TV
 https://cl-2.backend.energeek.cl/RadioSuyai-Neo/index.m3u8
 #EXTINF:-1 tvg-name="Suyai TV" tvg-logo="https://suyaitv.cl/wp-content/uploads/2024/10/ico_Suyai_TV_512.png" tvg-country="CL" group-title="FHD · Cultura",Suyai TV
@@ -9410,8 +9217,6 @@ https://d1v8bveimipl8w.cloudfront.net/This_Old_House_Makers.m3u8
 https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=11083
 #EXTINF:-1 tvg-name="TNA Wrestling" tvg-country="US" group-title="FHD · Otros",TNA Wrestling
 https://dpltey7dr5q2g.cloudfront.net/TNA_Wrestling.m3u8
-#EXTINF:-1 tvg-name="TNT Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/960px-TNT_Logo_2016.svg.png" tvg-country="US" group-title="FHD · Otros",TNT Latin America
-http://45.171.64.30:6060/play/a03i/index.m3u8
 #EXTINF:-1 tvg-name="Tony Robbins" tvg-country="US" group-title="FHD · Otros",Tony Robbins
 https://pb-qon3pgefgm0aj.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-name="TRACE UK" tvg-country="US" group-title="FHD · Otros",TRACE UK
@@ -9701,8 +9506,6 @@ https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01415-waterbearnetwor-waterbear-sam
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00353-lionsgatestudio-wickedtunanl-samsungnl/playlist.m3u8
 #EXTINF:-1 tvg-name="WOS" tvg-logo="https://i.imgur.com/L7MUBIo.png" tvg-country="NL" group-title="FHD · Otros",WOS
 https://ms2.mx-cd.net/dtv-11/99-660295/WOS.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="HBO 3 (Poland) (1080p)" tvg-logo="https://i.imgur.com/3QIHh2V.png" tvg-country="PL" group-title="FHD · Otros",HBO 3 (Poland) (1080p)
-http://185.227.34.179:8080/hbo-3-hd/index.m3u8
 #EXTINF:-1 tvg-name="Polsat Rodzina" tvg-logo="https://i.imgur.com/IS0AW48.png" tvg-country="PL" group-title="FHD · Otros",Polsat Rodzina
 http://57.128.210.196:8080/197/index.m3u8
 #EXTINF:-1 tvg-name="Puls 2" tvg-logo="https://i.imgur.com/EOnzPiZ.png" tvg-country="PL" group-title="FHD · Otros",Puls 2

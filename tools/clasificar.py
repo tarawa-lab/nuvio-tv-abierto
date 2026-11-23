@@ -98,6 +98,11 @@ for inf, exl, u in leer('playlist.m3u8'):
     full_id = attr(inf, 'tvg-id'); fid = full_id.split('@')[1].upper() if '@' in full_id else ''
     hd = res(nombre(inf)) >= 720 or fid in ('HD','FHD','UHD','4K') or feed_hd.get(tid, False) or nombre_hd(nombre(inf))
     add(re.sub(r'\s*[ⒼⓈⓎ]+\s*$', '', nombre(inf)), u, attr(inf, 'tvg-logo'), cc, g, es, exl, hd, None, res(nombre(inf)) >= 1080 or fid in ('FHD','UHD','4K') or feed_res.get(tid, 0) >= 1080, r=max(res(nombre(inf)), feed_res.get(tid, 0)), prio=2)
+# 2a) Fuera retransmisiones no oficiales de canales comerciales o de pago (servidores con IP pelada).
+MARCAS = r'antena ?3|la ?sexta|neox|\bnova\b|\bmega\b|atreseries|cuatro|telecinco|\bfdf\b|boing|divinity|energy|be ?mad|\baxn\b|dmax|comedy central|nickelodeon|disney|cartoon|eurosport|dazn|movistar|\bm\+|hbo|\bamc\b|syfy|tnt|cosmo|calle 13|paramount|sky |espn|fox|clan|real madrid'
+_n = len(canales)
+canales = [c for c in canales if not (re.match(r'https?://\d+\.\d+\.\d+\.\d+', c['url']) and re.search(MARCAS, c['name'].lower()))]
+print('retransmisiones no oficiales quitadas:', _n - len(canales))
 # 2b) Quitar repetidos: mismo canal (nombre normalizado + país) en varias fuentes o con varios enlaces.
 def clave(c):
     n = unicodedata.normalize('NFKD', c['name']).encode('ascii', 'ignore').decode().lower()
