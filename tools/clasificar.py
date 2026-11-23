@@ -29,11 +29,11 @@ def genero_texto(*t):
     return 'Otros'
 def esc(s): return (s or '').replace('"', "'")
 canales = []; vistos = set()
-def add(name, url, logo, cc, genero, espanol, extra_lines=(), hd=False, uhd=None, fhd_extra=False):
+def add(name, url, logo, cc, genero, espanol, extra_lines=(), hd=False, uhd=None, fhd_extra=False, r=0, prio=5):
     if not url or url in vistos: return
     if uhd is None: uhd = bool(re.search(r'\b(4K|UHD|2160p)\b', name or '', re.I))
     fhd = uhd or fhd_extra or bool(re.search(r'\b(FHD|FullHD|Full HD|1080[pi])\b', name or '', re.I))
-    vistos.add(url); canales.append(dict(name=name, url=url, logo=logo, cc=cc, genero=genero, es=espanol, extra=list(extra_lines), hd=hd, uhd=uhd, fhd=fhd))
+    vistos.add(url); canales.append(dict(name=name, url=url, logo=logo, cc=cc, genero=genero, es=espanol, extra=list(extra_lines), hd=hd, uhd=uhd, fhd=fhd, r=r, prio=prio))
 def res(t):
     m = re.findall(r'(\d{3,4})[pi]\b', t or ''); return max(map(int, m)) if m else 0
 feed_hd = {}; feed_res = {}
@@ -59,7 +59,7 @@ for i in idx:
     meta = json.load(open(os.path.join(root, 'meta/tv', i['id'] + '.json'), encoding='utf-8'))['meta']
     r0 = max([res(x.get('title','')) for x in st] + [0])
     hd = r0 >= 720 or (r0 == 0 and (feed_hd.get(cid, False) or nombre_hd(i['name'])))
-    add(i['name'], s['url'], meta.get('poster') or meta.get('logo'), i['cc'], g, es, ex, hd, r0 >= 2160 or bool(re.search(r'\b(4K|UHD)\b', i['name'], re.I)), r0 >= 1080 or (r0 == 0 and feed_res.get(cid, 0) >= 1080))
+    add(i['name'], s['url'], meta.get('poster') or meta.get('logo'), i['cc'], g, es, ex, hd, r0 >= 2160 or bool(re.search(r'\b(4K|UHD)\b', i['name'], re.I)), r0 >= 1080 or (r0 == 0 and feed_res.get(cid, 0) >= 1080), r=r0 or feed_res.get(cid, 0), prio=0 if i.get('tdt') else 1)
 # 2) Agregadores
 def leer(fn):
     out = []; cur = None; exl = []
@@ -79,14 +79,14 @@ CAT_ES = {'anime':'Infantil','cine':'Cine','comedia':'Humor','crimen y misterio'
 for fn in ['plutotv_es.m3u','samsungtvplus_es.m3u','plex_es.m3u']:
     for inf, exl, u in leer(fn):
         g = CAT_ES.get(attr(inf, 'group-title').lower()) or genero_texto(nombre(inf))
-        add(nombre(inf), u, attr(inf, 'tvg-logo'), 'ES', g, True, exl, True)
+        add(nombre(inf), u, attr(inf, 'tvg-logo'), 'ES', g, True, exl, True, r=720, prio=3)
 for fn in ['plutotv_all.m3u','samsungtvplus_all.m3u','plex_all.m3u','roku_all.m3u']:
     for inf, exl, u in leer(fn):
         grp = attr(inf, 'group-title'); cc = EN.get(grp.lower(), 'US' if fn.startswith('roku') else '')
         n = nombre(inf)
         es = cc in HISP or bool(re.search(r'español|espanol|latino|en espa', n.lower()))
         g = CAT_ES.get(grp.lower()) or genero_texto(n, grp if fn.startswith('roku') else '')
-        add(n, u, attr(inf, 'tvg-logo'), cc, g, es, exl, True)
+        add(n, u, attr(inf, 'tvg-logo'), cc, g, es, exl, True, r=720, prio=3)
 for inf, exl, u in leer('playlist.m3u8'):
     if attr(inf, 'group-title').startswith('VOD'): continue
     tid = attr(inf, 'tvg-id').split('@')[0]; c = chan.get(tid)
@@ -97,7 +97,27 @@ for inf, exl, u in leer('playlist.m3u8'):
     es = ('spa' in lg.split(';')) if lg else (cc in HISP)
     full_id = attr(inf, 'tvg-id'); fid = full_id.split('@')[1].upper() if '@' in full_id else ''
     hd = res(nombre(inf)) >= 720 or fid in ('HD','FHD','UHD','4K') or feed_hd.get(tid, False) or nombre_hd(nombre(inf))
-    add(re.sub(r'\s*[ⒼⓈⓎ]+\s*$', '', nombre(inf)), u, attr(inf, 'tvg-logo'), cc, g, es, exl, hd, None, res(nombre(inf)) >= 1080 or fid in ('FHD','UHD','4K') or feed_res.get(tid, 0) >= 1080)
+    add(re.sub(r'\s*[ⒼⓈⓎ]+\s*$', '', nombre(inf)), u, attr(inf, 'tvg-logo'), cc, g, es, exl, hd, None, res(nombre(inf)) >= 1080 or fid in ('FHD','UHD','4K') or feed_res.get(tid, 0) >= 1080, r=max(res(nombre(inf)), feed_res.get(tid, 0)), prio=2)
+# 2b) Quitar repetidos: mismo canal (nombre normalizado + país) en varias fuentes o con varios enlaces.
+def clave(c):
+    n = unicodedata.normalize('NFKD', c['name']).encode('ascii', 'ignore').decode().lower()
+    n = re.sub(r'\(.*?\)|\[.*?\]', ' ', n)
+    n = re.sub(r'\b(hd|fhd|uhd|4k|sd|hq|1080p|720p|576p|480p|live|en vivo|tv channel)\b', ' ', n)
+    n = re.sub(r'[^a-z0-9]+', '', n)
+    return (n or c['url'], c['cc'])
+antes = len(canales); mejor = {}
+for c in canales:
+    k = clave(c); o = mejor.get(k)
+    # mejor = más resolución; a igualdad, fuente oficial (TDT) > IPTV-org > Free-TV > plataformas; luego con logo
+    puntos = (c['r'], -c['prio'], bool(c['logo']))
+    if o is None or puntos > (o['r'], -o['prio'], bool(o['logo'])):
+        if o is not None: c['es'] = c['es'] or o['es']; c['genero'] = c['genero'] if c['genero'] != 'Otros' else o['genero']
+        mejor[k] = c
+    else:
+        o['es'] = o['es'] or c['es']
+        if o['genero'] == 'Otros': o['genero'] = c['genero']
+canales = list(mejor.values())
+print('repetidos quitados:', antes - len(canales), '→ quedan', len(canales))
 # 3) Escribir listas
 ORD = ['Generalistas','Autonómicos y locales (España)','Noticias','Deportes','Infantil','Cine','Series','Entretenimiento','Humor','Música','Documentales','Cultura',
        'Educación','Clásicos','Cocina','Viajes','Motor','Estilo de vida','Economía','Institucional','Tiempo','Religión','Relax','Teletienda','Otros']
