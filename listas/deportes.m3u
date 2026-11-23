@@ -905,31 +905,15 @@ https://samitaorigin.tangotv.in/KABADDI24X7/SAMITAORIGIN/index.m3u8
 https://jmp2.uk/stvp-INBD4700014DU
 #EXTINF:-1 tvg-name="Pickleball Now" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Pickleball_Now.png" tvg-country="IN" group-title="Deportes · India",Pickleball Now
 https://distro-timesgroup.vgcdn.net/vglive-sk-843549/playlist.m3u8
-#EXTINF:-1 tvg-name="Sony Sports Ten 1" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Sony Sports Ten 1
-http://116.90.120.149:8000/play/a126/index.m3u8
-#EXTINF:-1 tvg-name="Sony Sports Ten 2" tvg-logo="https://dtil.tmsimg.com/assets/s157592_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Sony Sports Ten 2
-http://116.90.120.149:8000/play/a137/index.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 3 Hindi" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Sony Sports Ten 3 Hindi
 https://r2.amml.in/sony-ten-3-hd/live.m3u8
-#EXTINF:-1 tvg-name="Sony Sports Ten 5" tvg-logo="https://dtil.tmsimg.com/assets/s157593_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Sony Sports Ten 5
-http://116.90.120.149:8000/play/a117/index.m3u8
 #EXTINF:-1 tvg-name="Sports First TV" tvg-country="IN" group-title="Deportes · India",Sports First TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
 https://d2396zb8liu8hs.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-SportsFirstTV/409.m3u8?ads.vf=IqoHUzAjl6S
 #EXTINF:-1 tvg-name="Sports Live" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3000899C_20260623T015652SQUARE.png" tvg-country="IN" group-title="Deportes · India",Sports Live
 https://jmp2.uk/stvp-IN3000899C
-#EXTINF:-1 tvg-name="Star Sports 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" tvg-country="IN" group-title="Deportes · India",Star Sports 1
-http://116.90.120.149:8000/play/a11x/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 1 Hindi" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8867/1782284658867-h.jpg" tvg-country="IN" group-title="Deportes · India",Star Sports 1 Hindi
-http://116.90.120.149:8000/play/a122/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" tvg-country="IN" group-title="Deportes · India",Star Sports 2
-http://116.90.120.149:8000/play/a120/index.m3u8
 #EXTINF:-1 tvg-name="TRACE Sport Stars" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN8000085E_20260623T015705SQUARE.png" tvg-country="IN" group-title="Deportes · India",TRACE Sport Stars
 https://jmp2.uk/stvp-IN8000085E
-#EXTINF:-1 tvg-name="Unite8 Sports 1" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00352H3S.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Unite8 Sports 1
-http://116.90.120.149:8000/play/a11l/index.m3u8
-#EXTINF:-1 tvg-name="Unite8 Sports 2" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00358PGT.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Unite8 Sports 2
-http://116.90.120.149:8000/play/a129/index.m3u8
 #EXTINF:-1 tvg-name="WedoTV Sports" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100015RL_20260708T005944SQUARE.png" tvg-country="IN" group-title="Deportes · India",WedoTV Sports
 https://jmp2.uk/stvp-IN2100015RL
 #EXTINF:-1 tvg-name="TVRI Sport" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/TVRI_Sport_2022.svg/960px-TVRI_Sport_2022.svg.png" tvg-country="ID" group-title="Deportes · Indonesia",TVRI Sport

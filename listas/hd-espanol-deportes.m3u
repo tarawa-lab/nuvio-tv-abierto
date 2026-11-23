@@ -267,6 +267,8 @@ https://tv.arkeo.cl:1936/radiolila/radiolila/playlist.m3u8
 https://5eaccbab48461.streamlock.net:1936/8242/ngrp:8242_all/playlist.m3u8
 #EXTINF:-1 tvg-name="Marga Marga TV" tvg-logo="https://i.imgur.com/4cg51eE.png" tvg-country="CL" group-title="Generalistas",Marga Marga TV
 https://v1.tustreaming.cl/margamargatv/index.m3u8
+#EXTINF:-1 tvg-name="Mas Radio TV" tvg-logo="https://cdn.m3u.cl/logo/1495_Mas_Radio_TV.png" tvg-country="CL" group-title="Generalistas",Mas Radio TV
+https://iptv.intersurtv.cl/intersur_mauletv/index.m3u8
 #EXTINF:-1 tvg-name="Mega" tvg-logo="https://i.imgur.com/RlZfR84.png" tvg-country="CL" group-title="Generalistas",Mega
 http://tr.live.clarovtrcdn.vtrplay.com/megahdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD
 #EXTINF:-1 tvg-name="Mi Radio TV" tvg-logo="https://i.imgur.com/XEpLWJw.png" tvg-country="CL" group-title="Generalistas",Mi Radio TV
@@ -279,12 +281,16 @@ https://tv1.ninatv.cl/hls/stream.m3u8
 https://v2.tustreaming.cl/odiseatv/index.m3u8
 #EXTINF:-1 tvg-name="Oli TV" tvg-logo="https://i.imgur.com/2emMRvf.jpeg" tvg-country="CL" group-title="Generalistas",Oli TV
 https://v4.tustreaming.cl/retroplaytv/index.m3u8
+#EXTINF:-1 tvg-name="Osorno TV" tvg-logo="https://i.imgur.com/0ELjva6.png" tvg-country="CL" group-title="Generalistas",Osorno TV
+https://envivo.osornotv.cl/memfs/cb5800be-330b-40c9-8519-af788c7e29eb.m3u8
 #EXTINF:-1 tvg-name="Polar TV" tvg-logo="https://i.imgur.com/4exfvPt.png" tvg-country="CL" group-title="Generalistas",Polar TV
 https://polartv.webredirect.org/memfs/319ac83c-e602-4e91-8104-2b5501380b5e.m3u8
 #EXTINF:-1 tvg-name="Primitivos TV" tvg-logo="https://i.imgur.com/w9WpbTN.jpeg" tvg-country="CL" group-title="Generalistas",Primitivos TV
 https://5eaccbab48461.streamlock.net:1936/heqhvtgebg/heqhvtgebg/playlist.m3u8
 #EXTINF:-1 tvg-name="Radio Ancoa TV" tvg-logo="https://cdn.m3u.cl/logo/406_Radio_Ancoa_TV.png" tvg-country="CL" group-title="Generalistas",Radio Ancoa TV
 https://v2.tustreaming.cl/radioancoatv/index.m3u8
+#EXTINF:-1 tvg-name="Radio Bohemia TV" tvg-logo="https://cdn.m3u.cl/logo/1776_Radio_Bohemia_TV.png" tvg-country="CL" group-title="Generalistas",Radio Bohemia TV
+https://portalstream.cl:8080/bohemia1.m3u8
 #EXTINF:-1 tvg-name="Radio Chiloe" tvg-logo="https://cdn.m3u.cl/logo/409_Radio_Chiloe.png" tvg-country="CL" group-title="Generalistas",Radio Chiloe
 https://videostream.chileservidores.com:8081/chiloe1/index.m3u8
 #EXTINF:-1 tvg-name="Radio Contemporanea Coihueco" tvg-logo="https://cdn.m3u.cl/logo/1493_Radio_Contemporanea_Coihueco.png" tvg-country="CL" group-title="Generalistas",Radio Contemporanea Coihueco
@@ -389,6 +395,8 @@ https://lbgo.bozztv.com/ssh101/ssh101/Cosmovisión/playlist.m3u8
 http://181.78.12.119:16123/play/ch33/index.m3u8
 #EXTINF:-1 tvg-name="Heliconia Radio TV" tvg-logo="https://i.imgur.com/AJ182BG.png" tvg-country="CO" group-title="Generalistas",Heliconia Radio TV
 https://eu1.servers10.com:8081/8178/index.m3u8
+#EXTINF:-1 tvg-name="Huila TV" tvg-logo="https://i.imgur.com/hFlGHNZ.png" tvg-country="CO" group-title="Generalistas",Huila TV
+https://server.asilivehd.com:3333/live/huilatvlive.m3u8
 #EXTINF:-1 tvg-name="Kalu TV" tvg-logo="https://i.imgur.com/MO4w3OT.jpeg" tvg-country="CO" group-title="Generalistas",Kalu TV
 https://tv.kaludecolombia.com/memfs/d71c0104-4752-4690-bdbf-19aa849da6c4.m3u8
 #EXTINF:-1 tvg-name="NSTV" tvg-logo="https://i.imgur.com/ES6xFAv.png" tvg-country="CO" group-title="Generalistas",NSTV
@@ -1149,6 +1157,8 @@ https://stream.castr.com/6809124f3f3e7e594c63cf15/live_8e5d0b50206a11f0869057644
 https://vtm1.msinteractiva.com/globaltv/globaltv/playlist.m3u8
 #EXTINF:-1 tvg-name="Haina Vision" tvg-logo="https://i.imgur.com/eoodUNJ.png" tvg-country="DO" group-title="Generalistas",Haina Vision
 https://cdn.streamingcpanel.com:3447/live/hainavisionlive.m3u8
+#EXTINF:-1 tvg-name="Hato Del Yaque TV" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/4075-294x165-FFFFFF.jpg" tvg-country="DO" group-title="Generalistas",Hato Del Yaque TV
+https://streamunoapp.com:3739/live/hatodelyaquetvlive.m3u8
 #EXTINF:-1 tvg-name="Hilando Fino TV" tvg-logo="https://i.imgur.com/E7ta6g8.png" tvg-country="DO" group-title="Generalistas",Hilando Fino TV
 https://hilandofinotv.essastream.com:3606/live/canalhilandofinotvlive.m3u8
 #EXTINF:-1 tvg-name="Informe TV" tvg-logo="https://imgur.com/TmJaXrO.jpg" tvg-country="DO" group-title="Generalistas",Informe TV
@@ -1225,6 +1235,8 @@ https://vdopanel.jlahozconsulting.com/p/3142/hybrid/play.m3u8
 https://streaming.telecablecentral.com.do/ReadyTV/ReadyHD/playlist.m3u8
 #EXTINF:-1 tvg-name="Reportero TV" tvg-logo="https://dominicanchannels.com/wp-content/uploads/Reportero-100x75-1.png" tvg-country="DO" group-title="Generalistas",Reportero TV
 https://streamrd.cloud:5443/LiveApp/streams/J3E3REmLNBzirS9A10575071547538.m3u8
+#EXTINF:-1 tvg-name="Retro vision TV" tvg-logo="https://retrovisionmia.com/assets/retrovision-logo-BHToA3lv.png" tvg-country="DO" group-title="Generalistas",Retro vision TV
+https://5790d294af2dc.streamlock.net/retrovision/retrovision/playlist.m3u8
 #EXTINF:-1 tvg-name="Ruta 66 TV" tvg-logo="https://i.imgur.com/oY4Xfvq.png" tvg-country="DO" group-title="Generalistas",Ruta 66 TV
 https://edge.livestreaminggroup.info/ruta66tvlive/index.m3u8
 #EXTINF:-1 tvg-name="San Isidro TV" tvg-logo="https://i.imgur.com/pwmJrsm.jpg" tvg-country="DO" group-title="Generalistas",San Isidro TV
@@ -1245,6 +1257,10 @@ https://cdn.streamrd.cloud/live/ch_kb5qe1zr.m3u8
 https://ss2.tvrdomi.com:1936/supertv55/supertv55/playlist.m3u8
 #EXTINF:-1 tvg-name="Sur TV" tvg-logo="https://i.imgur.com/oAyvK0N.jpeg" tvg-country="DO" group-title="Generalistas",Sur TV
 https://ss2.tvrdomi.com:1936/eradiofonicas/eradiofonicas/playlist.m3u8
+#EXTINF:-1 tvg-name="Taino Live TV" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/4090-294x165-FFFFFF.jpg" tvg-country="DO" group-title="Generalistas",Taino Live TV
+https://tainolivetv.com/hls/taino2026.m3u8
+#EXTINF:-1 tvg-name="Tele Azul" tvg-logo="https://imgur.com/a/cU7MHiu.jpg" tvg-country="DO" group-title="Generalistas",Tele Azul
+https://cdn.streamingcpanel.com:3327/live/teleazullive.m3u8
 #EXTINF:-1 tvg-name="Tele Dajabon TV" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3822-294x165-FFFFFF.jpg" tvg-country="DO" group-title="Generalistas",Tele Dajabon TV
 https://5790d294af2dc.streamlock.net/dajabon/dajabon/playlist.m3u8
 #EXTINF:-1 tvg-name="Tele Poder TV" tvg-logo="https://www.telepoder.online/wp-content/uploads/2024/02/cropped-cropped-Logo-PoderTV2.png" tvg-country="DO" group-title="Generalistas",Tele Poder TV
@@ -1618,7 +1634,7 @@ https://live-evg11.tv360.bitel.com.pe/bitel/selvaticaSRT/playlist.m3u8
 #EXTINF:-1 tvg-name="TV Peru Noticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/TV_Per%C3%BA_Noticias_-_2019_logo.png/960px-TV_Per%C3%BA_Noticias_-_2019_logo.png" tvg-country="PE" group-title="Noticias",TV Peru Noticias
 http://190.93.224.42/TV-PERU-NOTICIAS/index.m3u8
 #EXTINF:-1 tvg-name="Radio Isla TV" tvg-logo="https://i.ibb.co/PDThYr5/Logo-Radio-Isla.png" tvg-country="PR" group-title="Noticias",Radio Isla TV
-https://59a564764e2b6.streamlock.net/palestra/palestra/playlist.m3u8
+https://panel2.videocontentstreaming.com/live/4fd37e086394ac7e11a87acbc55e8f91.m3u8
 #EXTINF:-1 tvg-name="Carivision" tvg-logo="https://i.imgur.com/XjGb2UM.png" tvg-country="DO" group-title="Noticias",Carivision
 https://ss2.tvrdomi.com:1936/carivision/carivision/playlist.m3u8
 #EXTINF:-1 tvg-name="Hermanas Mirabal TV" tvg-logo="https://i.imgur.com/cbKgcGh.png" tvg-country="DO" group-title="Noticias",Hermanas Mirabal TV
@@ -1647,7 +1663,7 @@ https://epg.provider.plex.tv/library/parts/697140a85d851f5e69414688-60089d97f682
 #EXTINF:-1 tvg-name="Euronews Español" tvg-logo="https://provider-static.plex.tv/epg/cms/production/eea28bcc-26ea-4266-81b4-2945f334c3d9/Plex-WURL_Euronews-Logos_ES_-_astrid_collomb.png" tvg-country="CA" group-title="Noticias",Euronews Español
 https://epg.provider.plex.tv/library/parts/647f8d22a2fc3fadb4721685-60089d97f682a3002c34829d/?X-Plex-Token=oKR3wxgy7GUycRk9jZob
 #EXTINF:-1 tvg-name="CGTN Spanish" tvg-logo="https://i.imgur.com/Poz3xfi.png" tvg-country="CN" group-title="Noticias",CGTN Spanish
-http://45.165.82.19/test/index.m3u8
+https://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CNN en Espanol" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg/960px-Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg.png" tvg-country="US" group-title="Noticias",CNN en Espanol
 https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Estrella News" tvg-logo="https://cdn-profiles.tunein.com/s320627/images/logoq.png?t=1" tvg-country="US" group-title="Noticias",Estrella News
@@ -2085,6 +2101,8 @@ https://streaming.onnethn.com/CINEMAX/playlist.m3u8
 http://138.121.15.230:9002/DEPELICULA/index.m3u8
 #EXTINF:-1 tvg-name="DHE" tvg-logo="https://i.imgur.com/nsttoEa.png" tvg-country="US" group-title="Cine",DHE
 http://15.204.246.24:8080/DHEHD/index.m3u8
+#EXTINF:-1 tvg-name="FMH Movies" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2024/12/24/23/1735058961578/eaf883fb926d_480_270.png" tvg-country="US" group-title="Cine",FMH Movies
+http://45.186.254.75:8000/play/a07j/index.m3u8
 #EXTINF:-1 tvg-name="HBO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png" tvg-country="US" group-title="Cine",HBO
 http://tvsen7.aynascope.net/hbo/index.m3u8
 #EXTINF:-1 tvg-name="HBO Hits" tvg-logo="https://static.hbo.com/2025-09/HBO_Hits_Plex_Logo_bw.svg" tvg-country="US" group-title="Cine",HBO Hits
@@ -3151,6 +3169,10 @@ https://v2.tustreaming.cl/fmplus/index.m3u8
 https://v1.tustreaming.cl/genialtv/index.m3u8
 #EXTINF:-1 tvg-name="La Clave" tvg-logo="https://cdn.m3u.cl/logo/1270_La_Clave.png" tvg-country="CL" group-title="Música",La Clave
 https://unlimited1-cl-isp.dps.live/laclavetv/laclavetv.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="La Granja TV" tvg-logo="https://i.imgur.com/90luGab.png" tvg-country="CL" group-title="Música",La Granja TV
+https://oracle.streaminghd.cl/8126/8126/playlist.m3u8
+#EXTINF:-1 tvg-name="PalMundo FM" tvg-logo="https://cdn.m3u.cl/logo/1803_PalMundo_FM.png" tvg-country="CL" group-title="Música",PalMundo FM
+https://streampanelcp.palmundofm.cl/hls/palmundofm/visual/hd.m3u8
 #EXTINF:-1 tvg-name="Patagonia Radio TV" tvg-logo="https://i.imgur.com/oFuWBZO.png" tvg-country="CL" group-title="Música",Patagonia Radio TV
 https://video01.logicahost.com.br/grupomedia/grupomedia/playlist.m3u8
 #EXTINF:-1 tvg-name="Pauta" tvg-logo="https://i.imgur.com/UAKLJAt.png" tvg-country="CL" group-title="Música",Pauta
@@ -3364,8 +3386,6 @@ https://k20.usastreams.com:8081/tvperuanisima/index.m3u8
 https://streamtv.onliv3.online:1936/karibtv/karibtv/playlist.m3u8
 #EXTINF:-1 tvg-name="La-X" tvg-logo="https://i.imgur.com/i2GnQTq.png" tvg-country="PR" group-title="Música",La-X
 https://stream.eleden.com/livelax/ngrp:livelax_all/playlist.m3u8
-#EXTINF:-1 tvg-name="Nueva Vida FM" tvg-logo="https://i.ibb.co/3mbZWyN/nav-Bar-title-Image-iphone6plus.png" tvg-country="PR" group-title="Música",Nueva Vida FM
-https://stream.nuevavidafm.net:3937/live/nuevavidalive.m3u8
 #EXTINF:-1 tvg-name="The Retro Channel" tvg-logo="https://i.imgur.com/t3i1HtE.jpg" tvg-country="PR" group-title="Música",The Retro Channel
 https://583ed2f226ac2.streamlock.net/theretrochannel/stream/playlist.m3u8
 #EXTINF:-1 tvg-name="WWXY-DT3 (Maranatha Radio Ministries)" tvg-country="PR" group-title="Música",WWXY-DT3 (Maranatha Radio Ministries)
@@ -4010,20 +4030,20 @@ https://live-evg7.tv360.bitel.com.pe/bitel/andestvSRT/playlist.m3u8
 https://alfa.betheltv.tv/srt/3_abr/playlist.m3u8
 #EXTINF:-1 tvg-name="JN 19" tvg-logo="https://i.imgur.com/dudxyqk.png" tvg-country="PE" group-title="Religión",JN 19
 http://187.102.210.46/JN19/index.m3u8
-#EXTINF:-1 tvg-name="DNJ TV" tvg-logo="https://i.imgur.com/YqTcGJZ.png" tvg-country="PR" group-title="Religión",DNJ TV
-https://cloud2.streaminglivehd.com:1936/dnjv2/dnjv2/playlist.m3u8
 #EXTINF:-1 tvg-name="EBN Television" tvg-logo="https://i.imgur.com/4OCptwT.png" tvg-country="PR" group-title="Religión",EBN Television
 https://627bb251f23c7.streamlock.net:444/EBNTELEVISION/EBNTELEVISION/playlist.m3u8
-#EXTINF:-1 tvg-name="Familia Vision HD" tvg-logo="https://i.imgur.com/uqTH7m5.jpg" tvg-country="PR" group-title="Religión",Familia Vision HD
-https://584097344c1f0.streamlock.net/29/stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Faro de Santidad TV" tvg-logo="https://i.imgur.com/GoNBFzI.png" tvg-country="PR" group-title="Religión",Faro de Santidad TV
 https://5dbcd1053301e.streamlock.net:4443/farodesantidad/farodesantidad/playlist.m3u8
+#EXTINF:-1 tvg-name="Master Video" tvg-logo="https://i.imgur.com/0jj9Vx0.png" tvg-country="PR" group-title="Religión",Master Video
+https://eco.streams.ovh:8081/mastervideotv/index.m3u8
 #EXTINF:-1 tvg-name="Paraiso TV" tvg-logo="https://i.imgur.com/wE31GIP.jpg" tvg-country="PR" group-title="Religión",Paraiso TV
 https://stream.eleden.com/livewtpm/ngrp:livewtpm_all/playlist.m3u8
 #EXTINF:-1 tvg-name="Salvacion TV" tvg-logo="https://i.imgur.com/6HOViG9.png" tvg-country="PR" group-title="Religión",Salvacion TV
 https://stream.eleden.com/livesalvatv/ngrp:livesalvatv_all/playlist.m3u8
+#EXTINF:-1 tvg-name="WCLO 50.1" tvg-logo="https://publicfiles.fcc.gov/api/manager/download/entity/logo/3255/tv" tvg-country="PR" group-title="Religión",WCLO 50.1
+https://stream.nuevavidafm.net:3937/live/nuevavidalive.m3u8
 #EXTINF:-1 tvg-name="WECN" tvg-logo="https://i.imgur.com/NYBZBY0.png" tvg-country="PR" group-title="Religión",WECN
-https://59825a54e4454.streamlock.net:8443/pastorairisn394/pastorairisn394/chunklist_w239411719.m3u8
+https://59825a54e4454.streamlock.net:8443/pastorairisn394/pastorairisn394/master.m3u8
 #EXTINF:-1 tvg-name="Adoram TV" tvg-logo="https://i.imgur.com/uU01KHz.png" tvg-country="DO" group-title="Religión",Adoram TV
 https://183.giatvcdn.com/giatv/giatv-adoram/adoram/playlist.m3u8
 #EXTINF:-1 tvg-name="Cielo TV" tvg-logo="https://i.imgur.com/2PNw6BA.png" tvg-country="DO" group-title="Religión",Cielo TV
@@ -5788,10 +5808,6 @@ https://samitaorigin.tangotv.in/KABADDI24X7/SAMITAORIGIN/index.m3u8
 https://jmp2.uk/stvp-INBD4700014DU
 #EXTINF:-1 tvg-name="Pickleball Now" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Pickleball_Now.png" tvg-country="IN" group-title="Deportes · India",Pickleball Now
 https://distro-timesgroup.vgcdn.net/vglive-sk-843549/playlist.m3u8
-#EXTINF:-1 tvg-name="Sony Sports Ten 1" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Sony Sports Ten 1
-http://116.90.120.149:8000/play/a126/index.m3u8
-#EXTINF:-1 tvg-name="Sony Sports Ten 2" tvg-logo="https://dtil.tmsimg.com/assets/s157592_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Sony Sports Ten 2
-http://116.90.120.149:8000/play/a137/index.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 3 Hindi" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Sony Sports Ten 3 Hindi
 https://r2.amml.in/sony-ten-3-hd/live.m3u8
 #EXTINF:-1 tvg-name="Sports First TV" tvg-country="IN" group-title="Deportes · India",Sports First TV
@@ -5799,18 +5815,8 @@ https://r2.amml.in/sony-ten-3-hd/live.m3u8
 https://d2396zb8liu8hs.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-SportsFirstTV/409.m3u8?ads.vf=IqoHUzAjl6S
 #EXTINF:-1 tvg-name="Sports Live" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3000899C_20260623T015652SQUARE.png" tvg-country="IN" group-title="Deportes · India",Sports Live
 https://jmp2.uk/stvp-IN3000899C
-#EXTINF:-1 tvg-name="Star Sports 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" tvg-country="IN" group-title="Deportes · India",Star Sports 1
-http://116.90.120.149:8000/play/a11x/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 1 Hindi" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8867/1782284658867-h.jpg" tvg-country="IN" group-title="Deportes · India",Star Sports 1 Hindi
-http://116.90.120.149:8000/play/a122/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" tvg-country="IN" group-title="Deportes · India",Star Sports 2
-http://116.90.120.149:8000/play/a120/index.m3u8
 #EXTINF:-1 tvg-name="TRACE Sport Stars" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN8000085E_20260623T015705SQUARE.png" tvg-country="IN" group-title="Deportes · India",TRACE Sport Stars
 https://jmp2.uk/stvp-IN8000085E
-#EXTINF:-1 tvg-name="Unite8 Sports 1" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00352H3S.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Unite8 Sports 1
-http://116.90.120.149:8000/play/a11l/index.m3u8
-#EXTINF:-1 tvg-name="Unite8 Sports 2" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00358PGT.png?lock=720x540" tvg-country="IN" group-title="Deportes · India",Unite8 Sports 2
-http://116.90.120.149:8000/play/a129/index.m3u8
 #EXTINF:-1 tvg-name="WedoTV Sports" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100015RL_20260708T005944SQUARE.png" tvg-country="IN" group-title="Deportes · India",WedoTV Sports
 https://jmp2.uk/stvp-IN2100015RL
 #EXTINF:-1 tvg-name="TVRI Sport" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/TVRI_Sport_2022.svg/960px-TVRI_Sport_2022.svg.png" tvg-country="ID" group-title="Deportes · Indonesia",TVRI Sport

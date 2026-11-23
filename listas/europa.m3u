@@ -1317,6 +1317,8 @@ http://stream.apa.tv/apastream/index.m3u8
 https://operativmm.az/tvs/arb24/stream/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:ARBGunes.az" tvg-name="ARB Gunes" tvg-logo="https://i.imgur.com/dSg7KUK.png" group-title="Europa · Azerbaiyán",ARB Gunes
 http://185.118.50.218/arbgunesh/video.m3u8
+#EXTINF:-1 tvg-id="iptvorg:AyazTV.az" tvg-name="Ayaz TV" tvg-logo="https://www.ayaztv.com/storage/assets/site_logo.png" group-title="Europa · Azerbaiyán",Ayaz TV
+https://janya-ayaztv.vgcdn.net/ptnr-WebApp/title-Ayaz_TV/v1/vglive-sk-934820/main.m3u8
 #EXTINF:-1 tvg-id="iptvorg:x-7e2bb0d2c9" tvg-name="Ayaz TV" group-title="Europa · Azerbaiyán",Ayaz TV
 https://janya-ayaztv.vgcdn.net/ptnr-WebApp/title-Ayaz_TV/v1/vglive-sk-934820/720p/720p.m3u8
 #EXTINF:-1 tvg-id="iptvorg:x-ffceddfa5e" tvg-name="Ayaz TV HD" group-title="Europa · Azerbaiyán",Ayaz TV HD
@@ -2620,6 +2622,8 @@ https://jmp2.uk/plu-63b579961bdba100071214cb.m3u8
 https://do7nccdsswstc.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-1aso0bc668saa/a5233c83-f772-4a81-959a-45ec7877ef61/5.m3u8
 #EXTINF:-1 tvg-id="iptvorg:CanalJ.fr" tvg-name="Canal J" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Canal_J_2019_Logo.png/960px-Canal_J_2019_Logo.png" group-title="Europa · Francia",Canal J
 https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F3860888136d301b247640b
+#EXTINF:-1 tvg-id="iptvorg:CanalPlus.fr" tvg-name="Canal+" tvg-logo="https://i.imgur.com/5HcyMnW.png" group-title="Europa · Francia",Canal+
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F4177424223ffc540a587de
 #EXTINF:-1 tvg-id="iptvorg:CanalPlusSport.fr" tvg-name="Canal+ Sport" tvg-logo="https://i.imgur.com/EOXnU15.png" group-title="Europa · Francia",Canal+ Sport
 http://tv.streambox.fr/live/testlivestream/testlivestream/31.m3u8
 #EXTINF:-1 tvg-id="iptvorg:CannesLerinsTV.fr" tvg-name="Cannes Lerins TV" tvg-logo="https://i.imgur.com/atlgnum.png" group-title="Europa · Francia",Cannes Lerins TV
@@ -2647,6 +2651,8 @@ https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/canalplus/cnew
 https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/canalplus/cnews-prime-dm.m3u8
 #EXTINF:-1 tvg-id="iptvorg:x-4d44457f03" tvg-name="CNN Headlines International" group-title="Europa · Francia",CNN Headlines International
 https://jmp2.uk/plu-66c45b36a72e7b0008a2b291.m3u8
+#EXTINF:-1 tvg-id="iptvorg:ComediePlus.fr" tvg-name="Comedie+" tvg-logo="https://i.imgur.com/ArgX0Af.png" group-title="Europa · Francia",Comedie+
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F1928514641c723cfdf588b
 #EXTINF:-1 tvg-id="iptvorg:ComedyCentral.fr" tvg-name="Comedy Central" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png" group-title="Europa · Francia",Comedy Central
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/comedy_central/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:CrimeDistrict.fr" tvg-name="Crime District" tvg-logo="https://i.imgur.com/WQJ6Lbk.png" group-title="Europa · Francia",Crime District
@@ -5172,6 +5178,8 @@ https://d2ycaxub5x98iw.cloudfront.net/nlpo/clr-nlpo/merwetv/index.m3u8
 https://ms7.mx-cd.net/dtv-02/204-1147034/3ML_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:x-88ad2faab6" tvg-name="Mojitv" group-title="Europa · Países Bajos",Mojitv
 https://odmedia-mojitv-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="iptvorg:MTV.nl" tvg-name="MTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png" group-title="Europa · Países Bajos",MTV
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F8342374230cdd9e7b7646
 #EXTINF:-1 tvg-id="iptvorg:x-f232622db3" tvg-name="MYZen Fit" group-title="Europa · Países Bajos",MYZen Fit
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-samsungen-samsungnl/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:NationalGeographic.nl" tvg-name="National Geographic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" group-title="Europa · Países Bajos",National Geographic
@@ -5565,6 +5573,8 @@ http://92.114.85.87:8014/play/a006/index.m3u8
 https://1409502578.rsc.cdn77.org/live/stream-1/chunklist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:NickJr.pl" tvg-name="Nick Jr." tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nick_Jr._logo_2023_(outline).svg/960px-Nick_Jr._logo_2023_(outline).svg.png" group-title="Europa · Polonia",Nick Jr.
 http://92.114.85.87:8013/play/a004/index.m3u8
+#EXTINF:-1 tvg-id="iptvorg:Nickelodeon.pl" tvg-name="Nickelodeon" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="Europa · Polonia",Nickelodeon
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F5189779876700e71d303b
 #EXTINF:-1 tvg-id="iptvorg:Nicktoons.pl" tvg-name="Nicktoons" group-title="Europa · Polonia",Nicktoons
 http://92.114.85.87:8013/play/a008/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:NowaTV.pl" tvg-name="Nowa TV" tvg-logo="https://i.imgur.com/8cHK49r.png" group-title="Europa · Polonia",Nowa TV
@@ -5826,7 +5836,9 @@ https://vs-cmaf-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabi
 #EXTINF:-1 tvg-id="iptvorg:BBCDrama.uk" tvg-name="BBC Drama" tvg-logo="https://i.imgur.com/HctHhLL.png" group-title="Europa · Reino Unido",BBC Drama
 https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:BBCEarth.uk" tvg-name="BBC Earth" tvg-logo="https://i.imgur.com/nGSsUd4.png" group-title="Europa · Reino Unido",BBC Earth
-http://88.212.7.14/live/test_bbc_eartch_hevc/playlist.m3u8
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://proxy-v.rctiplus.id/live/web/bbcearth/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:BBCFirst.uk" tvg-name="BBC First" tvg-logo="https://i.imgur.com/UBoBYUI.png" group-title="Europa · Reino Unido",BBC First
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 http://88.212.7.14/live/bbc_first/index.m3u8
@@ -7071,6 +7083,8 @@ http://88.218.242.237:8001/Cartoon_Classics
 https://bl.rutube.ru/livestream/c9e26bf5c003fd8d477200065ca1a05f/index.m3u8?e=2072611029&s=eqlTXebDP9wSWTZgre6BwQ&scheme=https
 #EXTINF:-1 tvg-id="iptvorg:Channel12.ru" tvg-name="Channel 12" tvg-logo="https://i.imgur.com/OA9hm6e.png" group-title="Europa · Rusia",Channel 12
 https://streaming.thestream.cyou/live/7004.m3u8
+#EXTINF:-1 tvg-id="iptvorg:Channel4.ru" tvg-name="Channel 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/00/Channel4_logo.jpg" group-title="Europa · Rusia",Channel 4
+https://river-3-370.rtbcdn.ru/stream/genetta-316.m9.rutube.ru/60Ro5OWl7WWOswbVMQlqFw/1795975765/c6f66b644424c117f41e48062719ceed/576p_stream.m3u8
 #EXTINF:-1 tvg-id="iptvorg:Channel5.ru" tvg-name="Channel 5" tvg-logo="https://i.imgur.com/PQhMXOZ.png" group-title="Europa · Rusia",Channel 5
 http://31.148.5.241/kanal_5/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:Channel5International.ru" tvg-name="Channel 5 International" tvg-logo="https://i.imgur.com/8VKc2Ya.png" group-title="Europa · Rusia",Channel 5 International

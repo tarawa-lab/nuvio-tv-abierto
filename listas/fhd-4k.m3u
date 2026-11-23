@@ -197,14 +197,20 @@ https://tv.arkeo.cl:1936/unetev/unetev/playlist.m3u8
 https://jireh-8-hls-video-us-isp.dps.live/hls-video/931b584451fa6dd1313ee66efbfd5802e3f3bcea/metropolitanatv/metropolitanatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Maray TV" tvg-logo="https://i.imgur.com/YinMA8c.png" tvg-country="CL" group-title="FHD · Generalistas",Maray TV
 https://5eaccbab48461.streamlock.net:1936/8242/ngrp:8242_all/playlist.m3u8
+#EXTINF:-1 tvg-name="Mas Radio TV" tvg-logo="https://cdn.m3u.cl/logo/1495_Mas_Radio_TV.png" tvg-country="CL" group-title="FHD · Generalistas",Mas Radio TV
+https://iptv.intersurtv.cl/intersur_mauletv/index.m3u8
 #EXTINF:-1 tvg-name="Mega" tvg-logo="https://i.imgur.com/RlZfR84.png" tvg-country="CL" group-title="FHD · Generalistas",Mega
 http://tr.live.clarovtrcdn.vtrplay.com/megahdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD
 #EXTINF:-1 tvg-name="Mi Radio TV" tvg-logo="https://i.imgur.com/XEpLWJw.png" tvg-country="CL" group-title="FHD · Generalistas",Mi Radio TV
 https://scl.edge.grupoz.cl/miradio2/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Oli TV" tvg-logo="https://i.imgur.com/2emMRvf.jpeg" tvg-country="CL" group-title="FHD · Generalistas",Oli TV
 https://v4.tustreaming.cl/retroplaytv/index.m3u8
+#EXTINF:-1 tvg-name="Osorno TV" tvg-logo="https://i.imgur.com/0ELjva6.png" tvg-country="CL" group-title="FHD · Generalistas",Osorno TV
+https://envivo.osornotv.cl/memfs/cb5800be-330b-40c9-8519-af788c7e29eb.m3u8
 #EXTINF:-1 tvg-name="Polar TV" tvg-logo="https://i.imgur.com/4exfvPt.png" tvg-country="CL" group-title="FHD · Generalistas",Polar TV
 https://polartv.webredirect.org/memfs/319ac83c-e602-4e91-8104-2b5501380b5e.m3u8
+#EXTINF:-1 tvg-name="Radio Bohemia TV" tvg-logo="https://cdn.m3u.cl/logo/1776_Radio_Bohemia_TV.png" tvg-country="CL" group-title="FHD · Generalistas",Radio Bohemia TV
+https://portalstream.cl:8080/bohemia1.m3u8
 #EXTINF:-1 tvg-name="TV+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TV%2B_%282018%29.png/960px-TV%2B_%282018%29.png" tvg-country="CL" group-title="FHD · Generalistas",TV+
 https://jireh-8-hls-video-us-isp.dps.live/hls-video/ey6283je82983je9823je8jowowiekldk9838274/tvmas/tvmas.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="TVN" tvg-logo="https://i.imgur.com/3FKZHL4.png" tvg-country="CL" group-title="FHD · Generalistas",TVN
@@ -243,6 +249,8 @@ http://138.94.3.106:8000/play/a02o/index.m3u8
 https://live.amelbatv.co:81/cnctulualive/index.fmp4.m3u8
 #EXTINF:-1 tvg-name="Enlace Television" tvg-logo="https://cdn.colombia.com/canales/enlace-television-3301.jpg" tvg-country="CO" group-title="FHD · Generalistas",Enlace Television
 http://181.78.12.119:16123/play/ch33/index.m3u8
+#EXTINF:-1 tvg-name="Huila TV" tvg-logo="https://i.imgur.com/hFlGHNZ.png" tvg-country="CO" group-title="FHD · Generalistas",Huila TV
+https://server.asilivehd.com:3333/live/huilatvlive.m3u8
 #EXTINF:-1 tvg-name="Kalu TV" tvg-logo="https://i.imgur.com/MO4w3OT.jpeg" tvg-country="CO" group-title="FHD · Generalistas",Kalu TV
 https://tv.kaludecolombia.com/memfs/d71c0104-4752-4690-bdbf-19aa849da6c4.m3u8
 #EXTINF:-1 tvg-name="NSTV" tvg-logo="https://i.imgur.com/ES6xFAv.png" tvg-country="CO" group-title="FHD · Generalistas",NSTV
@@ -579,6 +587,8 @@ https://host.streamingnation.live/p/3345/hybrid/play.m3u8
 http://190.122.104.210:5080/LiveApp/streams/sitv2.m3u8
 #EXTINF:-1 tvg-name="Super Digital TV" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3431-294x165-FFFFFF.jpg" tvg-country="DO" group-title="FHD · Generalistas",Super Digital TV
 https://cdn.streamrd.cloud/live/ch_kb5qe1zr.m3u8
+#EXTINF:-1 tvg-name="Taino Live TV" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/4090-294x165-FFFFFF.jpg" tvg-country="DO" group-title="FHD · Generalistas",Taino Live TV
+https://tainolivetv.com/hls/taino2026.m3u8
 #EXTINF:-1 tvg-name="Telecanal 28" tvg-logo="https://i.imgur.com/hEJ6lZ9.png" tvg-country="DO" group-title="FHD · Generalistas",Telecanal 28
 https://edge.essastream.com/telecanal28/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Telecentro" tvg-logo="https://i.imgur.com/F17zNXh.png" tvg-country="DO" group-title="FHD · Generalistas",Telecentro
@@ -734,6 +744,8 @@ https://cdn3.wowza.com/1/MHFtazJReW5rOFhP/N2NWNDZ2/hls/live/playlist.m3u8
 https://test02.mdn.ors.at/orf/orf1/qxa/manifest.m3u8
 #EXTINF:-1 tvg-name="Steiermark TV" tvg-logo="https://i.imgur.com/AJrUPze.png" tvg-country="AT" group-title="FHD · Generalistas",Steiermark TV
 https://h056.video-stream-hosting.de/easycast8-live/_definst_/mp4:livestreamhd4/playlist.m3u8?ref=
+#EXTINF:-1 tvg-name="Ayaz TV" tvg-logo="https://www.ayaztv.com/storage/assets/site_logo.png" tvg-country="AZ" group-title="FHD · Generalistas",Ayaz TV
+https://janya-ayaztv.vgcdn.net/ptnr-WebApp/title-Ayaz_TV/v1/vglive-sk-934820/main.m3u8
 #EXTINF:-1 tvg-name="ZNS-TV" tvg-logo="https://i.imgur.com/h6nC8fe.png" tvg-country="BS" group-title="FHD · Generalistas",ZNS-TV
 https://zns-edge1.streamcomedia.cloud/znstv13/zns1080p_stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Gazi TV" tvg-logo="https://i.imgur.com/2Lzhiq6.png" tvg-country="BD" group-title="FHD · Generalistas",Gazi TV
@@ -1225,10 +1237,6 @@ http://122.248.43.242:1935/JTVSURABAYA/_definst_/myStream/playlist.m3u8
 https://re1.siar.us/madutv/hd720/playlist.m3u8
 #EXTINF:-1 tvg-name="Magna Channel" tvg-logo="https://i.imgur.com/tfJo0SO.png" tvg-country="ID" group-title="FHD · Generalistas",Magna Channel
 http://202.150.172.59/MagnaChannel/index.m3u8
-#EXTINF:-1 tvg-name="Moji" tvg-logo="https://i.imgur.com/mM9zapJ.png" tvg-country="ID" group-title="FHD · Generalistas",Moji
-#EXTVLCOPT:http-referrer=https://www.dens.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36
-https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8
 #EXTINF:-1 tvg-name="Nusantara TV" tvg-logo="https://i.imgur.com/viun5hj.png" tvg-country="ID" group-title="FHD · Generalistas",Nusantara TV
 https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
 #EXTINF:-1 tvg-name="RBTV Jogja" tvg-logo="https://upload.wikimedia.org/wikipedia/id/3/31/RBTV_Jogjakarta.png" tvg-country="ID" group-title="FHD · Generalistas",RBTV Jogja
@@ -1691,6 +1699,8 @@ https://vgtrkregion-reg.cdnvideo.ru/vgtrk/ufa/bashkortostan24-hd/index.m3u8
 https://belnovosti.cdn.easyhoster.ru:8443/stream.m3u8
 #EXTINF:-1 tvg-name="Channel 12" tvg-logo="https://i.imgur.com/OA9hm6e.png" tvg-country="RU" group-title="FHD · Generalistas",Channel 12
 https://streaming.thestream.cyou/live/7004.m3u8
+#EXTINF:-1 tvg-name="Channel 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/00/Channel4_logo.jpg" tvg-country="RU" group-title="FHD · Generalistas",Channel 4
+https://river-3-370.rtbcdn.ru/stream/genetta-316.m9.rutube.ru/60Ro5OWl7WWOswbVMQlqFw/1795975765/c6f66b644424c117f41e48062719ceed/576p_stream.m3u8
 #EXTINF:-1 tvg-name="Channel One" tvg-logo="https://uut-telecom.ru/wp-content/uploads/2021/12/pervyj-hd.png" tvg-country="RU" group-title="FHD · Generalistas",Channel One
 http://31.148.5.241/kanal_1/index.m3u8
 #EXTINF:-1 tvg-name="City Eden TV" tvg-logo="https://i.imgur.com/X9kACKi.png" tvg-country="RU" group-title="FHD · Generalistas",City Eden TV
@@ -1927,6 +1937,8 @@ http://stream.mcquack.net/358/index.m3u8
 http://stream.mcquack.net/341/index.m3u8
 #EXTINF:-1 tvg-name="Faraja Television" tvg-logo="https://i.imgur.com/NmnOGHI.jpg" tvg-country="UG" group-title="FHD · Generalistas",Faraja Television
 https://panel.freedomflixtv.org:3868/hybrid/play.m3u8
+#EXTINF:-1 tvg-name="KTV" tvg-logo="https://i.imgur.com/IA8Srft.jpg" tvg-country="UG" group-title="FHD · Generalistas",KTV
+https://stream.kingdommediaug.com/ktv/video.m3u8
 #EXTINF:-1 tvg-name="Tayari West TV" tvg-logo="https://i.imgur.com/tbnOtUZ.jpeg" tvg-country="UG" group-title="FHD · Generalistas",Tayari West TV
 https://stream.hydeinnovations.com/tarari-west/index.m3u8
 #EXTINF:-1 tvg-name="Dunyo bo'ylab" tvg-logo="https://i.imgur.com/KArB5U6.png" tvg-country="UZ" group-title="FHD · Generalistas",Dunyo bo'ylab
@@ -2026,6 +2038,8 @@ http://190.93.224.42/PBO/index.m3u8
 http://190.93.224.42/RPP/index.m3u8
 #EXTINF:-1 tvg-name="TV Peru Noticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/TV_Per%C3%BA_Noticias_-_2019_logo.png/960px-TV_Per%C3%BA_Noticias_-_2019_logo.png" tvg-country="PE" group-title="FHD · Noticias",TV Peru Noticias
 http://190.93.224.42/TV-PERU-NOTICIAS/index.m3u8
+#EXTINF:-1 tvg-name="Radio Isla TV" tvg-logo="https://i.ibb.co/PDThYr5/Logo-Radio-Isla.png" tvg-country="PR" group-title="FHD · Noticias",Radio Isla TV
+https://panel2.videocontentstreaming.com/live/4fd37e086394ac7e11a87acbc55e8f91.m3u8
 #EXTINF:-1 tvg-name="Carivision" tvg-logo="https://i.imgur.com/XjGb2UM.png" tvg-country="DO" group-title="FHD · Noticias",Carivision
 https://ss2.tvrdomi.com:1936/carivision/carivision/playlist.m3u8
 #EXTINF:-1 tvg-name="RDN" tvg-logo="https://i.imgur.com/x02CGSW.png" tvg-country="DO" group-title="FHD · Noticias",RDN
@@ -2151,10 +2165,14 @@ http://stream.mcquack.net/384/index.m3u8
 http://go.bkpcp.top/mg/cctv13
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Estrella_TV_Logo_2020.png/500px-Estrella_TV_Logo_2020.png" tvg-country="CN" group-title="FHD · Noticias",CGTN
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+#EXTINF:-1 tvg-name="CGTN Arabic" tvg-logo="https://i.imgur.com/AkFFrS7.png" tvg-country="CN" group-title="FHD · Noticias",CGTN Arabic
+https://arabic-liveali.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN French" tvg-logo="https://i.imgur.com/BwhledK.png" tvg-country="CN" group-title="FHD · Noticias",CGTN French
-https://news.cgtn.com/resource/live/french/cgtn-f.m3u8
+https://francais-liveali.cgtn.com/hls/LSvev95OuFZtKLc6CeKEFYXj220802LSTeV6PO0Ut9r71Uq3k5goCA220802cd/playlist.m3u8
+#EXTINF:-1 tvg-name="CGTN Russian" tvg-logo="https://i.imgur.com/nDWkCmL.png" tvg-country="CN" group-title="FHD · Noticias",CGTN Russian
+https://russian-liveali.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN Spanish" tvg-logo="https://i.imgur.com/Poz3xfi.png" tvg-country="CN" group-title="FHD · Noticias",CGTN Spanish
-http://45.165.82.19/test/index.m3u8
+https://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="Chuzhou News Channel" tvg-logo="https://i.imgur.com/9JfZJRv.png" tvg-country="CN" group-title="FHD · Noticias",Chuzhou News Channel
 http://live.cztv.cc:85/live/xwpd.m3u8
 #EXTINF:-1 tvg-name="Tonghua TV" tvg-logo="https://www.tvchinese.net/uploads/tv/thtv1.jpg" tvg-country="CN" group-title="FHD · Noticias",Tonghua TV
@@ -2434,6 +2452,8 @@ https://cc-lyf4c0hwzg5dd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 https://live.jswk.online/IK_RTPM/live/index.m3u8
 #EXTINF:-1 tvg-name="Kadak" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Kadak.png" tvg-country="IN" group-title="FHD · Noticias",Kadak
 https://n18syndication.akamaized.net/bpk-tv/Kadak_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="Kannur Vision" tvg-logo="https://i.imgur.com/FCXqPer.png" tvg-country="IN" group-title="FHD · Noticias",Kannur Vision
+https://stream.logichost.in/kannurvision/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Karnataka News Beat" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/newsbeatkarnataka.png" tvg-country="IN" group-title="FHD · Noticias",Karnataka News Beat
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d0f1a078-3293-4f87-80ac-34cff3279b0d/index.m3u8
 #EXTINF:-1 tvg-name="KBC News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/kbcnews.png" tvg-country="IN" group-title="FHD · Noticias",KBC News
@@ -3211,25 +3231,11 @@ http://141.94.193.53/Match4_HD/index.m3u8
 https://mumbai-edge.smartplaytv.in/DDSportsHD/index.m3u8
 #EXTINF:-1 tvg-name="FloRacing 24/7" tvg-country="IN" group-title="FHD · Deportes",FloRacing 24/7
 https://amg02278-amg02278c1-distrotv-us-7534.playouts.now.amagi.tv/playlist/amg02278-flosports-floracing24x7-distrotvus/playlist.m3u8
-#EXTINF:-1 tvg-name="Sony Sports Ten 1" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Deportes",Sony Sports Ten 1
-http://116.90.120.149:8000/play/a126/index.m3u8
-#EXTINF:-1 tvg-name="Sony Sports Ten 2" tvg-logo="https://dtil.tmsimg.com/assets/s157592_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Deportes",Sony Sports Ten 2
-http://116.90.120.149:8000/play/a137/index.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 3 Hindi" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" tvg-country="IN" group-title="FHD · Deportes",Sony Sports Ten 3 Hindi
 https://r2.amml.in/sony-ten-3-hd/live.m3u8
 #EXTINF:-1 tvg-name="Sports First TV" tvg-country="IN" group-title="FHD · Deportes",Sports First TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
 https://d2396zb8liu8hs.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-SportsFirstTV/409.m3u8?ads.vf=IqoHUzAjl6S
-#EXTINF:-1 tvg-name="Star Sports 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" tvg-country="IN" group-title="FHD · Deportes",Star Sports 1
-http://116.90.120.149:8000/play/a11x/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 1 Hindi" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8867/1782284658867-h.jpg" tvg-country="IN" group-title="FHD · Deportes",Star Sports 1 Hindi
-http://116.90.120.149:8000/play/a122/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" tvg-country="IN" group-title="FHD · Deportes",Star Sports 2
-http://116.90.120.149:8000/play/a120/index.m3u8
-#EXTINF:-1 tvg-name="Unite8 Sports 1" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00352H3S.png?lock=720x540" tvg-country="IN" group-title="FHD · Deportes",Unite8 Sports 1
-http://116.90.120.149:8000/play/a11l/index.m3u8
-#EXTINF:-1 tvg-name="Unite8 Sports 2" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00358PGT.png?lock=720x540" tvg-country="IN" group-title="FHD · Deportes",Unite8 Sports 2
-http://116.90.120.149:8000/play/a129/index.m3u8
 #EXTINF:-1 tvg-name="TVRI Sport" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/TVRI_Sport_2022.svg/960px-TVRI_Sport_2022.svg.png" tvg-country="ID" group-title="FHD · Deportes",TVRI Sport
 http://202.150.172.59/TVRISport/index.m3u8
 #EXTINF:-1 tvg-name="F1 Channel" tvg-logo="https://i.imgur.com/cjXzWsI.png" tvg-country="IE" group-title="FHD · Deportes",F1 Channel
@@ -3877,6 +3883,8 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e5
 https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-name="Ebony TV by Lionsgate" tvg-logo="https://provider-static.plex.tv/epg/cms/production/234d5377-ab07-41bf-acd6-34c17c1c051a/EbonyTV_Plex_Logo_Light_1500x1000.png" tvg-country="US" group-title="FHD · Cine",Ebony TV by Lionsgate
 https://pb-6csswagmy4nat.akamaized.net/Ebony_TV_by_Lionsgate.m3u8
+#EXTINF:-1 tvg-name="FMH Movies" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2024/12/24/23/1735058961578/eaf883fb926d_480_270.png" tvg-country="US" group-title="FHD · Cine",FMH Movies
+http://45.186.254.75:8000/play/a07j/index.m3u8
 #EXTINF:-1 tvg-name="Free Holiday Movies" tvg-country="US" group-title="FHD · Cine",Free Holiday Movies
 https://amg00346-vizioservicesll-oando2-vizious-ztssf.amagi.tv/playlist/amg00346-vizioservicesll-oando2-vizious/playlist.m3u8
 #EXTINF:-1 tvg-name="Free Movie Network" tvg-country="US" group-title="FHD · Cine",Free Movie Network
@@ -3977,12 +3985,8 @@ https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tf1_series_films/live.livx/play
 http://actionlive.siliconweb.com/actionabr/actiontv/playlist.m3u8
 #EXTINF:-1 tvg-name="MAX4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Max4_logo.png/960px-Max4_logo.png" tvg-country="HU" group-title="FHD · Cine",MAX4
 http://141.94.193.53/MAX4_HD/index.m3u8
-#EXTINF:-1 tvg-name="&pictures" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022J67R.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",&pictures
-http://116.90.120.149:8000/play/a132/index.m3u8
 #EXTINF:-1 tvg-name="&TV" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022RLRS.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",&TV
-http://116.90.120.149:8000/play/a133/index.m3u8
-#EXTINF:-1 tvg-name="&xplor HD" tvg-logo="https://i.imgur.com/9mK6dgM.png" tvg-country="IN" group-title="FHD · Cine",&xplor HD
-http://116.90.120.149:8000/play/a11o/index.m3u8
+https://3f56f997.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9BbmRUVl9ITFM/playlist.m3u8
 #EXTINF:-1 tvg-name="B4U Bhojpuri" tvg-logo="https://i.imgur.com/NwOQUDp.png" tvg-country="IN" group-title="FHD · Cine",B4U Bhojpuri
 https://cdnb4u.wiseplayout.com/B4U_Bhojpuri/master.m3u8
 #EXTINF:-1 tvg-name="B4U Kadak" tvg-logo="https://dtil.tmsimg.com/assets/s142695_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",B4U Kadak
@@ -4000,10 +4004,6 @@ https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnt
 https://box.bbaria.net:8083/Jalsha_Movie/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Mahua Play" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Mahua_Play.png" tvg-country="IN" group-title="FHD · Cine",Mahua Play
 https://cdn.ottlive.co.in/mahuaplay/index.m3u8
-#EXTINF:-1 tvg-name="MNX" tvg-logo="https://dtil.tmsimg.com/assets/s147570_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",MNX
-http://116.90.120.149:8000/play/a11e/index.m3u8
-#EXTINF:-1 tvg-name="Movies Now" tvg-logo="https://dtil.tmsimg.com/assets/s147571_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",Movies Now
-http://116.90.120.149:8000/play/a11f/index.m3u8
 #EXTINF:-1 tvg-name="NH BollyFlix" tvg-logo="https://i.ibb.co/yF9MPTDK/blyflx.png" tvg-country="IN" group-title="FHD · Cine",NH BollyFlix
 https://jmp2.uk/stvp-IN46000140Q
 #EXTINF:-1 tvg-name="NH Tamil Gold" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png" tvg-country="IN" group-title="FHD · Cine",NH Tamil Gold
@@ -4016,22 +4016,12 @@ https://gtc.ottlive.co.in/punjabshort/index.m3u8
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8
 #EXTINF:-1 tvg-name="Shemaroo Filmi Gaane" tvg-logo="https://i.imgur.com/2yOij1b.png" tvg-country="IN" group-title="FHD · Cine",Shemaroo Filmi Gaane
 https://prod-runn.cdn.runn.tv/shemaroo/stream/smrfgn/playlist.m3u8
-#EXTINF:-1 tvg-name="Sony Max" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",Sony Max
-https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/index.m3u8
-#EXTINF:-1 tvg-name="Sony Pix" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",Sony Pix
-http://116.90.120.149:8000/play/a138/index.m3u8
 #EXTINF:-1 tvg-name="Sony Wah" tvg-logo="https://dtil.tmsimg.com/assets/s157974_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",Sony Wah
 http://163.61.226.31:9981/stream/channelid/1743466790?profile=pass
 #EXTINF:-1 tvg-name="South Station" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3800008CX_20260325T012316SQUARE.png" tvg-country="IN" group-title="FHD · Cine",South Station
 https://cc-yw7ztecy8do3q.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yw7ztecy8do3q/SS_IN.m3u8
-#EXTINF:-1 tvg-name="Star Gold" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" tvg-country="IN" group-title="FHD · Cine",Star Gold
-http://116.90.120.149:8000/play/a12a/index.m3u8
-#EXTINF:-1 tvg-name="Star Gold Select" tvg-logo="https://dtil.tmsimg.com/assets/s143817_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",Star Gold Select
-http://116.90.120.149:8000/play/a131/index.m3u8
 #EXTINF:-1 tvg-name="Star Movies" tvg-logo="https://dtil.tmsimg.com/assets/s143829_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",Star Movies
 http://116.90.120.149:8000/play/a13a/index.m3u8
-#EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://dtil.tmsimg.com/assets/s143830_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",Star Movies Select
-http://116.90.120.149:8000/play/a139/index.m3u8
 #EXTINF:-1 tvg-name="Thalaa TV" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/thalaa-tv.png" tvg-country="IN" group-title="FHD · Cine",Thalaa TV
 https://streams2.sofast.tv/ptnr-khabriya/title-THALAA-TV-TAM_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c9d5c8a0-8c52-47bc-954d-e64a11314de2/manifest.m3u8
 #EXTINF:-1 tvg-name="The Movie Club" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN38000072R_20260325T012318SQUARE.png" tvg-country="IN" group-title="FHD · Cine",The Movie Club
@@ -4042,10 +4032,6 @@ https://streams2.sofast.tv/ptnr-khabriya/title-TOLLY-TV-TEL_Khabriya/v1/master/6
 https://server.zillarbarta.com/ZBCINEMA/index.m3u8
 #EXTINF:-1 tvg-name="Zee South Flix" tvg-logo="https://d3bd0tgyk368z1.cloudfront.net/zeelg/LG%20logo%20artwork/400x200/zsouthflix.png" tvg-country="IN" group-title="FHD · Cine",Zee South Flix
 https://amg00862-amg00862c9-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c9-amgplt0173/playlist.m3u8
-#EXTINF:-1 tvg-name="Zee Talkies" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S299.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",Zee Talkies
-http://116.90.120.149:8000/play/a116/index.m3u8
-#EXTINF:-1 tvg-name="Zee Thirai" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S9BF.png?lock=720x540" tvg-country="IN" group-title="FHD · Cine",Zee Thirai
-http://116.90.120.149:8000/play/a11q/index.m3u8
 #EXTINF:-1 tvg-name="iFilm Persian" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png" tvg-country="IR" group-title="FHD · Cine",iFilm Persian
 https://live.presstv.co.uk/hls/ifilmfa.m3u8
 #EXTINF:-1 tvg-name="Tamasha" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/thumb/f/f2/IRIB_tamashaTV.svg/960px-IRIB_tamashaTV.svg.png" tvg-country="IR" group-title="FHD · Cine",Tamasha
@@ -5333,6 +5319,8 @@ https://d3c7vdfq3tyeyw.cloudfront.net/v1/master/071c0467fcd02420cdf0d8a1ca3524b9
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starasianet.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-name="Bollywood Masala" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/bollywoodmasala.png" tvg-country="IN" group-title="FHD · Entretenimiento",Bollywood Masala
 https://lamhas.net/bollywoodmasala/index.m3u8
+#EXTINF:-1 tvg-name="Calvary TV" tvg-logo="https://i.imgur.com/BvQzwSp.png" tvg-country="IN" group-title="FHD · Entretenimiento",Calvary TV
+https://5dd3981940faa.streamlock.net/calvarytv/calvarytv/playlist.m3u8
 #EXTINF:-1 tvg-name="Cine Jomjomat" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Cine_Jomjomat.png" tvg-country="IN" group-title="FHD · Entretenimiento",Cine Jomjomat
 https://amg13779-amg13779c1-amgplt0016.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg13779-amg13779c1-amgplt0016/playlist.m3u8
 #EXTINF:-1 tvg-name="Colors" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/108/1782291760108-h.jpg" tvg-country="IN" group-title="FHD · Entretenimiento",Colors
@@ -5347,8 +5335,6 @@ https://amg00082-amg00082c1-distrotv-us-7248.playouts.now.amagi.tv/playlist/amg0
 http://163.61.226.31:9981/stream/channelid/1991369999?profile=pass
 #EXTINF:-1 tvg-name="Desi Channel" tvg-logo="https://desichannel.in/wp-content/uploads/2025/01/desi-channel.png" tvg-country="IN" group-title="FHD · Entretenimiento",Desi Channel
 https://desichannel.kableone.com/desichannel/master.m3u8
-#EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Entretenimiento",Discovery Channel
-http://103.135.253.32:8080/DISCOVERY/index.m3u8
 #EXTINF:-1 tvg-name="Epic Bharat" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0032BW6T.png?lock=720x540" tvg-country="IN" group-title="FHD · Entretenimiento",Epic Bharat
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/471/master.m3u8
@@ -5374,10 +5360,6 @@ https://amg01911-mangotv-amg01911c1-xiaomi-in-1270.playouts.now.amagi.tv/playlis
 https://mntv.livebox.co.in/mntvhls/live.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Entretenimiento",Mazhavil Manorama
 https://cdn.pishow.tv/ott/live/1479/master.m3u8
-#EXTINF:-1 tvg-name="MTV" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" tvg-country="IN" group-title="FHD · Entretenimiento",MTV
-#EXTVLCOPT:http-referrer=https://bhoomtv.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
-https://yupp-music.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2cf5/index.m3u8
 #EXTINF:-1 tvg-name="Namma Bangalore" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Namma_Bangalore.png" tvg-country="IN" group-title="FHD · Entretenimiento",Namma Bangalore
 https://stream.ottlive.co.in/nammatv/index.m3u8
 #EXTINF:-1 tvg-name="Oli TV" tvg-logo="https://i.ibb.co/XfvTQyJn/main-removebg-preview.png" tvg-country="IN" group-title="FHD · Entretenimiento",Oli TV
@@ -5577,6 +5559,8 @@ http://103.250.28.74:8000/play/a00u/index.m3u8
 https://tv.beatfm.nl/live.m3u8
 #EXTINF:-1 tvg-name="MaLive" tvg-logo="https://i.imgur.com/0Vzg2OR.png" tvg-country="NL" group-title="FHD · Entretenimiento",MaLive
 https://live.salto.nl/hls/malive_high.m3u8
+#EXTINF:-1 tvg-name="MTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png" tvg-country="NL" group-title="FHD · Entretenimiento",MTV
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F8342374230cdd9e7b7646
 #EXTINF:-1 tvg-name="Podium.TV" tvg-logo="https://i.imgur.com/bAhMhuz.jpg" tvg-country="NL" group-title="FHD · Entretenimiento",Podium.TV
 https://rrr.sz.xlcdn.com/?account=ndc_mediagroep&file=NDC1&output=playlist.m3u8&service=wowza&type=live
 #EXTINF:-1 tvg-name="Podium.TV 2" tvg-logo="https://i.imgur.com/bAhMhuz.jpg" tvg-country="NL" group-title="FHD · Entretenimiento",Podium.TV 2
@@ -5899,6 +5883,8 @@ http://23.237.104.106:8080/USA_STARZ_COMEDY/index.m3u8
 https://jmp2.uk/plu-66e2a94d167a8b000813485d.m3u8
 #EXTINF:-1 tvg-name="WBTV: Retro Black Laughs" tvg-country="US" group-title="FHD · Humor",WBTV: Retro Black Laughs
 https://amg00136-amg00136c176-amgplt0022.playout.now3.amagi.tv/ts-us-w2-n1/playlist/amg00136-amg00136c176-amgplt0022/playlist.m3u8
+#EXTINF:-1 tvg-name="Comedie+" tvg-logo="https://i.imgur.com/ArgX0Af.png" tvg-country="FR" group-title="FHD · Humor",Comedie+
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F1928514641c723cfdf588b
 #EXTINF:-1 tvg-name="ETV Comedy" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETV_Comedy.png" tvg-country="IN" group-title="FHD · Humor",ETV Comedy
 https://cc-wie8j8y69d2uy.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-wie8j8y69d2uy/WWBI/Amagi/ETV_Comedy_IN/playlist.m3u8
 #EXTINF:-1 tvg-name="Pitaara Comedy" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/PitaaraComedy.png" tvg-country="IN" group-title="FHD · Humor",Pitaara Comedy
@@ -5947,6 +5933,10 @@ https://5f700d5b2c46f.streamlock.net/thecabinn/thecabinn/playlist.m3u8
 https://master.tucableip.com/audiokisstv/index.m3u8
 #EXTINF:-1 tvg-name="13 Festival" tvg-logo="https://i.imgur.com/Ymk6j5o.png" tvg-country="CL" group-title="FHD · Música",13 Festival
 https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
+#EXTINF:-1 tvg-name="La Granja TV" tvg-logo="https://i.imgur.com/90luGab.png" tvg-country="CL" group-title="FHD · Música",La Granja TV
+https://oracle.streaminghd.cl/8126/8126/playlist.m3u8
+#EXTINF:-1 tvg-name="PalMundo FM" tvg-logo="https://cdn.m3u.cl/logo/1803_PalMundo_FM.png" tvg-country="CL" group-title="FHD · Música",PalMundo FM
+https://streampanelcp.palmundofm.cl/hls/palmundofm/visual/hd.m3u8
 #EXTINF:-1 tvg-name="Pauta" tvg-logo="https://i.imgur.com/UAKLJAt.png" tvg-country="CL" group-title="FHD · Música",Pauta
 https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/pautatv/pautatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Radio Ritmo FM" tvg-logo="https://i.imgur.com/qU3E0kX.png" tvg-country="CL" group-title="FHD · Música",Radio Ritmo FM
@@ -6835,15 +6825,9 @@ https://cc-mgr91yrk4pehy.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 #EXTINF:-1 tvg-name="Epic Crimes" tvg-logo="https://i.imgur.com/a5kaqDc.png" tvg-country="IN" group-title="FHD · Documentales",Epic Crimes
 https://cc-wsuyg2uxeak04.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-wsuyg2uxeak04/master.m3u8
 #EXTINF:-1 tvg-name="History TV18" tvg-logo="https://dtil.tmsimg.com/assets/s143133_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Documentales",History TV18
-http://116.90.120.149:8000/play/a12z/index.m3u8
+https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelenglish-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="India TV Aap Ki Adalat" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Aap_Ki_Adalat.png" tvg-country="IN" group-title="FHD · Documentales",India TV Aap Ki Adalat
 https://amg01550-amg01550c6-samsung-in-4679.playouts.now.amagi.tv/playlist/amg01550-indiatvfast-indiatvakasamsung-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-name="National Geographic" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" tvg-country="IN" group-title="FHD · Documentales",National Geographic
-http://116.90.120.149:8000/play/a115/index.m3u8
-#EXTINF:-1 tvg-name="National Geographic Wild" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/5075/1785250005075-h.jpg" tvg-country="IN" group-title="FHD · Documentales",National Geographic Wild
-http://116.90.120.149:8000/play/a11h/index.m3u8
-#EXTINF:-1 tvg-name="Sony BBC Earth" tvg-logo="https://dtil.tmsimg.com/assets/s143800_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Documentales",Sony BBC Earth
-http://116.90.120.149:8000/play/a130/index.m3u8
 #EXTINF:-1 tvg-name="Karbala Documentary" tvg-logo="https://www.karbala-tv.iq/documentary/static/img/logo.png" tvg-country="IQ" group-title="FHD · Documentales",Karbala Documentary
 https://ktvlive.online/stream/hls/ch3.m3u8
 #EXTINF:-1 tvg-name="Italiana" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/98/Italiana_%282026%29.svg/revision/latest?cb=20260824144626" tvg-country="IT" group-title="FHD · Documentales",Italiana
@@ -6873,7 +6857,9 @@ https://ead2625dd95b42dabfd015fadcf144e3.mediatailor.eu-west-1.amazonaws.com/v1/
 #EXTINF:-1 tvg-name="Animal Planet" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/960px-2018_Animal_Planet_logo.svg.png" tvg-country="UK" group-title="FHD · Documentales",Animal Planet
 http://37.49.224.5/stream/10/index.m3u8
 #EXTINF:-1 tvg-name="BBC Earth" tvg-logo="https://i.imgur.com/nGSsUd4.png" tvg-country="UK" group-title="FHD · Documentales",BBC Earth
-http://88.212.7.14/live/test_bbc_eartch_hevc/playlist.m3u8
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://proxy-v.rctiplus.id/live/web/bbcearth/index.m3u8
 #EXTINF:-1 tvg-name="BBC Four" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/BBC_Four_logo_2021.svg/500px-BBC_Four_logo_2021.svg.png" tvg-country="GB" group-title="FHD · Documentales",BBC Four
 https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_four_hd/iptv_hd_abr_v1.m3u8
 #EXTINF:-1 tvg-name="Discovery Science Europe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Discovery_Science_2017_Logo.svg/960px-Discovery_Science_2017_Logo.svg.png" tvg-country="UK" group-title="FHD · Documentales",Discovery Science Europe
@@ -7513,8 +7499,6 @@ http://103.190.232.129/stream/tvb/style/master.m3u8?p=967e33767f592e1aaf3d4019f3
 https://d2dgecfolnmfcv.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_LIFE_H264-5_cloud_in/index.m3u8
 #EXTINF:-1 tvg-name="NDTV Good Times" tvg-logo="https://i.imgur.com/7cruYvo.png" tvg-country="IN" group-title="FHD · Estilo de vida",NDTV Good Times
 https://amg01448-samsungin-ndtvgoodtimes-samsungin-ad-gp.amagi.tv/playlist/amg01448-samsungin-ndtvgoodtimes-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-name="TLC" tvg-logo="https://dtil.tmsimg.com/assets/s123500_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="FHD · Estilo de vida",TLC
-http://116.90.120.149:8000/play/a11g/index.m3u8
 #EXTINF:-1 tvg-name="Biznet Lifestyle" tvg-logo="https://i.imgur.com/XqUfQKA.png" tvg-country="ID" group-title="FHD · Estilo de vida",Biznet Lifestyle
 http://livestream.biznetvideo.net/biznet_lifestyle/smil:lifestyle.smil/index.m3u8
 #EXTINF:-1 tvg-name="Class TV Moda" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Class-tv-moda.png/960px-Class-tv-moda.png" tvg-country="IT" group-title="FHD · Estilo de vida",Class TV Moda
@@ -7857,8 +7841,10 @@ https://copacoradios.desdeparaguay.net/rcctv/rcctv/playlist.m3u8?admin=nacion
 http://187.102.210.46/JN19/index.m3u8
 #EXTINF:-1 tvg-name="EBN Television" tvg-logo="https://i.imgur.com/4OCptwT.png" tvg-country="PR" group-title="FHD · Religión",EBN Television
 https://627bb251f23c7.streamlock.net:444/EBNTELEVISION/EBNTELEVISION/playlist.m3u8
-#EXTINF:-1 tvg-name="Familia Vision HD" tvg-logo="https://i.imgur.com/uqTH7m5.jpg" tvg-country="PR" group-title="FHD · Religión",Familia Vision HD
-https://584097344c1f0.streamlock.net/29/stream/playlist.m3u8
+#EXTINF:-1 tvg-name="Master Video" tvg-logo="https://i.imgur.com/0jj9Vx0.png" tvg-country="PR" group-title="FHD · Religión",Master Video
+https://eco.streams.ovh:8081/mastervideotv/index.m3u8
+#EXTINF:-1 tvg-name="WECN" tvg-logo="https://i.imgur.com/NYBZBY0.png" tvg-country="PR" group-title="FHD · Religión",WECN
+https://59825a54e4454.streamlock.net:8443/pastorairisn394/pastorairisn394/master.m3u8
 #EXTINF:-1 tvg-name="Cielo TV" tvg-logo="https://i.imgur.com/2PNw6BA.png" tvg-country="DO" group-title="FHD · Religión",Cielo TV
 https://streaming.servervideo.net:1936/cielotv/cielotv/playlist.m3u8
 #EXTINF:-1 tvg-name="Televida" tvg-logo="https://i.imgur.com/S8Zdn41.png" tvg-country="DO" group-title="FHD · Religión",Televida
@@ -8093,6 +8079,8 @@ https://knocktv2.wiseplayout.com/Knock_Bhakti_EST/master.m3u8
 https://mumbai-edge.smartplaytv.in/MahaBhakthi/index.m3u8
 #EXTINF:-1 tvg-name="Mercy TV" tvg-logo="https://i.imgur.com/klNH4tV.png" tvg-country="IN" group-title="FHD · Religión",Mercy TV
 https://5dd3981940faa.streamlock.net/mercytv/mercytv/playlist.m3u8
+#EXTINF:-1 tvg-name="Nijam TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/nijamtv.png" tvg-country="IN" group-title="FHD · Religión",Nijam TV
+https://nijamtv.indiamatrix.in/nijamtv/nijamtv.m3u8
 #EXTINF:-1 tvg-name="PMC Telugu" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/PMC_Telugu.png" tvg-country="IN" group-title="FHD · Religión",PMC Telugu
 https://mumbai-edge.smartplaytv.in/PMC/index.m3u8
 #EXTINF:-1 tvg-name="PTC Simran" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002NG05K.png?lock=720x540" tvg-country="IN" group-title="FHD · Religión",PTC Simran
@@ -8290,6 +8278,8 @@ https://lbl.netmedya.net/hls/lalegultv.m3u8
 https://cdn3.wowza.com/1/WjduMm1tYnlwNXQx/M01NV3Uz/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Ark TV" tvg-logo="https://i.imgur.com/yCHNZXD.png" tvg-country="UG" group-title="FHD · Religión",Ark TV
 https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8
+#EXTINF:-1 tvg-name="Glorious Times TV" tvg-logo="https://i.imgur.com/F3sH2Zt.jpeg" tvg-country="UG" group-title="FHD · Religión",Glorious Times TV
+https://gttv-cdn.cybercdn.live/GTTV/Live/playlist.m3u8
 #EXTINF:-1 tvg-name="Salt TV" tvg-logo="https://i.imgur.com/AK9nE6Y.png" tvg-country="UG" group-title="FHD · Religión",Salt TV
 https://stream.salttelevision.com/hls/stream.m3u8
 #EXTINF:-1 tvg-name="ZenLIFE by Stingray" tvg-logo="https://www.stingray.com/wp-content/uploads/2023/12/stingray_zenlifebystingray_white.svg" tvg-country="CA" group-title="FHD · Relax",ZenLIFE by Stingray

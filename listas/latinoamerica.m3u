@@ -968,6 +968,8 @@ https://panelvideo1.intermediahost.co:3286/live/ruzfpkqklive.m3u8
 https://tv.frecuenciaf.com/live/envivo_1080p4000kbs/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:HeliconiaRadioTV.co" tvg-name="Heliconia Radio TV" tvg-logo="https://i.imgur.com/AJ182BG.png" group-title="Latinoamérica · Colombia",Heliconia Radio TV
 https://eu1.servers10.com:8081/8178/index.m3u8
+#EXTINF:-1 tvg-id="iptvorg:HuilaTV.co" tvg-name="Huila TV" tvg-logo="https://i.imgur.com/hFlGHNZ.png" group-title="Latinoamérica · Colombia",Huila TV
+https://server.asilivehd.com:3333/live/huilatvlive.m3u8
 #EXTINF:-1 tvg-id="iptvorg:KaluTV.co" tvg-name="Kalu TV" tvg-logo="https://i.imgur.com/MO4w3OT.jpeg" group-title="Latinoamérica · Colombia",Kalu TV
 https://tv.kaludecolombia.com/memfs/d71c0104-4752-4690-bdbf-19aa849da6c4.m3u8
 #EXTINF:-1 tvg-id="iptvorg:LaHermandadSalsera.co" tvg-name="La Hermandad Salsera" tvg-logo="https://i.imgur.com/7Wlt6bc.png" group-title="Latinoamérica · Colombia",La Hermandad Salsera
@@ -1257,6 +1259,8 @@ https://vdochile.com:3134/stream/play.m3u8
 https://unlimited1-cl-isp.dps.live/laclavetv/laclavetv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:LaComarcaTV.cl" tvg-name="La Comarca TV" tvg-logo="https://cdn.m3u.cl/logo/1698_La_Comarca_TV.png" group-title="Latinoamérica · Chile",La Comarca TV
 https://v2.tustreaming.cl/lcomarcatv/index.m3u8
+#EXTINF:-1 tvg-id="iptvorg:LaGranjaTV.cl" tvg-name="La Granja TV" tvg-logo="https://i.imgur.com/90luGab.png" group-title="Latinoamérica · Chile",La Granja TV
+https://oracle.streaminghd.cl/8126/8126/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:LaMelinkanaTV.cl" tvg-name="La Melinkana TV" tvg-logo="https://i.imgur.com/I0nzI1y.png" group-title="Latinoamérica · Chile",La Melinkana TV
 https://v1.tustreaming.cl/melinkana/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:LaMetroTV.cl" tvg-name="La Metro TV" tvg-logo="https://i.imgur.com/0aoI5Zd.jpeg" group-title="Latinoamérica · Chile",La Metro TV
@@ -1273,6 +1277,8 @@ https://tv.arkeo.cl:1936/radiolila/radiolila/playlist.m3u8
 https://5eaccbab48461.streamlock.net:1936/8242/ngrp:8242_all/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:MargaMargaTV.cl" tvg-name="Marga Marga TV" tvg-logo="https://i.imgur.com/4cg51eE.png" group-title="Latinoamérica · Chile",Marga Marga TV
 https://v1.tustreaming.cl/margamargatv/index.m3u8
+#EXTINF:-1 tvg-id="iptvorg:MasRadioTV.cl" tvg-name="Mas Radio TV" tvg-logo="https://cdn.m3u.cl/logo/1495_Mas_Radio_TV.png" group-title="Latinoamérica · Chile",Mas Radio TV
+https://iptv.intersurtv.cl/intersur_mauletv/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:Mega.cl" tvg-name="Mega" tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Latinoamérica · Chile",Mega
 http://tr.live.clarovtrcdn.vtrplay.com/megahdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD
 #EXTINF:-1 tvg-id="iptvorg:Mega2.cl" tvg-name="Mega 2" tvg-logo="https://i.imgur.com/c1ME00r.png" group-title="Latinoamérica · Chile",Mega 2
@@ -1304,6 +1310,10 @@ https://v2.tustreaming.cl/odiseatv/index.m3u8
 https://v4.tustreaming.cl/retroplaytv/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:Opinionsur.cl" tvg-name="Opinionsur" tvg-logo="https://i.imgur.com/4IjhXKm.png" group-title="Latinoamérica · Chile",Opinionsur
 https://183.bozztv.com/giatv/giatv-opinionsurc/opinionsurc/playlist.m3u8
+#EXTINF:-1 tvg-id="iptvorg:OsornoTV.cl" tvg-name="Osorno TV" tvg-logo="https://i.imgur.com/0ELjva6.png" group-title="Latinoamérica · Chile",Osorno TV
+https://envivo.osornotv.cl/memfs/cb5800be-330b-40c9-8519-af788c7e29eb.m3u8
+#EXTINF:-1 tvg-id="iptvorg:PalMundoFM.cl" tvg-name="PalMundo FM" tvg-logo="https://cdn.m3u.cl/logo/1803_PalMundo_FM.png" group-title="Latinoamérica · Chile",PalMundo FM
+https://streampanelcp.palmundofm.cl/hls/palmundofm/visual/hd.m3u8
 #EXTINF:-1 tvg-id="iptvorg:PatagoniaRadioTV.cl" tvg-name="Patagonia Radio TV" tvg-logo="https://i.imgur.com/oFuWBZO.png" group-title="Latinoamérica · Chile",Patagonia Radio TV
 https://video01.logicahost.com.br/grupomedia/grupomedia/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:Pauta.cl" tvg-name="Pauta" tvg-logo="https://i.imgur.com/UAKLJAt.png" group-title="Latinoamérica · Chile",Pauta
@@ -1324,6 +1334,8 @@ https://v2.tustreaming.cl/americamovil/index.m3u8
 https://v2.tustreaming.cl/radioancoatv/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:RadioArmoniaTV.cl" tvg-name="Radio Armonia TV" tvg-logo="https://i.imgur.com/puWBnP3.png" group-title="Latinoamérica · Chile",Radio Armonia TV
 https://v2.tustreaming.cl/armoniamovil/index.m3u8
+#EXTINF:-1 tvg-id="iptvorg:RadioBohemiaTV.cl" tvg-name="Radio Bohemia TV" tvg-logo="https://cdn.m3u.cl/logo/1776_Radio_Bohemia_TV.png" group-title="Latinoamérica · Chile",Radio Bohemia TV
+https://portalstream.cl:8080/bohemia1.m3u8
 #EXTINF:-1 tvg-id="iptvorg:RadioChiloe.cl" tvg-name="Radio Chiloe" tvg-logo="https://cdn.m3u.cl/logo/409_Radio_Chiloe.png" group-title="Latinoamérica · Chile",Radio Chiloe
 https://videostream.chileservidores.com:8081/chiloe1/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:RadioContemporaneaCoihueco.cl" tvg-name="Radio Contemporanea Coihueco" tvg-logo="https://cdn.m3u.cl/logo/1493_Radio_Contemporanea_Coihueco.png" group-title="Latinoamérica · Chile",Radio Contemporanea Coihueco
@@ -2892,6 +2904,8 @@ https://vtm1.msinteractiva.com/globaltv/globaltv/playlist.m3u8
 https://183.giatvcdn.com/ssh101/ssh101/guaymatetv/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:HainaVision.do" tvg-name="Haina Vision" tvg-logo="https://i.imgur.com/eoodUNJ.png" group-title="Latinoamérica · República Dominicana",Haina Vision
 https://cdn.streamingcpanel.com:3447/live/hainavisionlive.m3u8
+#EXTINF:-1 tvg-id="iptvorg:HatoDelYaqueTV.do" tvg-name="Hato Del Yaque TV" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/4075-294x165-FFFFFF.jpg" group-title="Latinoamérica · República Dominicana",Hato Del Yaque TV
+https://streamunoapp.com:3739/live/hatodelyaquetvlive.m3u8
 #EXTINF:-1 tvg-id="iptvorg:HermanasMirabalTV.do" tvg-name="Hermanas Mirabal TV" tvg-logo="https://i.imgur.com/cbKgcGh.png" group-title="Latinoamérica · República Dominicana",Hermanas Mirabal TV
 https://fox.hostlagarto.com:8081/hmtv/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:HilandoFinoTV.do" tvg-name="Hilando Fino TV" tvg-logo="https://i.imgur.com/E7ta6g8.png" group-title="Latinoamérica · República Dominicana",Hilando Fino TV
@@ -3024,6 +3038,8 @@ https://edge.essastream.com/rdntv/tracks-v1a1/mono.m3u8
 https://streaming.telecablecentral.com.do/ReadyTV/ReadyHD/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:ReporteroTV.do" tvg-name="Reportero TV" tvg-logo="https://dominicanchannels.com/wp-content/uploads/Reportero-100x75-1.png" group-title="Latinoamérica · República Dominicana",Reportero TV
 https://streamrd.cloud:5443/LiveApp/streams/J3E3REmLNBzirS9A10575071547538.m3u8
+#EXTINF:-1 tvg-id="iptvorg:RetrovisionTV.do" tvg-name="Retro vision TV" tvg-logo="https://retrovisionmia.com/assets/retrovision-logo-BHToA3lv.png" group-title="Latinoamérica · República Dominicana",Retro vision TV
+https://5790d294af2dc.streamlock.net/retrovision/retrovision/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:RNN.do" tvg-name="RNN" tvg-logo="https://i.imgur.com/12Z9qPw.png" group-title="Latinoamérica · República Dominicana",RNN
 https://2-fss-2.streamhoster.com/pl_138/206532-6829902-1/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:RocavisionTV.do" tvg-name="Rocavision TV" tvg-logo="https://imgur.com/FkHqqsi.jpg" group-title="Latinoamérica · República Dominicana",Rocavision TV
@@ -3058,12 +3074,16 @@ https://ss2.tvrdomi.com:1936/supertv55/supertv55/playlist.m3u8
 https://stream.haislin.com/super7fm/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:SurTV.do" tvg-name="Sur TV" tvg-logo="https://i.imgur.com/oAyvK0N.jpeg" group-title="Latinoamérica · República Dominicana",Sur TV
 https://ss2.tvrdomi.com:1936/eradiofonicas/eradiofonicas/playlist.m3u8
+#EXTINF:-1 tvg-id="iptvorg:TainoLiveTV.do" tvg-name="Taino Live TV" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/4090-294x165-FFFFFF.jpg" group-title="Latinoamérica · República Dominicana",Taino Live TV
+https://tainolivetv.com/hls/taino2026.m3u8
 #EXTINF:-1 tvg-id="iptvorg:TarimaTV.do" tvg-name="Tarima TV" tvg-logo="https://vercanalesdominicanos.com/wp-content/uploads/2026/03/tarima.png" group-title="Latinoamérica · República Dominicana",Tarima TV
 http://190.122.104.210:5080/LiveApp/streams/tarima.m3u8
 #EXTINF:-1 tvg-id="iptvorg:TDNMedios.do" tvg-name="TDN Medios" tvg-logo="https://i.imgur.com/C8dSJM7.png" group-title="Latinoamérica · República Dominicana",TDN Medios
 https://castv10.plugstreaming.com:19360/tdntv/tdntv.m3u8
 #EXTINF:-1 tvg-id="iptvorg:TeleAntillas.do" tvg-name="Tele Antillas" tvg-logo="https://i.imgur.com/G1pJZkC.png" group-title="Latinoamérica · República Dominicana",Tele Antillas
 https://hls.tvabierta.net/hls/010.m3u8
+#EXTINF:-1 tvg-id="iptvorg:TeleAzul.do" tvg-name="Tele Azul" tvg-logo="https://imgur.com/a/cU7MHiu.jpg" group-title="Latinoamérica · República Dominicana",Tele Azul
+https://cdn.streamingcpanel.com:3327/live/teleazullive.m3u8
 #EXTINF:-1 tvg-id="iptvorg:TeleDajabonTV.do" tvg-name="Tele Dajabon TV" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3822-294x165-FFFFFF.jpg" group-title="Latinoamérica · República Dominicana",Tele Dajabon TV
 https://5790d294af2dc.streamlock.net/dajabon/dajabon/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:TeleDominicanaTV.do" tvg-name="Tele Dominicana TV" tvg-logo="https://dominicanchannels.com/wp-content/uploads/teledominicana.png" group-title="Latinoamérica · República Dominicana",Tele Dominicana TV
@@ -3652,26 +3672,20 @@ https://video2.getstreamhosting.com:19360/8216/8216.m3u8
 https://627bb251f23c7.streamlock.net:444/CDMInternacional/CDMInternacional/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:DeFianceMedia.pr" tvg-name="DeFiance Media" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5e6HtuC9SEacvU98D5CWN9eBhERsc_WU73KZAyKHaePqMkJloAQ1lGfSGHqg-W_j5Z2g&usqp=CAU" group-title="Latinoamérica · Puerto Rico",DeFiance Media
 https://amg01529-defiancetv-defiancemedia-glewed-tre8x.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="iptvorg:DNJTV.pr" tvg-name="DNJ TV" tvg-logo="https://i.imgur.com/YqTcGJZ.png" group-title="Latinoamérica · Puerto Rico",DNJ TV
-https://cloud2.streaminglivehd.com:1936/dnjv2/dnjv2/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:EBNTelevision.pr" tvg-name="EBN Television" tvg-logo="https://i.imgur.com/4OCptwT.png" group-title="Latinoamérica · Puerto Rico",EBN Television
 https://627bb251f23c7.streamlock.net:444/EBNTELEVISION/EBNTELEVISION/playlist.m3u8
-#EXTINF:-1 tvg-id="iptvorg:FamiliaVisionHD.pr" tvg-name="Familia Vision HD" tvg-logo="https://i.imgur.com/uqTH7m5.jpg" group-title="Latinoamérica · Puerto Rico",Familia Vision HD
-https://584097344c1f0.streamlock.net/29/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:FarodeSantidadTV.pr" tvg-name="Faro de Santidad TV" tvg-logo="https://i.imgur.com/GoNBFzI.png" group-title="Latinoamérica · Puerto Rico",Faro de Santidad TV
 https://5dbcd1053301e.streamlock.net:4443/farodesantidad/farodesantidad/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:LaX.pr" tvg-name="La-X" tvg-logo="https://i.imgur.com/i2GnQTq.png" group-title="Latinoamérica · Puerto Rico",La-X
 https://stream.eleden.com/livelax/ngrp:livelax_all/playlist.m3u8
-#EXTINF:-1 tvg-id="iptvorg:NGRadioTV.pr" tvg-name="NG Radio TV" tvg-logo="https://i.imgur.com/KsNI3vQ.jpg" group-title="Latinoamérica · Puerto Rico",NG Radio TV
-https://67acccf130420.streamlock.net/ngradiotv/ngradiotv/playlist.m3u8
-#EXTINF:-1 tvg-id="iptvorg:NuevaVidaFM.pr" tvg-name="Nueva Vida FM" tvg-logo="https://i.ibb.co/3mbZWyN/nav-Bar-title-Image-iphone6plus.png" group-title="Latinoamérica · Puerto Rico",Nueva Vida FM
-https://stream.nuevavidafm.net:3937/live/nuevavidalive.m3u8
+#EXTINF:-1 tvg-id="iptvorg:MasterVideo.pr" tvg-name="Master Video" tvg-logo="https://i.imgur.com/0jj9Vx0.png" group-title="Latinoamérica · Puerto Rico",Master Video
+https://eco.streams.ovh:8081/mastervideotv/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:ParaisoTV.pr" tvg-name="Paraiso TV" tvg-logo="https://i.imgur.com/wE31GIP.jpg" group-title="Latinoamérica · Puerto Rico",Paraiso TV
 https://stream.eleden.com/livewtpm/ngrp:livewtpm_all/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:PuraPalabra.pr" tvg-name="Pura Palabra" tvg-logo="https://i.imgur.com/nl5vyIw.png" group-title="Latinoamérica · Puerto Rico",Pura Palabra
 https://59825a54e4454.streamlock.net:8443/william233/william233/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:RadioIslaTV.pr" tvg-name="Radio Isla TV" tvg-logo="https://i.ibb.co/PDThYr5/Logo-Radio-Isla.png" group-title="Latinoamérica · Puerto Rico",Radio Isla TV
-https://59a564764e2b6.streamlock.net/palestra/palestra/playlist.m3u8
+https://panel2.videocontentstreaming.com/live/4fd37e086394ac7e11a87acbc55e8f91.m3u8
 #EXTINF:-1 tvg-id="iptvorg:SalvacionTV.pr" tvg-name="Salvacion TV" tvg-logo="https://i.imgur.com/6HOViG9.png" group-title="Latinoamérica · Puerto Rico",Salvacion TV
 https://stream.eleden.com/livesalvatv/ngrp:livesalvatv_all/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:Telenorte.pr" tvg-name="Telenorte" tvg-logo="https://i.imgur.com/LCiYFrh.jpg" group-title="Latinoamérica · Puerto Rico",Telenorte
@@ -3686,10 +3700,12 @@ https://59825a54e4454.streamlock.net:8443/william652/william652/playlist.m3u8
 https://wapa.hostless.app/WAPA-TV-4-1.m3u8
 #EXTINF:-1 tvg-id="iptvorg:WAPATV42.pr" tvg-name="WAPA-TV 4.2" tvg-logo="https://i.imgur.com/5WNBFmp.png" group-title="Latinoamérica · Puerto Rico",WAPA-TV 4.2
 https://wapa.hostless.app/WAPA-TV-4-2.m3u8
+#EXTINF:-1 tvg-id="iptvorg:WCLO501.pr" tvg-name="WCLO 50.1" tvg-logo="https://publicfiles.fcc.gov/api/manager/download/entity/logo/3255/tv" group-title="Latinoamérica · Puerto Rico",WCLO 50.1
+https://stream.nuevavidafm.net:3937/live/nuevavidalive.m3u8
 #EXTINF:-1 tvg-id="iptvorg:x-e88c3d2b34" tvg-name="WDWL-DT1 (Teleadoración/Enlace PR)" group-title="Latinoamérica · Puerto Rico",WDWL-DT1 (Teleadoración/Enlace PR)
 https://67acccf130420.streamlock.net/enlacepr1/enlacepr1/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:WECN.pr" tvg-name="WECN" tvg-logo="https://i.imgur.com/NYBZBY0.png" group-title="Latinoamérica · Puerto Rico",WECN
-https://59825a54e4454.streamlock.net:8443/pastorairisn394/pastorairisn394/chunklist_w239411719.m3u8
+https://59825a54e4454.streamlock.net:8443/pastorairisn394/pastorairisn394/master.m3u8
 #EXTINF:-1 tvg-id="iptvorg:WELU81.pr" tvg-name="WELU 8.1" tvg-logo="https://i.imgur.com/42UdwD0.png" group-title="Latinoamérica · Puerto Rico",WELU 8.1
 https://video1.getstreamhosting.com:1936/8226/8226/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:WIPRTV61.pr" tvg-name="WIPR-TV 6.1" tvg-logo="https://i.imgur.com/MGJaxFO.png" group-title="Latinoamérica · Puerto Rico",WIPR-TV 6.1
@@ -4247,6 +4263,8 @@ https://srv1.paineldevideo.com/liberdaderadioetv/liberdaderadioetv/playlist.m3u8
 https://streaming.cloudecast.com/hls/tvlifeamerica/index.m3u8
 #EXTINF:-1 tvg-id="iptvorg:TVLitoralRN.br" tvg-name="TV Litoral RN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3e/TV_LITORAL_RN.jpg" group-title="Latinoamérica · Brasil",TV Litoral RN
 https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8
+#EXTINF:-1 tvg-id="iptvorg:TVMaanaim.br" tvg-name="TV Maanaim" tvg-logo="https://i.imgur.com/PZhdHvf.png" group-title="Latinoamérica · Brasil",TV Maanaim
+https://cpbr.appflux.com.br:2000/hls/maranatalive1/maranatalive1.m3u8
 #EXTINF:-1 tvg-id="iptvorg:TVMackenzie.br" tvg-name="TV Mackenzie" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/TV_Mackenzie_logo.svg/960px-TV_Mackenzie_logo.svg.png" group-title="Latinoamérica · Brasil",TV Mackenzie
 https://player.internetaovivo.com:8443/live_tvmackenzieabr/tvmackenzieabr/playlist.m3u8
 #EXTINF:-1 tvg-id="iptvorg:TVMaisMarica.br" tvg-name="TV Mais Marica" tvg-logo="https://i.imgur.com/lgCRX7q.png" group-title="Latinoamérica · Brasil",TV Mais Marica

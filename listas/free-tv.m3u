@@ -445,6 +445,8 @@ https://www.youtube.com/c/Africanewsfr/live
 https://www.dailymotion.com/video/x2lefik
 #EXTINF:-1 group-title="Free-TV · Francia" tvg-name="France Inter" tvg-logo="https://i.imgur.com/d9Ncl8m.png" tvg-id="FranceInter.fr" tvg-chno="32" tvg-country="FR",France Inter Ⓨ
 https://www.youtube.com/c/FranceInter/live
+#EXTINF:-1 group-title="Free-TV · Francia" tvg-name="CGTN Français" tvg-logo="https://i.imgur.com/fMsJYzl.png" tvg-id="CGTNFrench.cn" tvg-chno="34" tvg-country="FR",CGTN Français
+https://news.cgtn.com/resource/live/french/cgtn-f.m3u8
 #EXTINF:-1 group-title="Free-TV · Francia" tvg-name="Air Connect TV" tvg-logo="onnectTV.f" tvg-chno="-" tvg-country="FR",Air Connect TV
 https://tv.airconnectradio.com/live.m3u8
 #EXTINF:-1 group-title="Free-TV · Francia" tvg-name="TF1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Logo_TF1_2013.svg/500px-Logo_TF1_2013.svg.png" tvg-id="TF1.fr" tvg-chno="1" tvg-country="FR",TF1
@@ -1877,6 +1879,8 @@ https://streaming102.interskytech.com/live/618.m3u8
 http://92.50.128.180/utv/1358/index.m3u8
 #EXTINF:-1 group-title="Free-TV · Rusia" tvg-name="RT Д Русский" tvg-logo="https://i.imgur.com/v5fpEBo.png" tvg-id="RTD.ru" tvg-chno="23" tvg-country="RU",RT Д Русский Ⓖ
 https://hls.rt.com/hls/rtdru.m3u8
+#EXTINF:-1 group-title="Free-TV · Rusia" tvg-name="CGTN Pусский" tvg-logo="https://i.imgur.com/fMsJYzl.png" tvg-id="CGTNRussian.cn" tvg-chno="24" tvg-country="RU",CGTN Pусский
+https://news.cgtn.com/resource/live/russian/cgtn-r.m3u8
 #EXTINF:-1 group-title="Free-TV · Rusia" tvg-name="Euronews по-русски" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Euronews_2022.svg/500px-Euronews_2022.svg.png" tvg-id="EuronewsRussian.fr" tvg-chno="25" tvg-country="RU",Euronews по-русски Ⓨ
 https://www.youtube.com/euronewsru/live
 #EXTINF:-1 group-title="Free-TV · Rusia" tvg-name="РТР-Планета" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/85/RTR_Planeta_Europe.png" tvg-id="RTRPlaneta.ru" tvg-chno="26" tvg-country="RU",РТР-Планета Ⓢ
