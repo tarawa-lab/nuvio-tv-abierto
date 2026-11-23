@@ -1,0 +1,25 @@
+name: Simulacro enlaces caídos
+on:
+  workflow_dispatch:
+  push:
+    paths: ['tools/comprobar.py', '.github/workflows/simulacro.yml']
+permissions:
+  contents: write
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install aiohttp
+      - run: python tools/comprobar.py
+      - name: Guardar informe
+        run: |
+          git config user.name "tarawa-lab"
+          git config user.email "tarawa-lab@users.noreply.github.com"
+          git add informe
+          git commit -m "Informe del simulacro de enlaces caídos" || exit 0
+          git pull --rebase
+          git push
