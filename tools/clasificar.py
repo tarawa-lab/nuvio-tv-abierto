@@ -29,9 +29,16 @@ def genero_texto(*t):
     return 'Otros'
 def esc(s): return (s or '').replace('"', "'")
 canales = []; vistos = set()
-def add(name, url, logo, cc, genero, espanol, extra_lines=()):
+def add(name, url, logo, cc, genero, espanol, extra_lines=(), hd=False):
     if not url or url in vistos: return
-    vistos.add(url); canales.append(dict(name=name, url=url, logo=logo, cc=cc, genero=genero, es=espanol, extra=list(extra_lines)))
+    vistos.add(url); canales.append(dict(name=name, url=url, logo=logo, cc=cc, genero=genero, es=espanol, extra=list(extra_lines), hd=hd))
+def res(t):
+    m = re.findall(r'(\d{3,4})[pi]\b', t or ''); return max(map(int, m)) if m else 0
+feed_hd = {}
+for r_ in csv.DictReader(open(os.path.join(db, 'feeds.csv'), encoding='utf-8')):
+    if res(r_['format']) >= 720 or r_['id'].upper() in ('HD','FHD','UHD','4K'): feed_hd[r_['channel']] = True
+def nombre_hd(n): return bool(re.search(r'\b(HD|FHD|UHD|4K)\b', n or '', re.I))
+
 # 1) Propios (TDT + IPTV-org), con su género y país del índice
 idx = json.load(open(os.environ.get('CANALES_INDEX', '/tmp/_canales_index.json'), encoding='utf-8'))
 for i in idx:
@@ -46,7 +53,9 @@ for i in idx:
     lg = lang.get(cid, '') if cid else ''
     es = ('spa' in lg.split(';')) if lg else (i['cc'] in HISP)
     meta = json.load(open(os.path.join(root, 'meta/tv', i['id'] + '.json'), encoding='utf-8'))['meta']
-    add(i['name'], s['url'], meta.get('poster') or meta.get('logo'), i['cc'], g, es, ex)
+    r0 = max([res(x.get('title','')) for x in st] + [0])
+    hd = r0 >= 720 or (r0 == 0 and (feed_hd.get(cid, False) or nombre_hd(i['name'])))
+    add(i['name'], s['url'], meta.get('poster') or meta.get('logo'), i['cc'], g, es, ex, hd)
 # 2) Agregadores
 def leer(fn):
     out = []; cur = None; exl = []
@@ -66,14 +75,14 @@ CAT_ES = {'anime':'Infantil','cine':'Cine','comedia':'Humor','crimen y misterio'
 for fn in ['plutotv_es.m3u','samsungtvplus_es.m3u','plex_es.m3u']:
     for inf, exl, u in leer(fn):
         g = CAT_ES.get(attr(inf, 'group-title').lower()) or genero_texto(nombre(inf))
-        add(nombre(inf), u, attr(inf, 'tvg-logo'), 'ES', g, True, exl)
+        add(nombre(inf), u, attr(inf, 'tvg-logo'), 'ES', g, True, exl, True)
 for fn in ['plutotv_all.m3u','samsungtvplus_all.m3u','plex_all.m3u','roku_all.m3u']:
     for inf, exl, u in leer(fn):
         grp = attr(inf, 'group-title'); cc = EN.get(grp.lower(), 'US' if fn.startswith('roku') else '')
         n = nombre(inf)
         es = cc in HISP or bool(re.search(r'español|espanol|latino|en espa', n.lower()))
         g = CAT_ES.get(grp.lower()) or genero_texto(n, grp if fn.startswith('roku') else '')
-        add(n, u, attr(inf, 'tvg-logo'), cc, g, es, exl)
+        add(n, u, attr(inf, 'tvg-logo'), cc, g, es, exl, True)
 for inf, exl, u in leer('playlist.m3u8'):
     if attr(inf, 'group-title').startswith('VOD'): continue
     tid = attr(inf, 'tvg-id').split('@')[0]; c = chan.get(tid)
@@ -82,7 +91,9 @@ for inf, exl, u in leer('playlist.m3u8'):
     g = cats[0] if cats else genero_texto(nombre(inf))
     lg = lang.get(tid, '')
     es = ('spa' in lg.split(';')) if lg else (cc in HISP)
-    add(re.sub(r'\s*[ⒼⓈⓎ]+\s*$', '', nombre(inf)), u, attr(inf, 'tvg-logo'), cc, g, es, exl)
+    full_id = attr(inf, 'tvg-id'); fid = full_id.split('@')[1].upper() if '@' in full_id else ''
+    hd = res(nombre(inf)) >= 720 or fid in ('HD','FHD','UHD','4K') or feed_hd.get(tid, False) or nombre_hd(nombre(inf))
+    add(re.sub(r'\s*[ⒼⓈⓎ]+\s*$', '', nombre(inf)), u, attr(inf, 'tvg-logo'), cc, g, es, exl, hd)
 # 3) Escribir listas
 ORD = ['Generalistas','Autonómicos y locales (España)','Noticias','Deportes','Infantil','Cine','Series','Entretenimiento','Humor','Música','Documentales','Cultura',
        'Educación','Clásicos','Cocina','Viajes','Motor','Estilo de vida','Economía','Institucional','Tiempo','Religión','Relax','Teletienda','Otros']
@@ -105,3 +116,11 @@ print(r); print('géneros (todos):', collections.Counter(c['genero'] for c in ca
 dep = [c for c in canales if c['genero'] == 'Deportes']
 r['deportes'] = escribir('deportes.m3u', sorted(dep, key=lambda c: (c['cc'] != 'ES', not c['es'], c['cc'] not in HISP, pais(c['cc']), c['name'].lower())), lambda c: 'Deportes · ' + pais(c['cc']))
 print('deportes:', r['deportes'])
+
+# HD y (en español o deportivo)
+hdsel = [c for c in canales if c['hd'] and (c['es'] or c['genero'] == 'Deportes')]
+def k_hd(c):
+    if c['genero'] != 'Deportes': return (0,) + key_gen(c)
+    return (1, c['cc'] != 'ES', not c['es'], c['cc'] not in HISP, norm(pais(c['cc'])), c['name'].lower())
+r['hd'] = escribir('hd-espanol-deportes.m3u', sorted(hdsel, key=k_hd), lambda c: ('Deportes · ' + pais(c['cc'])) if c['genero'] == 'Deportes' else c['genero'])
+print('hd:', r['hd'], collections.Counter(c['genero'] for c in hdsel).most_common(8))
