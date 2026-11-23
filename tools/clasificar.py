@@ -102,3 +102,6 @@ esp = [c for c in canales if c['es']]
 r['generos-espanol'] = escribir('generos-espanol.m3u', sorted(esp, key=key_gen), lambda c: c['genero'])
 import collections
 print(r); print('géneros (todos):', collections.Counter(c['genero'] for c in canales).most_common()); print('géneros (español):', collections.Counter(c['genero'] for c in esp).most_common(12))
+dep = [c for c in canales if c['genero'] == 'Deportes']
+r['deportes'] = escribir('deportes.m3u', sorted(dep, key=lambda c: (c['cc'] != 'ES', not c['es'], c['cc'] not in HISP, pais(c['cc']), c['name'].lower())), lambda c: 'Deportes · ' + pais(c['cc']))
+print('deportes:', r['deportes'])
